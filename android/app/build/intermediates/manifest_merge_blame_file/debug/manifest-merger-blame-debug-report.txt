@@ -1,0 +1,227 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.rnsdktester"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="32" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->D:\Git\GitHub\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:5:5-77
+11-->D:\Git\GitHub\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:5:5-79
+12-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:5:22-76
+13    <uses-permission android:name="android.permission.BLUETOOTH" />
+13-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:6:5-68
+13-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:6:22-65
+14    <uses-permission android:name="android.permission.CAMERA" />
+14-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:7:5-65
+14-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:7:22-62
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:3:5-67
+15-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:3:22-64
+16    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS" />
+16-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:8:5-75
+16-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:8:22-72
+17    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+17-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:9:5-80
+17-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:9:22-77
+18    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+18-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:10:5-71
+18-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:10:22-68
+19    <uses-permission android:name="android.permission.WAKE_LOCK" />
+19-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:11:5-68
+19-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:11:22-65
+20    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+20-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:12:5-76
+20-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:12:22-73
+21    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+21-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:13:5-77
+21-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:13:22-74
+22    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+22-->[:react-native-calendar-events] D:\Git\GitHub\MaternityCare_Live\node_modules\react-native-calendar-events\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-73
+22-->[:react-native-calendar-events] D:\Git\GitHub\MaternityCare_Live\node_modules\react-native-calendar-events\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-70
+23    <uses-permission android:name="android.permission.READ_CALENDAR" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+23-->[:react-native-calendar-events] D:\Git\GitHub\MaternityCare_Live\node_modules\react-native-calendar-events\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-72
+23-->[:react-native-calendar-events] D:\Git\GitHub\MaternityCare_Live\node_modules\react-native-calendar-events\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:22-69
+24    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+24-->[com.google.android.gms:play-services-iid:17.0.0] C:\Users\rezau\.gradle\caches\transforms-3\776d75dda440e869ff9a17f486556044\transformed\jetified-play-services-iid-17.0.0\AndroidManifest.xml:23:5-82
+24-->[com.google.android.gms:play-services-iid:17.0.0] C:\Users\rezau\.gradle\caches\transforms-3\776d75dda440e869ff9a17f486556044\transformed\jetified-play-services-iid-17.0.0\AndroidManifest.xml:23:22-79
+25    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+25-->[com.android.installreferrer:installreferrer:1.1.2] C:\Users\rezau\.gradle\caches\transforms-3\7c9052aed509d204e3da9c0aad720d24\transformed\jetified-installreferrer-1.1.2\AndroidManifest.xml:9:5-110
+25-->[com.android.installreferrer:installreferrer:1.1.2] C:\Users\rezau\.gradle\caches\transforms-3\7c9052aed509d204e3da9c0aad720d24\transformed\jetified-installreferrer-1.1.2\AndroidManifest.xml:9:22-107
+26
+27    <application
+27-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:15:5-34:19
+28        android:name="com.rnsdktester.MainApplication"
+28-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:16:7-38
+29        android:allowBackup="false"
+29-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:20:7-34
+30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+30-->[androidx.core:core:1.7.0] C:\Users\rezau\.gradle\caches\transforms-3\0b45bf6cb91fe04a4c99eb5c404052b3\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+31        android:debuggable="true"
+32        android:extractNativeLibs="false"
+33        android:icon="@mipmap/ic_launcher"
+33-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:18:7-41
+34        android:label="@string/app_name"
+34-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:17:7-39
+35        android:roundIcon="@mipmap/ic_launcher_round"
+35-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:19:7-52
+36        android:theme="@style/AppTheme"
+36-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:21:7-38
+37        android:usesCleartextTraffic="true" >
+37-->D:\Git\GitHub\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:19:9-44
+38        <activity
+38-->D:\Git\GitHub\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:22:9-111
+39            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+39-->D:\Git\GitHub\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:22:19-83
+40            android:exported="false" />
+40-->D:\Git\GitHub\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:22:84-108
+41        <activity
+41-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:22:7-33:18
+42            android:name="com.rnsdktester.MainActivity"
+42-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:23:9-37
+43            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+43-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:25:9-118
+44            android:exported="true"
+44-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:28:9-32
+45            android:label="@string/app_name"
+45-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:24:9-41
+46            android:launchMode="singleTask"
+46-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:26:9-40
+47            android:windowSoftInputMode="adjustResize" >
+47-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:27:9-51
+48            <intent-filter>
+48-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:29:9-32:25
+49                <action android:name="android.intent.action.MAIN" />
+49-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:30:13-65
+49-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:30:21-62
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+51-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:31:13-73
+51-->D:\Git\GitHub\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:31:23-70
+52            </intent-filter>
+53        </activity>
+54
+55        <provider
+55-->[:react-native-performance] D:\Git\GitHub\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-12:39
+56            android:name="com.oblador.performance.StartTimeProvider"
+56-->[:react-native-performance] D:\Git\GitHub\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-69
+57            android:authorities="com.rnsdktester.start.time.provider"
+57-->[:react-native-performance] D:\Git\GitHub\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-71
+58            android:exported="false"
+58-->[:react-native-performance] D:\Git\GitHub\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
+59            android:initOrder="200" />
+59-->[:react-native-performance] D:\Git\GitHub\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-36
+60        <provider
+60-->[:react-native-webview] D:\Git\GitHub\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
+61            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+61-->[:react-native-webview] D:\Git\GitHub\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-83
+62            android:authorities="com.rnsdktester.fileprovider"
+62-->[:react-native-webview] D:\Git\GitHub\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-64
+63            android:exported="false"
+63-->[:react-native-webview] D:\Git\GitHub\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
+64            android:grantUriPermissions="true" >
+64-->[:react-native-webview] D:\Git\GitHub\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-47
+65            <meta-data
+65-->[:react-native-webview] D:\Git\GitHub\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:63
+66                android:name="android.support.FILE_PROVIDER_PATHS"
+66-->[:react-native-webview] D:\Git\GitHub\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-67
+67                android:resource="@xml/file_provider_paths" />
+67-->[:react-native-webview] D:\Git\GitHub\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-60
+68        </provider>
+69
+70        <uses-library
+70-->[com.giphy.sdk:ui:2.3.4] C:\Users\rezau\.gradle\caches\transforms-3\27f46fd366dfe9a7a250a5f76893ade4\transformed\jetified-ui-2.3.4\AndroidManifest.xml:12:9-14:40
+71            android:name="android.test.runner"
+71-->[com.giphy.sdk:ui:2.3.4] C:\Users\rezau\.gradle\caches\transforms-3\27f46fd366dfe9a7a250a5f76893ade4\transformed\jetified-ui-2.3.4\AndroidManifest.xml:13:13-47
+72            android:required="false" />
+72-->[com.giphy.sdk:ui:2.3.4] C:\Users\rezau\.gradle\caches\transforms-3\27f46fd366dfe9a7a250a5f76893ade4\transformed\jetified-ui-2.3.4\AndroidManifest.xml:14:13-37
+73        <uses-library
+73-->[com.giphy.sdk:ui:2.3.4] C:\Users\rezau\.gradle\caches\transforms-3\27f46fd366dfe9a7a250a5f76893ade4\transformed\jetified-ui-2.3.4\AndroidManifest.xml:15:9-17:40
+74            android:name="android.test.base"
+74-->[com.giphy.sdk:ui:2.3.4] C:\Users\rezau\.gradle\caches\transforms-3\27f46fd366dfe9a7a250a5f76893ade4\transformed\jetified-ui-2.3.4\AndroidManifest.xml:16:13-45
+75            android:required="false" />
+75-->[com.giphy.sdk:ui:2.3.4] C:\Users\rezau\.gradle\caches\transforms-3\27f46fd366dfe9a7a250a5f76893ade4\transformed\jetified-ui-2.3.4\AndroidManifest.xml:17:13-37
+76        <uses-library
+76-->[com.giphy.sdk:ui:2.3.4] C:\Users\rezau\.gradle\caches\transforms-3\27f46fd366dfe9a7a250a5f76893ade4\transformed\jetified-ui-2.3.4\AndroidManifest.xml:18:9-20:40
+77            android:name="android.test.mock"
+77-->[com.giphy.sdk:ui:2.3.4] C:\Users\rezau\.gradle\caches\transforms-3\27f46fd366dfe9a7a250a5f76893ade4\transformed\jetified-ui-2.3.4\AndroidManifest.xml:19:13-45
+78            android:required="false" />
+78-->[com.giphy.sdk:ui:2.3.4] C:\Users\rezau\.gradle\caches\transforms-3\27f46fd366dfe9a7a250a5f76893ade4\transformed\jetified-ui-2.3.4\AndroidManifest.xml:20:13-37
+79
+80        <activity
+80-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\rezau\.gradle\caches\transforms-3\35b541f4c1636dd9a11c9cc10f7e2579\transformed\jetified-play-services-auth-20.5.0\AndroidManifest.xml:23:9-27:75
+81            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+81-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\rezau\.gradle\caches\transforms-3\35b541f4c1636dd9a11c9cc10f7e2579\transformed\jetified-play-services-auth-20.5.0\AndroidManifest.xml:24:13-93
+82            android:excludeFromRecents="true"
+82-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\rezau\.gradle\caches\transforms-3\35b541f4c1636dd9a11c9cc10f7e2579\transformed\jetified-play-services-auth-20.5.0\AndroidManifest.xml:25:13-46
+83            android:exported="false"
+83-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\rezau\.gradle\caches\transforms-3\35b541f4c1636dd9a11c9cc10f7e2579\transformed\jetified-play-services-auth-20.5.0\AndroidManifest.xml:26:13-37
+84            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+84-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\rezau\.gradle\caches\transforms-3\35b541f4c1636dd9a11c9cc10f7e2579\transformed\jetified-play-services-auth-20.5.0\AndroidManifest.xml:27:13-72
+85        <!--
+86            Service handling Google Sign-In user revocation. For apps that do not integrate with
+87            Google Sign-In, this service will never be started.
+88        -->
+89        <service
+89-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\rezau\.gradle\caches\transforms-3\35b541f4c1636dd9a11c9cc10f7e2579\transformed\jetified-play-services-auth-20.5.0\AndroidManifest.xml:33:9-37:51
+90            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+90-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\rezau\.gradle\caches\transforms-3\35b541f4c1636dd9a11c9cc10f7e2579\transformed\jetified-play-services-auth-20.5.0\AndroidManifest.xml:34:13-89
+91            android:exported="true"
+91-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\rezau\.gradle\caches\transforms-3\35b541f4c1636dd9a11c9cc10f7e2579\transformed\jetified-play-services-auth-20.5.0\AndroidManifest.xml:35:13-36
+92            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+92-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\rezau\.gradle\caches\transforms-3\35b541f4c1636dd9a11c9cc10f7e2579\transformed\jetified-play-services-auth-20.5.0\AndroidManifest.xml:36:13-107
+93            android:visibleToInstantApps="true" />
+93-->[com.google.android.gms:play-services-auth:20.5.0] C:\Users\rezau\.gradle\caches\transforms-3\35b541f4c1636dd9a11c9cc10f7e2579\transformed\jetified-play-services-auth-20.5.0\AndroidManifest.xml:37:13-48
+94
+95        <activity
+95-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\rezau\.gradle\caches\transforms-3\f51f232ad6bf01632b483ea340b295c1\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+96            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+96-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\rezau\.gradle\caches\transforms-3\f51f232ad6bf01632b483ea340b295c1\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+97            android:exported="false"
+97-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\rezau\.gradle\caches\transforms-3\f51f232ad6bf01632b483ea340b295c1\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+98            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+98-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\rezau\.gradle\caches\transforms-3\f51f232ad6bf01632b483ea340b295c1\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+99
+100        <meta-data
+100-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\rezau\.gradle\caches\transforms-3\59be507273bca11d0a4af29fd6e4d631\transformed\jetified-play-services-basement-18.2.0\AndroidManifest.xml:21:9-23:69
+101            android:name="com.google.android.gms.version"
+101-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\rezau\.gradle\caches\transforms-3\59be507273bca11d0a4af29fd6e4d631\transformed\jetified-play-services-basement-18.2.0\AndroidManifest.xml:22:13-58
+102            android:value="@integer/google_play_services_version" />
+102-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\rezau\.gradle\caches\transforms-3\59be507273bca11d0a4af29fd6e4d631\transformed\jetified-play-services-basement-18.2.0\AndroidManifest.xml:23:13-66
+103
+104        <provider
+104-->[androidx.emoji2:emoji2:1.0.0] C:\Users\rezau\.gradle\caches\transforms-3\cd878d3ace130bfa3511d09958467d89\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+105            android:name="androidx.startup.InitializationProvider"
+105-->[androidx.emoji2:emoji2:1.0.0] C:\Users\rezau\.gradle\caches\transforms-3\cd878d3ace130bfa3511d09958467d89\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+106            android:authorities="com.rnsdktester.androidx-startup"
+106-->[androidx.emoji2:emoji2:1.0.0] C:\Users\rezau\.gradle\caches\transforms-3\cd878d3ace130bfa3511d09958467d89\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+107            android:exported="false" >
+107-->[androidx.emoji2:emoji2:1.0.0] C:\Users\rezau\.gradle\caches\transforms-3\cd878d3ace130bfa3511d09958467d89\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+108            <meta-data
+108-->[androidx.emoji2:emoji2:1.0.0] C:\Users\rezau\.gradle\caches\transforms-3\cd878d3ace130bfa3511d09958467d89\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+109                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+109-->[androidx.emoji2:emoji2:1.0.0] C:\Users\rezau\.gradle\caches\transforms-3\cd878d3ace130bfa3511d09958467d89\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+110                android:value="androidx.startup" />
+110-->[androidx.emoji2:emoji2:1.0.0] C:\Users\rezau\.gradle\caches\transforms-3\cd878d3ace130bfa3511d09958467d89\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+111            <meta-data
+111-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\rezau\.gradle\caches\transforms-3\303c1283f4ee4aa631d19a1852e5a300\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+112                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+112-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\rezau\.gradle\caches\transforms-3\303c1283f4ee4aa631d19a1852e5a300\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+113                android:value="androidx.startup" />
+113-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\rezau\.gradle\caches\transforms-3\303c1283f4ee4aa631d19a1852e5a300\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+114        </provider>
+115
+116        <meta-data
+116-->[com.facebook.soloader:soloader:0.10.5] C:\Users\rezau\.gradle\caches\transforms-3\f3aa59f95403a35105855a8d0f51cfdc\transformed\jetified-soloader-0.10.5\AndroidManifest.xml:12:9-14:37
+117            android:name="com.facebook.soloader.enabled"
+117-->[com.facebook.soloader:soloader:0.10.5] C:\Users\rezau\.gradle\caches\transforms-3\f3aa59f95403a35105855a8d0f51cfdc\transformed\jetified-soloader-0.10.5\AndroidManifest.xml:13:13-57
+118            android:value="false" />
+118-->[com.facebook.soloader:soloader:0.10.5] C:\Users\rezau\.gradle\caches\transforms-3\f3aa59f95403a35105855a8d0f51cfdc\transformed\jetified-soloader-0.10.5\AndroidManifest.xml:14:13-34
+119    </application>
+120
+121</manifest>
