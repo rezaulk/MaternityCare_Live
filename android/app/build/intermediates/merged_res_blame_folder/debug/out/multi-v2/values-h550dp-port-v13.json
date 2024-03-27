@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.rnsdktester.app-mergeDebugResources-41:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+            "outputFile": "com.rnsdktester.app-mergeDebugResources-46:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\rezau\\.gradle\\caches\\transforms-3\\e3565b2f490e93fdcd3a2e653cb43d56\\transformed\\material-1.6.1\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.rnsdktester.app-mergeDebugResources-41:/values-v21/values-v21.xml",
+            "outputFile": "com.rnsdktester.app-mergeDebugResources-46:/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\rezau\\.gradle\\caches\\transforms-3\\d07d8efbc1b958aa12ccc09e3dda5a95\\transformed\\jetified-exoplayer-ui-2.18.1\\res\\values-v21\\values-v21.xml",

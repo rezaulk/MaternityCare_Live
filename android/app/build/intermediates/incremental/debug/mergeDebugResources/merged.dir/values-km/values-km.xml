@@ -70,6 +70,7 @@
     <string name="common_open_on_phone">បើកតាមទូរស័ព្ទ</string>
     <string name="common_signin_button_text">ចូល</string>
     <string name="common_signin_button_text_long">ចូលដោយប្រើ Google</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"បាន​ចម្លង​តំណ​ទៅឃ្លីបបត"</string>
     <string name="error_icon_content_description">បញ្ហា</string>
     <string name="exo_controls_cc_disabled_description">បើកអក្សររត់</string>
     <string name="exo_controls_cc_enabled_description">បិទអក្សររត់</string>
@@ -123,6 +124,9 @@
     <string name="exo_track_surround_7_point_1">សំឡេង​រងំ​ខ្នាត 7.1</string>
     <string name="exo_track_unknown">មិនស្គាល់</string>
     <string name="exposed_dropdown_menu_content_description">បង្ហាញ​ម៉ឺនុយ​ធ្លាក់ចុះ</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"ចម្លង​តំណ"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"បើក​នៅក្នុង​កម្មវិធី​រុករកតាម​អ៊ីនធឺណិត"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"តំណចែករំលែក"</string>
     <string name="icon_content_description">រូប​ប្រអប់បញ្ចូល</string>
     <string name="item_view_role_description">ផ្ទាំង</string>
     <string name="material_clock_toggle_content_description">ជ្រើសរើស AM ឬ PM</string>

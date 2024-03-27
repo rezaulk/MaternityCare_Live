@@ -65,6 +65,18 @@ import com.brentvatne.react.ReactVideoPackage;
 import com.oney.WebRTCModule.WebRTCModulePackage;
 // react-native-webview
 import com.reactnativecommunity.webview.RNCWebViewPackage;
+// @react-native-firebase/app
+import io.invertase.firebase.app.ReactNativeFirebaseAppPackage;
+// @react-native-firebase/auth
+import io.invertase.firebase.auth.ReactNativeFirebaseAuthPackage;
+// @react-native-firebase/database
+import io.invertase.firebase.database.ReactNativeFirebaseDatabasePackage;
+// @react-native-firebase/firestore
+import io.invertase.firebase.firestore.ReactNativeFirebaseFirestorePackage;
+// react-native-maps
+import com.rnmaps.maps.MapsPackage;
+// react-native-vector-icons
+import com.oblador.vectoricons.VectorIconsPackage;
 
 public class PackageList {
   private Application application;
@@ -136,7 +148,13 @@ public class PackageList {
       new SvgPackage(),
       new ReactVideoPackage(),
       new WebRTCModulePackage(),
-      new RNCWebViewPackage()
+      new RNCWebViewPackage(),
+      new ReactNativeFirebaseAppPackage(),
+      new ReactNativeFirebaseAuthPackage(),
+      new ReactNativeFirebaseDatabasePackage(),
+      new ReactNativeFirebaseFirestorePackage(),
+      new MapsPackage(),
+      new VectorIconsPackage()
     ));
   }
 }

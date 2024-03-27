@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.rnsdktester.app-mergeDebugResources-41:/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "com.rnsdktester.app-mergeDebugResources-46:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
                     "source": "C:\\Users\\rezau\\.gradle\\caches\\transforms-3\\35b541f4c1636dd9a11c9cc10f7e2579\\transformed\\jetified-play-services-auth-20.5.0\\res\\values-watch-v20\\values.xml",

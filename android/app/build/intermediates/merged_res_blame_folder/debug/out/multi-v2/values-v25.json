@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.rnsdktester.app-mergeDebugResources-41:/values-v25/values-v25.xml",
+            "outputFile": "com.rnsdktester.app-mergeDebugResources-46:/values-v25/values-v25.xml",
             "map": [
                 {
                     "source": "C:\\Users\\rezau\\.gradle\\caches\\transforms-3\\63ff41b8c432188eb6ba53e22bc8635d\\transformed\\appcompat-1.4.2\\res\\values-v25\\values-v25.xml",
