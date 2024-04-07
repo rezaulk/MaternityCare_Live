@@ -2010,6 +2010,7 @@
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="copy_toast_msg">Link copied to clipboard</string>
+    <string name="default_web_client_id" translatable="false">500881920072-1v73q09f96nbeeamk06j9jp034c37epv.apps.googleusercontent.com</string>
     <string name="error_drm_not_supported">Protected content not supported on API levels below 18</string>
     <string name="error_drm_unknown">An unknown DRM error occurred</string>
     <string name="error_drm_unsupported_scheme">This device does not support the required DRM scheme</string>
@@ -2077,6 +2078,12 @@
     <string name="fallback_menu_item_copy_link">Copy link</string>
     <string name="fallback_menu_item_open_in_browser">Open in browser</string>
     <string name="fallback_menu_item_share_link">Share link</string>
+    <string name="firebase_database_url" translatable="false">https://maternitycare-61e1e-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">500881920072</string>
+    <string name="google_api_key" translatable="false">AIzaSyBiKcn7mG3asIjdtaNY4Y8Mg7qxEIcuPeI</string>
+    <string name="google_app_id" translatable="false">1:500881920072:android:7703cdcbc17c540722887d</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBiKcn7mG3asIjdtaNY4Y8Mg7qxEIcuPeI</string>
+    <string name="google_storage_bucket" translatable="false">maternitycare-61e1e.appspot.com</string>
     <string name="gph_attibution_back">Back</string>
     <string name="gph_back">Back</string>
     <string name="gph_choose_clip">Select Clip</string>
@@ -2202,6 +2209,7 @@
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
     <string name="progressbar_description" translatable="false">Progress Bar</string>
+    <string name="project_id" translatable="false">maternitycare-61e1e</string>
     <string name="radiogroup_description" translatable="false">Radio Group</string>
     <string name="rn_tab_description" translatable="false">Tab</string>
     <string name="scrollbar_description" translatable="false">Scroll Bar</string>

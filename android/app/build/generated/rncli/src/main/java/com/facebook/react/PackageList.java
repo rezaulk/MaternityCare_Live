@@ -25,6 +25,14 @@ import com.reactnativecommunity.clipboard.ClipboardPackage;
 import com.reactnativecommunity.netinfo.NetInfoPackage;
 // @react-native-community/slider
 import com.reactnativecommunity.slider.ReactSliderPackage;
+// @react-native-firebase/app
+import io.invertase.firebase.app.ReactNativeFirebaseAppPackage;
+// @react-native-firebase/auth
+import io.invertase.firebase.auth.ReactNativeFirebaseAuthPackage;
+// @react-native-firebase/database
+import io.invertase.firebase.database.ReactNativeFirebaseDatabasePackage;
+// @react-native-firebase/firestore
+import io.invertase.firebase.firestore.ReactNativeFirebaseFirestorePackage;
 // @react-native-google-signin/google-signin
 import com.reactnativegooglesignin.RNGoogleSigninPackage;
 // react-native-background-timer
@@ -43,6 +51,8 @@ import org.linusu.RNGetRandomValuesPackage;
 import com.rnimmersivemode.RNImmersiveModePackage;
 // react-native-keep-awake
 import com.corbt.keepawake.KCKeepAwakePackage;
+// react-native-maps
+import com.rnmaps.maps.MapsPackage;
 // react-native-orientation-locker
 import org.wonday.orientation.OrientationPackage;
 // react-native-pager-view
@@ -59,24 +69,14 @@ import com.zmxv.RNSound.RNSoundPackage;
 import org.devio.rn.splashscreen.SplashScreenReactPackage;
 // react-native-svg
 import com.horcrux.svg.SvgPackage;
+// react-native-vector-icons
+import com.oblador.vectoricons.VectorIconsPackage;
 // react-native-video
 import com.brentvatne.react.ReactVideoPackage;
 // react-native-webrtc
 import com.oney.WebRTCModule.WebRTCModulePackage;
 // react-native-webview
 import com.reactnativecommunity.webview.RNCWebViewPackage;
-// @react-native-firebase/app
-import io.invertase.firebase.app.ReactNativeFirebaseAppPackage;
-// @react-native-firebase/auth
-import io.invertase.firebase.auth.ReactNativeFirebaseAuthPackage;
-// @react-native-firebase/database
-import io.invertase.firebase.database.ReactNativeFirebaseDatabasePackage;
-// @react-native-firebase/firestore
-import io.invertase.firebase.firestore.ReactNativeFirebaseFirestorePackage;
-// react-native-maps
-import com.rnmaps.maps.MapsPackage;
-// react-native-vector-icons
-import com.oblador.vectoricons.VectorIconsPackage;
 
 public class PackageList {
   private Application application;
@@ -129,6 +129,10 @@ public class PackageList {
       new ClipboardPackage(),
       new NetInfoPackage(),
       new ReactSliderPackage(),
+      new ReactNativeFirebaseAppPackage(),
+      new ReactNativeFirebaseAuthPackage(),
+      new ReactNativeFirebaseDatabasePackage(),
+      new ReactNativeFirebaseFirestorePackage(),
       new RNGoogleSigninPackage(),
       new BackgroundTimerPackage(),
       new RNCalendarEventsPackage(),
@@ -138,6 +142,7 @@ public class PackageList {
       new RNGetRandomValuesPackage(),
       new RNImmersiveModePackage(),
       new KCKeepAwakePackage(),
+      new MapsPackage(),
       new OrientationPackage(),
       new PagerViewPackage(),
       new PerformancePackage(),
@@ -146,15 +151,10 @@ public class PackageList {
       new RNSoundPackage(),
       new SplashScreenReactPackage(),
       new SvgPackage(),
+      new VectorIconsPackage(),
       new ReactVideoPackage(),
       new WebRTCModulePackage(),
-      new RNCWebViewPackage(),
-      new ReactNativeFirebaseAppPackage(),
-      new ReactNativeFirebaseAuthPackage(),
-      new ReactNativeFirebaseDatabasePackage(),
-      new ReactNativeFirebaseFirestorePackage(),
-      new MapsPackage(),
-      new VectorIconsPackage()
+      new RNCWebViewPackage()
     ));
   }
 }

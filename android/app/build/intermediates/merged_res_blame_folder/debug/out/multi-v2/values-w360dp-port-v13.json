@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.rnsdktester.app-mergeDebugResources-46:/values-w360dp-port-v13/values-w360dp-port-v13.xml",
+            "outputFile": "com.maternitycare.app-mergeDebugResources-47:/values-w360dp-port-v13/values-w360dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\rezau\\.gradle\\caches\\transforms-3\\e3565b2f490e93fdcd3a2e653cb43d56\\transformed\\material-1.6.1\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
+                    "source": "C:\\Users\\rezau\\.gradle\\caches\\transforms-3\\248656d4e71cf504c1d7434857a79d9d\\transformed\\material-1.6.1\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

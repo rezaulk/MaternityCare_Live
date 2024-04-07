@@ -1,4 +1,4 @@
-package com.rnsdktester;
+package com.maternitycare;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

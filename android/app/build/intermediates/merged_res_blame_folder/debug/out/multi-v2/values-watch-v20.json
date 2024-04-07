@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.rnsdktester.app-mergeDebugResources-46:/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "com.maternitycare.app-mergeDebugResources-47:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\rezau\\.gradle\\caches\\transforms-3\\35b541f4c1636dd9a11c9cc10f7e2579\\transformed\\jetified-play-services-auth-20.5.0\\res\\values-watch-v20\\values.xml",
+                    "source": "C:\\Users\\rezau\\.gradle\\caches\\transforms-3\\e06437d11e1b6aff417a50cd20b349ea\\transformed\\jetified-play-services-auth-20.5.0\\res\\values-watch-v20\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\rezau\\.gradle\\caches\\transforms-3\\63ff41b8c432188eb6ba53e22bc8635d\\transformed\\appcompat-1.4.2\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "C:\\Users\\rezau\\.gradle\\caches\\transforms-3\\a03b3e9d7f447d8e72618cda6a2a2edd\\transformed\\appcompat-1.4.2\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

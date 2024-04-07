@@ -1,4 +1,4 @@
-com.rnsdktester
+com.maternitycare
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -4023,6 +4023,7 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string copy_toast_msg
+string default_web_client_id
 string error_drm_not_supported
 string error_drm_unknown
 string error_drm_unsupported_scheme
@@ -4090,6 +4091,12 @@ string fab_transformation_sheet_behavior
 string fallback_menu_item_copy_link
 string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
+string firebase_database_url
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string gph_attibution_back
 string gph_back
 string gph_choose_clip
@@ -4215,6 +4222,7 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string progressbar_description
+string project_id
 string radiogroup_description
 string rn_tab_description
 string scrollbar_description

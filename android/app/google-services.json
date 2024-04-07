@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "500881920072",
+    "firebase_url": "https://maternitycare-61e1e-default-rtdb.firebaseio.com",
+    "project_id": "maternitycare-61e1e",
+    "storage_bucket": "maternitycare-61e1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500881920072:android:7703cdcbc17c540722887d",
+        "android_client_info": {
+          "package_name": "com.maternitycare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500881920072-bq5ojnfpil7mtsu513ns16qb0pll8trk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.maternitycare",
+            "certificate_hash": "e76311af2799ed2125a7746f44cb1c3e1f29b3cb"
+          }
+        },
+        {
+          "client_id": "500881920072-k25s8c9os6d3ec3fssuhb35bbbd2oei2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.maternitycare",
+            "certificate_hash": "890afecf681275263403446bd7dbf438a9de3b02"
+          }
+        },
+        {
+          "client_id": "500881920072-1v73q09f96nbeeamk06j9jp034c37epv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiKcn7mG3asIjdtaNY4Y8Mg7qxEIcuPeI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500881920072-1v73q09f96nbeeamk06j9jp034c37epv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

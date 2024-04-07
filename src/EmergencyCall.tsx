@@ -23,7 +23,7 @@ import {
 } from 'native-base';
 
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import { auth } from '../Fire';
+import { auth } from '../firebase';
 
 function EmergencyCall({navigation}: {navigation: any}) {
   const [service, setService] = React.useState('');

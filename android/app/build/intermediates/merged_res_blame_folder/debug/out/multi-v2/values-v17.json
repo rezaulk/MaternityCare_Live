@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.rnsdktester.app-mergeDebugResources-46:/values-v17/values-v17.xml",
+            "outputFile": "com.maternitycare.app-mergeDebugResources-47:/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\rezau\\.gradle\\caches\\transforms-3\\63ff41b8c432188eb6ba53e22bc8635d\\transformed\\appcompat-1.4.2\\res\\values-v17\\values-v17.xml",
+                    "source": "C:\\Users\\rezau\\.gradle\\caches\\transforms-3\\a03b3e9d7f447d8e72618cda6a2a2edd\\transformed\\appcompat-1.4.2\\res\\values-v17\\values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
