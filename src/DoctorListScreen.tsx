@@ -21,20 +21,20 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 function DoctorListScreen({navigation}: {navigation: any}) {
   return (
-    <View style={{flex: 1}}>
+    <View style={{flex: 1 , backgroundColor: 'white'}}>
       <ScrollView horizontal={false} persistentScrollbar={false}>
         {/* <Heading size="md" paddingLeft={5} paddingBottom={5}>
           Pregnant Mother Care
         </Heading> */}
 
         <VStack w="100%" space={5} p={2} alignSelf="center">
+          <Center>
           <Input
             placeholder="Search"
             borderWidth={1}
             borderRadius={25}
             variant="filled"
-            width="100%"
-            borderRadius="10"
+            width="90%"
             py="1"
             px="2"
             InputLeftElement={
@@ -46,6 +46,8 @@ function DoctorListScreen({navigation}: {navigation: any}) {
               />
             }
           />
+          </Center>
+        
         </VStack>
 
         <Center pb={2}>
@@ -75,17 +77,17 @@ function DoctorListScreen({navigation}: {navigation: any}) {
                     source={require('./assets/Doctor1.png')}
                     alt="image"
                   />
-                  <Text fontSize="12" p={2}>
+                  <Text  fontWeight={'extrabold'} fontSize="10" p={2}>
                     8 Years of experience
                   </Text>
                 </Center>
 
                 <Center w="70%">
                   <VStack w="100%">
-                    <Text fontSize="16" ml="-1" paddingLeft={5}>
+                    <Text fontWeight={'extrabold'} fontSize="16" ml="-1" paddingLeft={5}>
                       Assistant. Prof. Dr. Farhana
                     </Text>
-                    <Text fontSize="12" ml="-1" paddingLeft={5}>
+                    <Text  fontWeight={'bold'} fontSize="12" ml="-1" paddingLeft={5}>
                       MBBS,FCPS
                     </Text>
                     <Text fontSize="12" ml="-1" paddingLeft={5}>
@@ -111,11 +113,11 @@ function DoctorListScreen({navigation}: {navigation: any}) {
                     </Text>
                   </VStack>
 
-                  <HStack w="100%" space={5} textAlign={'right'}>
+                  <HStack w="100%"  space={5} textAlign={'left'}>
                     <Text
                       fontSize="12"
                       color={'blue.400'}
-                      ml="-1"
+                      marginLeft='auto'
                       paddingLeft={5}>
                       Available Today
                     </Text>
@@ -161,17 +163,17 @@ function DoctorListScreen({navigation}: {navigation: any}) {
                   source={require('./assets/Doctor2.png')}
                   alt="image"
                 />
-                <Text fontSize="12" p={2}>
+                <Text fontWeight={'extrabold'} fontSize="10" p={2}>
                   8 Years of experience
                 </Text>
               </Center>
 
               <Center w="70%">
                 <VStack w="100%">
-                  <Text fontSize="16" ml="-1" paddingLeft={5}>
+                  <Text fontWeight={'extrabold'} fontSize="16" ml="-1" paddingLeft={5}>
                     Dr Tarafdar Runa Laila
                   </Text>
-                  <Text fontSize="12" ml="-1" paddingLeft={5}>
+                  <Text fontWeight={'bold'} fontSize="12" ml="-1" paddingLeft={5}>
                     MBBS,FCPS
                   </Text>
                   <Text fontSize="12" ml="-1" paddingLeft={5}>
@@ -201,6 +203,8 @@ function DoctorListScreen({navigation}: {navigation: any}) {
                     fontSize="12"
                     color={'blue.400'}
                     ml="-1"
+                    marginLeft='auto'
+
                     paddingLeft={5}>
                     Available Today
                   </Text>
@@ -245,17 +249,17 @@ function DoctorListScreen({navigation}: {navigation: any}) {
                   source={require('./assets/Doctor1.png')}
                   alt="image"
                 />
-                <Text fontSize="12" p={2}>
+                <Text fontWeight={'extrabold'} fontSize="10" p={2}>
                   8 Years of experience
                 </Text>
               </Center>
 
               <Center w="70%">
                 <VStack w="100%">
-                  <Text fontSize="16" ml="-1" paddingLeft={5}>
+                  <Text fontWeight={'extrabold'} fontSize="16" ml="-1" paddingLeft={5}>
                     Assistant. Prof. Dr. Farhana
                   </Text>
-                  <Text fontSize="12" ml="-1" paddingLeft={5}>
+                  <Text fontWeight={'bold'} fontSize="12" ml="-1" paddingLeft={5}>
                     MBBS,FCPS
                   </Text>
                   <Text fontSize="12" ml="-1" paddingLeft={5}>
@@ -285,6 +289,8 @@ function DoctorListScreen({navigation}: {navigation: any}) {
                     fontSize="12"
                     color={'blue.400'}
                     ml="-1"
+                    marginLeft='auto'
+
                     paddingLeft={5}>
                     Available Today
                   </Text>
@@ -329,17 +335,17 @@ function DoctorListScreen({navigation}: {navigation: any}) {
                   source={require('./assets/Doctor1.png')}
                   alt="image"
                 />
-                <Text fontSize="12" p={2}>
+                <Text fontWeight={'extrabold'}  fontSize="10" p={2}>
                   8 Years of experience
                 </Text>
               </Center>
 
               <Center w="70%">
                 <VStack w="100%">
-                  <Text fontSize="16" ml="-1" paddingLeft={5}>
+                  <Text fontWeight={'extrabold'} fontSize="16" ml="-1" paddingLeft={5}>
                     Assistant. Prof. Dr. Farhana
                   </Text>
-                  <Text fontSize="12" ml="-1" paddingLeft={5}>
+                  <Text fontWeight={'bold'} fontSize="12" ml="-1" paddingLeft={5}>
                     MBBS,FCPS
                   </Text>
                   <Text fontSize="12" ml="-1" paddingLeft={5}>
@@ -369,6 +375,8 @@ function DoctorListScreen({navigation}: {navigation: any}) {
                     fontSize="12"
                     color={'blue.400'}
                     ml="-1"
+                    marginLeft='auto'
+
                     paddingLeft={5}>
                     Available Today
                   </Text>

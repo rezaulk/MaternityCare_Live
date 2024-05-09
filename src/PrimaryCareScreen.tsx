@@ -90,7 +90,7 @@ function PrimaryCareScreen({navigation}: {navigation: any}) {
             <HStack height={20}>
               <Center  width="40%">
                 <Text fontSize="20" ml="-1" paddingLeft={5}>
-                  Messsage
+                  Message
                 </Text>
               </Center>
 

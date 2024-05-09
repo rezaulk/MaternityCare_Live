@@ -78,13 +78,21 @@ function Header() {
             source={require('./src/assets/logo.png')}
             alt="image"
           />
-          <Text
+            <Image
+            // size={'100px'}
+            width={180}
+            height={80}
+            source={require('./src/assets/maternity_logo.png')}
+            alt="image"
+            resizeMode="contain"
+          />
+          {/* <Text
             color="black"
             fontSize="20"
             fontWeight="bold"
             paddingLeft={'10px'}>
             MaternityCare
-          </Text>
+          </Text> */}
         </HStack>
         <HStack>
           <Icon as={Ionicons} name="notifications" size="lg" color="black" />
@@ -108,7 +116,10 @@ function MyTabs() {
           headerTitle: props => <Header />,
           tabBarLabel: 'Home',
           tabBarIcon: ({color, size}) => (
-            <Icon as={Ionicons} name="home" size="sm" color="black" />
+            <Icon as={Ionicons} name="home" 
+            size={'lg'}
+           //  h={34} w={34} 
+               color="black" />
           ),
         }}
       />
@@ -118,7 +129,11 @@ function MyTabs() {
         options={{
           tabBarLabel: 'History',
           tabBarIcon: ({color, size}) => (
-            <Icon as={Ionicons} name="archive" size="sm" color="black" />
+            <Icon as={Ionicons} name="archive" 
+            size={'lg'}
+            
+          //  h={34} w={34}
+             color="black" />
           ),
         }}
       />
@@ -128,7 +143,7 @@ function MyTabs() {
         options={{
           tabBarLabel: 'Emergency Call',
           tabBarIcon: ({color, size}) => (
-            <Icon as={Ionicons} name="call" size="sm" color="black" />
+            <Icon as={Ionicons} name="call" size="lg" color="black" />
           ),
         }}
       />
@@ -138,7 +153,7 @@ function MyTabs() {
         options={{
           tabBarLabel: 'Map',
           tabBarIcon: ({color, size}) => (
-            <Icon as={Ionicons} name="map" size="sm" color="black" />
+            <Icon as={Ionicons} name="map" size="lg" color="black" />
           ),
         }}
       />
@@ -148,7 +163,7 @@ function MyTabs() {
         options={{
           tabBarLabel: 'Profile',
           tabBarIcon: ({color, size}) => (
-            <Icon as={Ionicons} name="person" size="sm" color="black" />
+            <Icon as={Ionicons} name="person" size="lg" color="black" />
           ),
         }}
       />
@@ -174,7 +189,13 @@ export default function App() {
             component={MyTabs}
             options={{headerShown: false}}
           />
-          <Stack.Screen name="DoctorList" component={DoctorListScreen} />
+          <Stack.Screen
+           options={{
+            title: 'Specialist Doctor',
+          }}
+          
+
+          name="DoctorList" component={DoctorListScreen} />
           <Stack.Screen
             options={{headerShown: false}}
             name="SignInScreen"

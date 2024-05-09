@@ -43,7 +43,7 @@ function HomeScreen({navigation}: {navigation: any}) {
   return (
     <View style={{flex: 1}}>
       <ScrollView horizontal={false} persistentScrollbar={false}>
-        <Heading size="md" pt={2} paddingLeft={5} paddingBottom={5}>
+        <Heading size="md" pt={2} paddingLeft={5} paddingBottom={2}>
           Pregnant Mother Care {userName}
         </Heading>
 
@@ -69,8 +69,10 @@ function HomeScreen({navigation}: {navigation: any}) {
                     <HStack h={12} backgroundColor="#FD9999">
                       <Center w="30%">
                         <Image
-                          height={9}
-                          w={9}
+                          height={36}
+                          w={40}
+                        resizeMode="contain"
+
                           source={require('./assets/PrimaryCare.jpg')}
                           alt="image"
                         />
@@ -79,9 +81,9 @@ function HomeScreen({navigation}: {navigation: any}) {
                       <Center w="70%">
                         <Text
                           fontSize="14"
-                          ml="-1"
-                          paddingLeft={3}
-                          paddingRight={5}>
+                         
+                          paddingLeft={0}
+                          paddingRight={0}>
                           Primary Care
                         </Text>
                       </Center>
@@ -117,8 +119,10 @@ function HomeScreen({navigation}: {navigation: any}) {
                   <HStack h={12} backgroundColor="#FD9999">
                     <Center w="30%">
                       <Image
-                        height={9}
-                        w={9}
+                        height={36}
+                        w={40}
+                        resizeMode="contain"
+
                         source={require('./assets/Gyconologist.png')}
                         alt="image"
                       />
@@ -127,9 +131,8 @@ function HomeScreen({navigation}: {navigation: any}) {
                     <Center w="70%">
                       <Text
                         fontSize="14"
-                        ml="-1"
-                        paddingLeft={3}
-                        paddingRight={5}>
+                        paddingLeft={0}
+                        paddingRight={0}>
                         Consult with a Specialist
                       </Text>
                     </Center>
@@ -167,8 +170,10 @@ function HomeScreen({navigation}: {navigation: any}) {
                     <HStack h={12} backgroundColor="#FD9999">
                       <Center w="30%">
                         <Image
-                          height={9}
-                          w={9}
+                          h={36}
+                          w={40}
+                        resizeMode="contain"
+
                           source={require('./assets/Nutrition.jpg')}
                           alt="image"
                         />
@@ -177,16 +182,16 @@ function HomeScreen({navigation}: {navigation: any}) {
                       <Center w="70%">
                         <Text
                           fontSize="14"
-                          ml="-1"
-                          paddingLeft={3}
-                          paddingRight={5}>
+                        
+                          paddingLeft={0}
+                          paddingRight={0}>
                           Nutrion & Fitness
                         </Text>
                       </Center>
                     </HStack>
                     <Stack h={12} space={2} alignItems="center">
                       <Text fontSize="14" ml="-1">
-                        Pregnency time food,diet
+                        Pregnency time food , diet
                       </Text>
                     </Stack>
                   </Pressable>
@@ -215,8 +220,9 @@ function HomeScreen({navigation}: {navigation: any}) {
                   <HStack h={12} backgroundColor="#FD9999">
                     <Center w="30%">
                       <Image
-                        height={9}
-                        w={9}
+                        height={36}
+                        w={40}
+                        resizeMode="contain"
                         source={require('./assets/Clinic.jpg')}
                         alt="image"
                       />
@@ -225,16 +231,15 @@ function HomeScreen({navigation}: {navigation: any}) {
                     <Center w="70%">
                       <Text
                         fontSize="14"
-                        ml="-1"
-                        paddingLeft={3}
-                        paddingRight={5}>
+                        paddingLeft={0}
+                        paddingRight={0}>
                         Clinic Appontments
                       </Text>
                     </Center>
                   </HStack>
                   <Stack h={12} space={2} alignItems="center">
                     <Text fontSize="14" ml="-1">
-                      Booking click for delivery
+                      Booking clinic for delivery
                     </Text>
                   </Stack>
                   </Pressable>
@@ -471,8 +476,8 @@ function HomeScreen({navigation}: {navigation: any}) {
                   <Pressable onPress={() => navigation.navigate('DoctorList')}>
                     <Box
                       // maxW="40"
-                      h={140}
-                      w={95}
+                      h={130}
+                    w={110}
                       rounded="lg"
                       overflow="hidden"
                       borderColor="coolGray.200"
@@ -490,22 +495,29 @@ function HomeScreen({navigation}: {navigation: any}) {
                       }}>
                    
                         <Center>
-                          <HStack>
+                          <HStack p={2}>
                             <Image
-                              size={'sm'}
+                             h={60}
+                             w={60}
+                            resizeMode="contain"
+
+                              //size={'sm'}
                               source={require('./assets/Pediatriction.jpg')}
                               alt="image"
                             />
                           </HStack>
                         </Center>
-                     
-                      <Stack p="4" space={3}>
+                        <Box>
+                      <Center> 
+                      <Stack p="2" space={3}>
                         <Stack space={2}>
                           <Text fontSize="12" ml="-1">
                             Pediatrician
                           </Text>
                         </Stack>
                       </Stack>
+                      </Center>
+                    </Box>
                     </Box>
                   </Pressable>
                 </Box>
@@ -515,8 +527,8 @@ function HomeScreen({navigation}: {navigation: any}) {
                 <Box alignItems="center">
                   <Box
                     maxW="40"
-                    h={140}
-                    w={90}
+                    h={130}
+                    w={110}
                     rounded="lg"
                     overflow="hidden"
                     borderColor="coolGray.200"
@@ -534,22 +546,30 @@ function HomeScreen({navigation}: {navigation: any}) {
                     }}>
                     <Box>
                       <Center>
-                        <HStack>
+                        <HStack p={2}>
                           <Image
-                            size={'sm'}
+                          //  size={'sm'}
+                          h={60}
+                          w={60}
+                          resizeMode="contain"
+
                             source={require('./assets/Medicine.png')}
                             alt="image"
                           />
                         </HStack>
                       </Center>
                     </Box>
-                    <Stack p="4" space={3}>
+                    <Box>
+                      <Center>
+                    <Stack p="2" space={3}>
                       <Stack space={2}>
                         <Text fontSize="12" ml="-1">
                           Medicine
                         </Text>
                       </Stack>
                     </Stack>
+                    </Center>
+                    </Box>
                   </Box>
                 </Box>
               </HStack>
@@ -558,8 +578,8 @@ function HomeScreen({navigation}: {navigation: any}) {
                 <Box alignItems="center">
                   <Box
                  //   maxW="40"
-                    h={140}
-                    w={95}
+                 h={130}
+                 w={110}
                     rounded="lg"
                     overflow="hidden"
                     borderColor="coolGray.200"
@@ -577,22 +597,30 @@ function HomeScreen({navigation}: {navigation: any}) {
                     }}>
                     <Box>
                       <Center>
-                        <HStack>
+                        <HStack p={2}>
                           <Image
-                            size={'sm'}
+                            h={60}
+                            w={60}
+                            resizeMode="contain"
+
+                           // size={'sm'}
                             source={require('./assets/Heart.png')}
                             alt="image"
                           />
                         </HStack>
                       </Center>
                     </Box>
-                    <Stack p="4" space={3}>
+                    <Box>
+                      <Center>
+                    <Stack p="2" space={3}>
                       <Stack space={2}>
                         <Text fontSize="12" ml="-1">
                           Pediatric heart disease
                         </Text>
                       </Stack>
                     </Stack>
+                    </Center>
+                    </Box>
                   </Box>
                 </Box>
               </HStack>
@@ -601,8 +629,8 @@ function HomeScreen({navigation}: {navigation: any}) {
                 <Box alignItems="center">
                   <Box
                    // maxW="40"
-                    h={140}
-                    w={95}
+                   h={130}
+                   w={110}
                     rounded="lg"
                     overflow="hidden"
                     borderColor="coolGray.200"
@@ -620,22 +648,30 @@ function HomeScreen({navigation}: {navigation: any}) {
                     }}>
                     <Box>
                       <Center>
-                        <HStack>
+                        <HStack p={2}>
                           <Image
-                            size={'sm'}
+                           // size={'sm'}
+                           h={60}
+                           w={60}
+                           resizeMode="contain"
+
                             source={require('./assets/Gyconologist.png')}
                             alt="image"
                           />
                         </HStack>
                       </Center>
                     </Box>
-                    <Stack p="4" space={3}>
+                    <Box>
+                      <Center>
+                    <Stack p="2" space={3}>
                       <Stack space={2}>
                         <Text fontSize="12" ml="-1">
                           Gynecology
                         </Text>
                       </Stack>
                     </Stack>
+                    </Center>
+                    </Box>
                   </Box>
                 </Box>
               </HStack>
@@ -645,18 +681,18 @@ function HomeScreen({navigation}: {navigation: any}) {
           </HStack>
         </Center>
 
-        <Heading size="md" pt={2} paddingLeft={5} paddingBottom={5}>
+        <Heading size="md" pt={2} paddingLeft={5} paddingBottom={0}>
           Other Services
         </Heading>
 
         <Center>
-          <HStack space={5} w="100%" px="5" alignItems="center" >
+          <HStack space={5} w="100%" px="3" alignItems="center" >
             <ScrollView horizontal={true} persistentScrollbar={true}>
               <HStack alignItems="center" p={1}>
                 <Box alignItems="center">
                   <Box
-                    h={140}
-                    w={95}
+                    h={130}
+                    w={110}
                     rounded="lg"
                     overflow="hidden"
                     borderColor="coolGray.200"
@@ -674,22 +710,30 @@ function HomeScreen({navigation}: {navigation: any}) {
                     }}>
                     <Box>
                       <Center>
-                        <HStack>
+                        <HStack p={2}>
                           <Image
-                            size={'sm'}
+                           // size={'sm'}
+                            h={60}
+                            w={60}
+                            resizeMode="contain"
                             source={require('./assets/shop.jpg')}
                             alt="image"
                           />
                         </HStack>
                       </Center>
                     </Box>
-                    <Stack p="4" space={3}>
+
+                    <Box>
+                      <Center>
+                    <Stack p="2" space={3}>
                       <Stack space={2}>
                         <Text fontSize="12" ml="-1">
                           Shop
                         </Text>
                       </Stack>
                     </Stack>
+                    </Center>
+                    </Box>
                   </Box>
                 </Box>
               </HStack>
@@ -697,8 +741,8 @@ function HomeScreen({navigation}: {navigation: any}) {
               <HStack alignItems="center" p={1}>
                 <Box alignItems="center">
                   <Box
-                    h={140}
-                    w={95}
+                    h={130}
+                    w={110}
                     rounded="lg"
                     overflow="hidden"
                     borderColor="coolGray.200"
@@ -716,22 +760,29 @@ function HomeScreen({navigation}: {navigation: any}) {
                     }}>
                     <Box>
                       <Center>
-                        <HStack>
+                        <HStack p={2}>
                           <Image
-                            size={'sm'}
+                            //size={'sm'}
+                            h={60}
+                            w={60}
+                            resizeMode="contain"
                             source={require('./assets/blood.jpg')}
                             alt="image"
                           />
                         </HStack>
                       </Center>
                     </Box>
-                    <Stack p="4" space={3}>
+                    <Box>
+                      <Center>
+                    <Stack p="2" space={3}>
                       <Stack space={2}>
                         <Text fontSize="12" ml="-1">
                           Blood
                         </Text>
                       </Stack>
                     </Stack>
+                    </Center>
+                    </Box>
                   </Box>
                 </Box>
               </HStack>
@@ -739,8 +790,8 @@ function HomeScreen({navigation}: {navigation: any}) {
               <HStack alignItems="center">
                 <Box alignItems="center">
                   <Box
-                    h={140}
-                    w={95}
+                    h={130}
+                    w={110}
                     rounded="lg"
                     overflow="hidden"
                     borderColor="coolGray.200"
@@ -758,22 +809,29 @@ function HomeScreen({navigation}: {navigation: any}) {
                     }}>
                     <Box>
                       <Center>
-                        <HStack>
+                        <HStack p={2}>
                           <Image
-                            size={'sm'}
+                            //size={'sm'}
+                            h={60}
+                            w={60}
+                            resizeMode="contain"
                             source={require('./assets/LaboratoryTest.png')}
                             alt="image"
                           />
                         </HStack>
                       </Center>
                     </Box>
-                    <Stack p="4" space={3}>
+                    <Box>
+                      <Center>
+                    <Stack p="2" space={3}>
                       <Stack space={2}>
                         <Text fontSize="12" ml="-1">
                           Laboraotry Test
                         </Text>
                       </Stack>
                     </Stack>
+                    </Center>
+                    </Box>
                   </Box>
                 </Box>
               </HStack>
@@ -781,8 +839,8 @@ function HomeScreen({navigation}: {navigation: any}) {
               <HStack alignItems="center" p={1}>
                 <Box alignItems="center">
                   <Box
-                    h={140}
-                    w={95}
+                    h={130}
+                    w={110}
                     rounded="lg"
                     overflow="hidden"
                     borderColor="coolGray.200"
@@ -800,22 +858,29 @@ function HomeScreen({navigation}: {navigation: any}) {
                     }}>
                     <Box>
                       <Center>
-                        <HStack>
+                        <HStack p={2}>
                           <Image
-                            size={'sm'}
+                            //size={'sm'}
+                            h={60}
+                            w={60}
+                            resizeMode="contain"
                             source={require('./assets/article.jpg')}
                             alt="image"
                           />
                         </HStack>
                       </Center>
                     </Box>
-                    <Stack p="4" space={3}>
-                      <Stack space={2}>
+                    <Box>
+                      <Center>
+                    <Stack p="2" space={1}>
+                      <Stack space={1}>
                         <Text fontSize="12" ml="-1">
                           Health concern Article & video
                         </Text>
                       </Stack>
                     </Stack>
+                    </Center>
+                    </Box>
                   </Box>
                 </Box>
               </HStack>
