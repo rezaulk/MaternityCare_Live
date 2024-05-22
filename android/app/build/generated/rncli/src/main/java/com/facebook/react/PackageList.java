@@ -35,6 +35,8 @@ import io.invertase.firebase.database.ReactNativeFirebaseDatabasePackage;
 import io.invertase.firebase.firestore.ReactNativeFirebaseFirestorePackage;
 // @react-native-google-signin/google-signin
 import com.reactnativegooglesignin.RNGoogleSigninPackage;
+// lottie-react-native
+import com.airbnb.android.react.lottie.LottiePackage;
 // react-native-background-timer
 import com.ocetnik.timer.BackgroundTimerPackage;
 // react-native-calendar-events
@@ -134,6 +136,7 @@ public class PackageList {
       new ReactNativeFirebaseDatabasePackage(),
       new ReactNativeFirebaseFirestorePackage(),
       new RNGoogleSigninPackage(),
+      new LottiePackage(),
       new BackgroundTimerPackage(),
       new RNCalendarEventsPackage(),
       new RNDefaultPreferencePackage(),

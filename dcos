@@ -1,0 +1,30 @@
+npx react-native run-android --port=1234
+./gradlew clean
+
+
+
+npx react-native bundle --dev false --platform android --entry-file index.js --bundle-output ./android/app/src/main/assets/index.android.bundle --assets-dest ./android/app/src/main/res
+
+cd android
+./gradlew assembleRelease
+
+
+
+
+npm uninstall react-native-reanimated
+npm install react-native-reanimated@2.2.4
+npx react-native start --reset-cache
+
+
+npm i react-native-device-info --legacy-peer-deps
+
+
+
+https://fontawesome.com/v5/search?q=Happy&o=r&m=free
+
+App ICon ADD
+https://www.techomoro.com/how-to-add-app-icon-to-react-native-android-app/
+
+
+Font Family Add: 
+https://medium.com/@mehran.khan/ultimate-guide-to-use-custom-fonts-in-react-native-77fcdf859cf4

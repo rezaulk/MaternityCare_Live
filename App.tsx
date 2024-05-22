@@ -61,7 +61,10 @@ import ChatScreen from './src/ChatScreen';
 import LoginScreen from './src/loginScreen';
 import EmergencyCall from './src/EmergencyCall';
 import NutrionScreenDetails from './src/NutrionScreenDetails';
+import InitalScreen from './src/InitalScreen';
+
 import Meeting from './src/Jitsi/Meeting';
+import MapScreen from './src/MapScreen';
 
 function Header() {
   return (
@@ -123,13 +126,16 @@ function MyTabs() {
           ),
         }}
       />
+
+
+
       <Tab.Screen
         name="History1"
         component={SettingsScreen}
         options={{
-          tabBarLabel: 'History',
+          tabBarLabel: 'Appoinment',
           tabBarIcon: ({color, size}) => (
-            <Icon as={Ionicons} name="archive" 
+            <Icon as={Ionicons} name="clipboard" 
             size={'lg'}
             
           //  h={34} w={34}
@@ -141,7 +147,7 @@ function MyTabs() {
         name="EmergencyCall1"
         component={EmergencyCall}
         options={{
-          tabBarLabel: 'Emergency Call',
+          tabBarLabel: 'Emergency',
           tabBarIcon: ({color, size}) => (
             <Icon as={Ionicons} name="call" size="lg" color="black" />
           ),
@@ -149,7 +155,7 @@ function MyTabs() {
       />
       <Tab.Screen
         name="Map1"
-        component={SettingsScreen}
+        component={MapScreen}
         options={{
           tabBarLabel: 'Map',
           tabBarIcon: ({color, size}) => (
@@ -177,17 +183,41 @@ export default function App() {
       <NativeBaseProvider>
         <Stack.Navigator>
         <Stack.Screen
+            name="InitalScreen"
+            options={{
+              title: '',
+            }}
+            component={InitalScreen}
+          />
+
+<Stack.Screen
             name="loginScreen"
             options={{
               title: 'Create account',
+              headerShown: false
+              
             }}
+             
             component={LoginScreen}
           />
+<Stack.Screen
+            name="MapScreen"
+            options={{
+              title: 'Create account',
+            }}
+            component={MapScreen}
+          />
+
+
+
+
 
           <Stack.Screen
             name="Home"
             component={MyTabs}
             options={{headerShown: false}}
+            
+            
           />
           <Stack.Screen
            options={{

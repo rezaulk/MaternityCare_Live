@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 
-import {Alert, ScrollView, View} from 'react-native';
+import {Alert, ScrollView, StyleSheet, TextInput, View} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {
   Text,
@@ -24,7 +24,9 @@ import {
 import auth, { firebase } from '@react-native-firebase/auth';
 import database from '@react-native-firebase/database';
 import firestore from '@react-native-firebase/firestore';
-
+import PhoneInput from "react-native-phone-number-input";
+import OTPTextInput  from "react-native-otp-textinput";
+import OTPTextView from 'react-native-otp-textinput';
 
 function LoginScreen({navigation}: {navigation: any}) {
   const [formData, setData] = React.useState({});
@@ -33,8 +35,30 @@ function LoginScreen({navigation}: {navigation: any}) {
   const [PhoneNo, setPhoneNo] = useState('');
   const [user, setUser] = useState();
   const [confirmedCheck, setConfirmedCheck] = useState(false);
+  const phoneInput = useRef<PhoneInput>(null);
+  const [formattedValue, setFormattedValue] = useState("");
 
 
+  const [otpInput, setOtpInput] = useState<string>('');
+
+  const input = useRef<OTPTextView>(null);
+
+  const clear = () => input.current?.clear();
+
+  const updateOtpText = () => input.current?.setValue(otpInput);
+
+  const showTextAlert = () => otpInput && Alert.alert(otpInput);
+
+  const handleCellTextChange = async (text: string, i: number) => {
+    if (i === 0) {
+      const clippedText = await Clipboard.getString();
+      if (clippedText.slice(0, 1) === text) {
+        input.current?.setValue(clippedText, true);
+      }
+    }
+  };
+
+   
 
   const getData = async () => {
     try {
@@ -102,7 +126,8 @@ function LoginScreen({navigation}: {navigation: any}) {
       try {
 
 
-        var _phone =  '+88'+ formData.Phone;
+        debugger;
+        var _phone =  formData.Phone;
 
         signInWithPhoneNumber(_phone);
         // const confirmation = await auth().signInWithPhoneNumber(
@@ -234,30 +259,29 @@ function LoginScreen({navigation}: {navigation: any}) {
   const handleChange = text => setCode(text);
 
   return (
-    <View style={{flex: 1}}>
-      <ScrollView horizontal={false} persistentScrollbar={false}>
-        <Center w="100%">
-          <Box safeArea p="2" py="8" w="90%" maxW="290">
-            <Heading
+   
+    <Center flex={1} px="3">
+    <Box alignItems="center"  >
+          <Box  safeArea p="2" py="8" w="100%" maxW="290" alignItems="center">
+            {/* <Heading
               size="lg"
+              textAlign={'center'}
               fontWeight="600"
               color="coolGray.800"
               _dark={{
                 color: 'warmGray.50',
               }}>
-              Maternity Care
-            </Heading>
-            <Heading
-              mt="1"
-              _dark={{
-                color: 'warmGray.200',
-              }}
-              color="coolGray.600"
-              fontWeight="medium"
-              size="xs">
-              Sign in your account
-            </Heading>
 
+<Image
+                  style={{ height: 200, width: 200, resizeMode: "contain" }}
+                  source={require("./assets/maternity_Care_logo.png")}
+                  alt="image"
+                />
+
+             
+            </Heading> */}
+
+          
             <VStack space={3} mt="5">
               <FormControl>
 {/* <Input value={value} w="100%" onChangeText={handleChange} placeholder="Value Controlled Input" /> */}
@@ -296,27 +320,129 @@ function LoginScreen({navigation}: {navigation: any}) {
 {confirmedCheck ?
      <View> 
 
-<FormControl.Label>Enter your OTP</FormControl.Label>
+<Heading
+              mt="1"
+              textAlign={'center'}
+              _dark={{
+                color: 'warmGray.200',
+              }}
+              color="coolGray.600"
+              fontSize="xl"
+              // paddingBottom={10}
+              // size="xs"
+              >
+            Enter 4 digit Mobile Verification Code Code is send to 016-------26 Number
+            </Heading>
 
-<Input value={code} w="100%" onChangeText={handleChange} placeholder="Value Controlled Input" />
 
+{/* <FormControl.Label   textAlign={'center'}>Enter 4 digit Mobile Verification Code Code is send to 016-------26 Number</FormControl.Label> */}
+
+{/* <Input value={code} w="100%" onChangeText={handleChange} placeholder="Value Controlled Input" /> */}
+
+{/* <OTPTextView
+          ref={input}
+          containerStyle={styles.textInputContainer}
+          handleTextChange={setOtpInput}
+          handleCellTextChange={handleCellTextChange}
+          inputCount={4}
+          keyboardType="numeric"
+        /> */}
+
+<Text>Demo OTP: 258686</Text>
+
+<OTPTextView
+          containerStyle={styles.textInputContainer}
+          textInputStyle={styles.roundedTextInput}
+          defaultValue=""
+          inputCount={6}
+          handleTextChange={setCode}
+        />
+        {/* <OTPTextView
+          containerStyle={styles.textInputContainer}
+          tintColor="#000"  //258686
+        />
+        <TextInput />
+        <OTPTextView
+          containerStyle={styles.textInputContainer}
+          tintColor={['#FF0000', '#FFFF00', '#00FF00', '#0000FF']}
+        />
+        <OTPTextView
+          containerStyle={styles.textInputContainer}
+          tintColor="#000"
+          offTintColor={['#FF0000', '#FFFF00', '#00FF00', '#0000FF']}
+        /> */}
+
+        
+
+
+{/* <OTPTextInput ref={e => (this.otpInput = e)} >
+
+
+</OTPTextInput> */}
        {/* <Input
                   onChangeText={value => setData({...formData, Phone: value})}
                 /> */}
      <Button onPress={confirmCode} mt="2" colorScheme="indigo">
-      Confirm Code
+      Confirm
      </Button> 
      </View> :
     <View>  
-     <FormControl.Label>Put your mobile number</FormControl.Label>
+     {/* <FormControl.Label>Put your mobile number</FormControl.Label> */}
 {/* <Input value={value} w="100%" onChangeText={handleChange} placeholder="Value Controlled Input" /> */}
-<Input
+{/* <Input
                   onChangeText={value => setData({...formData, Phone: value})}
-                />
+                /> */}
 
-      <Button onPress={onSubmit} mt="2" colorScheme="indigo">
-  Continue
+<Center>
+
+<Image
+                  style={{ borderWidth:1, height: 30, width: 200, resizeMode: "contain" }}
+                  source={require("./assets/maternity_Care_logo.png")}
+                  alt="image"
+                />
+            <Heading
+              mt="1"
+              textAlign={'center'}
+              _dark={{
+                color: 'warmGray.200',
+              }}
+              color="coolGray.600"
+              fontSize="xl"
+              paddingBottom={10}
+              // size="xs"
+              >
+              Sign in to your account
+            </Heading>
+
+
+
+<PhoneInput
+            ref={phoneInput}
+            defaultValue={value}
+            defaultCode="BD"
+            layout="first"
+            placeholder='Mobile Number'
+            onChangeText={(text) => {
+              setData({...formData, Phone: text})
+            }}
+            onChangeFormattedText={(text) => {
+              // setFormattedValue(text);
+              setData({...formData, Phone: text})
+            }}
+            
+            withDarkTheme
+            withShadow
+            autoFocus
+            
+          />
+
+
+<Text>Demo Number: 01674086295</Text>
+      <Button width={250} marginTop={10} onPress={onSubmit} mt="2" colorScheme="indigo">
+  Sign In
  </Button> 
+</Center>
+
  
   </View>
 }
@@ -336,10 +462,63 @@ function LoginScreen({navigation}: {navigation: any}) {
 
 
           </Box>
-        </Center>
-      </ScrollView>
-    </View>
+       </Box>
+
+       </Center>
+    
   );
 }
 
 export default LoginScreen;
+
+
+const styles = StyleSheet.create({
+  safeAreaView: {
+    flex: 1,
+  },
+  container: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+    padding: 5,
+    paddingVertical: 20,
+  },
+  welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+  },
+  instructions: {
+    fontSize: 18,
+    fontWeight: '500',
+    textAlign: 'center',
+    color: '#333333',
+    marginBottom: 10,
+  },
+  textInputContainer: {
+    marginBottom: 20,
+  },
+  roundedTextInput: {
+    borderRadius: 10,
+    borderWidth: 4,
+  },
+  buttonWrapper: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    marginBottom: 20,
+    width: '60%',
+    gap: 20,
+  },
+  textInput: {
+    height: 40,
+    width: '80%',
+    borderColor: '#000',
+    borderWidth: 1,
+    padding: 10,
+    fontSize: 16,
+    letterSpacing: 5,
+    marginBottom: 10,
+    textAlign: 'center',
+  },
+});
+

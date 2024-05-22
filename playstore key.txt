@@ -1,0 +1,23 @@
+C:\Users\rezau>keytool -genkeypair -v -storetype PKCS12 -keystore maternity-care-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000
+Enter keystore password:
+
+Re-enter new password:
+
+What is your first and last name?
+  [Unknown]:  reza
+What is the name of your organizational unit?
+  [Unknown]:  maternitycare
+What is the name of your organization?
+  [Unknown]:  maternitycare
+What is the name of your City or Locality?
+  [Unknown]:  dhaka
+What is the name of your State or Province?
+  [Unknown]:  dhaka
+What is the two-letter country code for this unit?
+  [Unknown]:  BD
+Is CN=reza, OU=maternitycare, O=maternitycare, L=dhaka, ST=dhaka, C=BD correct?
+  [no]:  yes
+
+Generating 2,048 bit RSA key pair and self-signed certificate (SHA256withRSA) with a validity of 10,000 days
+        for: CN=reza, OU=maternitycare, O=maternitycare, L=dhaka, ST=dhaka, C=BD
+[Storing maternity-care-key.keystore]
