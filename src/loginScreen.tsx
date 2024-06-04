@@ -127,9 +127,24 @@ function LoginScreen({navigation}: {navigation: any}) {
 
 
         debugger;
-        var _phone =  formData.Phone;
+        
+        if(formData.Phone != undefined)
+   {
+    var _phone =  formData.Phone;
 
-        signInWithPhoneNumber(_phone);
+    signInWithPhoneNumber(_phone);
+   }
+       
+
+        
+
+       // setConfirmedCheck(true);
+
+
+
+
+
+
         // const confirmation = await auth().signInWithPhoneNumber(
         //   _phone
         // );
@@ -189,8 +204,12 @@ function LoginScreen({navigation}: {navigation: any}) {
   
     async function confirmCode() {
       try {
-       const res=   await confirm.confirm(code);
-       console.log(res);
+
+        /*
+          const res=   await confirm.confirm(code);
+          console.log(res);
+         */
+     
 
        navigation.navigate('Home');
       } catch (error) {

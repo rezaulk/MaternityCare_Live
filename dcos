@@ -2,11 +2,18 @@ npx react-native run-android --port=1234
 ./gradlew clean
 
 
+./gradlew bundleRelease
 
+*** Unsigned APk  Start ***
 npx react-native bundle --dev false --platform android --entry-file index.js --bundle-output ./android/app/src/main/assets/index.android.bundle --assets-dest ./android/app/src/main/res
 
 cd android
 ./gradlew assembleRelease
+
+
+*** Unsigned APk  End ***
+
+./gradlew bundleRelease
 
 
 
@@ -28,3 +35,27 @@ https://www.techomoro.com/how-to-add-app-icon-to-react-native-android-app/
 
 Font Family Add: 
 https://medium.com/@mehran.khan/ultimate-guide-to-use-custom-fonts-in-react-native-77fcdf859cf4
+
+
+
+
+
+# create assets folder in the current project
+$ mkdir android/app/src/main/assets
+
+# create bundle script
+$ react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
+
+# execute command to run android to create debug apk
+$ react-native run-android
+
+# change to android folder
+$ cd android
+
+# build debug apk
+$ ./gradlew assembleDebug
+
+# install app
+$ ./gradlew :app:installDebug
+
+

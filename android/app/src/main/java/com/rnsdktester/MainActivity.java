@@ -1,4 +1,4 @@
-package com.maternitycare;
+package com.maternitycare_demo;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

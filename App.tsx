@@ -43,7 +43,7 @@ import {HStack, Text, Icon, NativeBaseProvider, Image} from 'native-base';
 
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import HomeScreen from './src/HomeScreen';
-import SettingsScreen from './src/SettingsScreen';
+import AppointmentScreen from './src/AppointmentScreen';
 import DoctorListScreen from './src/DoctorListScreen';
 import SignInScreen from './src/SignInScreen';
 import SignUpScreen from './src/SignUpScreen';
@@ -65,6 +65,8 @@ import InitalScreen from './src/InitalScreen';
 
 import Meeting from './src/Jitsi/Meeting';
 import MapScreen from './src/MapScreen';
+import AppointmentDetailsScreen from './src/AppointmentDetailsScreen';
+import ShopScreen from './src/ShopScreen';
 
 function Header() {
   return (
@@ -130,9 +132,10 @@ function MyTabs() {
 
 
       <Tab.Screen
-        name="History1"
-        component={SettingsScreen}
+        name="Appoinment"
+        component={AppointmentScreen}
         options={{
+          // headerShown: false,
           tabBarLabel: 'Appoinment',
           tabBarIcon: ({color, size}) => (
             <Icon as={Ionicons} name="clipboard" 
@@ -183,9 +186,10 @@ export default function App() {
       <NativeBaseProvider>
         <Stack.Navigator>
         <Stack.Screen
+         
             name="InitalScreen"
             options={{
-              title: '',
+              headerShown: false
             }}
             component={InitalScreen}
           />
@@ -330,6 +334,22 @@ export default function App() {
               title: 'Article Details',
             }}
             component={NutrionScreenDetails}
+          />
+
+<Stack.Screen
+            name="AppointmentDetails"
+            options={{
+              title: 'Consulting With Doctor',
+            }}
+            component={AppointmentDetailsScreen}
+          />
+
+<Stack.Screen
+            name="ShopScreen"
+            options={{
+              title: 'ShopScreen',
+            }}
+            component={ShopScreen}
           />
 
 

@@ -54,6 +54,8 @@ function HomeScreen({navigation}: {navigation: any}) {
                 <Box
                   rounded="lg"
                   overflow="hidden"
+                  borderWidth={1}
+
                   _dark={{
                     borderColor: 'coolGray.600',
                     backgroundColor: 'gray.700',
@@ -81,14 +83,13 @@ function HomeScreen({navigation}: {navigation: any}) {
                       <Center w="70%">
                         <Text
                           fontSize="14"
-                         
                           paddingLeft={0}
                           paddingRight={0}>
                           Primary Care
                         </Text>
                       </Center>
                     </HStack>
-                    <Stack h={12} space={2} alignItems="center">
+                    <Stack   space={2} alignItems="center">
                       <Text fontSize="14" ml="-1">
                         Talk to Nurse {'\n'}online 24 hours
                       </Text>
@@ -103,6 +104,7 @@ function HomeScreen({navigation}: {navigation: any}) {
                 <Box
                   rounded="lg"
                   overflow="hidden"
+                  borderWidth={1}
                   _dark={{
                     borderColor: 'coolGray.600',
                     backgroundColor: 'gray.700',
@@ -115,7 +117,6 @@ function HomeScreen({navigation}: {navigation: any}) {
                     backgroundColor: 'gray.50',
                   }}>
                   <Pressable onPress={() => navigation.navigate('DoctorList')}>
-
                   <HStack h={12} backgroundColor="#FD9999">
                     <Center w="30%">
                       <Image
@@ -146,7 +147,6 @@ function HomeScreen({navigation}: {navigation: any}) {
                 </Box>
               </Box>
             </Center>
-            {/* <Center h="40" w="20" bg="primary.700" rounded="md" shadow={3} /> */}
           </HStack>
 
           <HStack space={5} justifyContent="center">
@@ -709,6 +709,8 @@ function HomeScreen({navigation}: {navigation: any}) {
                       backgroundColor: 'gray.50',
                     }}>
                     <Box>
+                    <Pressable onPress={() => navigation.navigate('ShopScreen')}>
+              
                       <Center>
                         <HStack p={2}>
                           <Image
@@ -721,6 +723,7 @@ function HomeScreen({navigation}: {navigation: any}) {
                           />
                         </HStack>
                       </Center>
+                      </Pressable>
                     </Box>
 
                     <Box>

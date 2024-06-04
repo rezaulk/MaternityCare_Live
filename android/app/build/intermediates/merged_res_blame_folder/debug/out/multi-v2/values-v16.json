@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.maternitycare.app-mergeDebugResources-49:/values-v16/values-v16.xml",
+            "outputFile": "com.maternitycare_demo.app-mergeDebugResources-49:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\rezau\\.gradle\\caches\\transforms-3\\27fac501161601088acb07f79207c237\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\rezau\\.gradle\\caches\\transforms-3\\1a2da3769a054a9b4d7a155dd96ba4f0\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\rezau\\.gradle\\caches\\transforms-3\\21363363444ebb7e04faa9d13ed584eb\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\rezau\\.gradle\\caches\\transforms-3\\01554370bd78c7048635cb3f320861f1\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]

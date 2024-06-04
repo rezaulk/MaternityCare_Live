@@ -50,10 +50,12 @@ react {
     // hermesFlags = ["-O", "-output-source-map"]
 }
 
+def enableSeparateBuildPerCPUArchitecture = false
+
 /**
  * Set this to true to Run Proguard on Release builds to minify the Java bytecode.
  */
-def enableProguardInReleaseBuilds = true
+def enableProguardInReleaseBuilds = false
 
 /**
  * The preferred build flavor of JavaScriptCore (JSC)
@@ -73,12 +75,12 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.maternitycare"
+    namespace "com.maternitycare_demo"
     defaultConfig {
-        applicationId "com.maternitycare"
+        applicationId "com.maternitycare_demo"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
+        versionCode 3
         versionName "1.0"
     }
     signingConfigs {
@@ -106,7 +108,7 @@ android {
             // Caution! In production, you need to generate your own keystore file.
             // see https://reactnative.dev/docs/signed-apk-android.
             signingConfig signingConfigs.release
-            // signingConfig signingConfigs.debug
+           // signingConfig signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
@@ -121,6 +123,14 @@ dependencies {
     debugImplementation("com.facebook.flipper:flipper-network-plugin:${FLIPPER_VERSION}") {
         exclude group:'com.squareup.okhttp3', module:'okhttp'
     }
+
+ 
+
+
+    // compile (project(':react-native-open-street-map')) {
+    //     // if you use the lib gms in the project or libs on project
+    //     exclude group: 'com.google.android.gms'
+    // }
 
     debugImplementation("com.facebook.flipper:flipper-fresco-plugin:${FLIPPER_VERSION}")
     if (hermesEnabled.toBoolean()) {

@@ -1,4 +1,4 @@
-com.maternitycare
+com.maternitycare_demo
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -4025,7 +4025,6 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string copy_toast_msg
-string default_web_client_id
 string error_drm_not_supported
 string error_drm_unknown
 string error_drm_unsupported_scheme
@@ -4093,7 +4092,6 @@ string fab_transformation_sheet_behavior
 string fallback_menu_item_copy_link
 string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
-string firebase_database_url
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id
