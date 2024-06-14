@@ -1,895 +1,449 @@
-import * as React from 'react';
-import {Pressable, ScrollView, View} from 'react-native';
+import React, { useEffect, useState } from "react";
+import { ScrollView, StyleSheet } from "react-native";
+import Papa from "papaparse";
+import {
+  Avatar,
+  Box,
+  Button,
+  Center,
+  FlatList,
+  HStack,
+  Heading,
+  Icon,
+  Input,
+  NativeBaseProvider,
+  Spacer,
+  Spinner,
+  Text,
+  VStack,
+} from "native-base";
+import Ionicons from "react-native-vector-icons/Ionicons";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
-import {Text, Heading, Image, Center, Box, HStack, Stack} from 'native-base';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import {useEffect} from 'react';
-import auth from "@react-native-firebase/auth";
+const ShopScreen = ({navigation}: {navigation: any}) => {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [dataSearching, setDataSearching] = React.useState(false);
+
+  const [medicinelist, setmedicinelist] = React.useState<Medicine[]>([]);
+  const [mainmedicinelist, setmainmedicinelist] = React.useState<Medicine[]>([]);
+
+  const [text, setText] = React.useState('');
+
+  const fetchCSVData = async () => {
+    setLoading(true);
+    setError(null);
+
+    const response = await fetch(
+      "https://raw.githubusercontent.com/rezaulk/Barrons333/main/medicine.csv"
+    );
+    const csvData = await response.text();
+
+    const parsedData = Papa.parse(csvData, {
+      header: true,
+      complete: (results) => {
+        debugger;
+        const data = results.data;
+        const meta = results.meta;
+        const trimmedKeys = meta.fields.map((field) =>
+          field.replace(/\s/g, "_")
+        );
+
+        const trimmedData = data.map((row) => {
+          const trimmedRow = {};
+          trimmedKeys.forEach((key, index) => {
+            trimmedRow[key] = row[meta.fields[index]];
+          });
+          return trimmedRow;
+        });
+
+        debugger;
+        const trimmedData1 = trimmedData.map((row) => {
+        
+          // let price = extractNumbers(row.package_container);
+          // debugger;
+          return {...row, 'Price': row.package_container
+            // , 'Price' : extractNumbers(row.package_container)?.price
+          };
+        });
+
+        setmedicinelist(trimmedData1);
+        setmainmedicinelist(trimmedData1);
 
 
-function ShopScreen({navigation}: {navigation: any}) {
-  const getData = async () => {
-    try {
-      const value = await AsyncStorage.getItem('@userName');
-      if (value !== null) {
-        setuserName(value);
-        // value previously stored
-      }
-    } catch (e) {
-      // error reading value
-    }
-  };
-
-  const [userName, setuserName] = React.useState('');
-
-  useEffect(() => {
-    getData();
-
-
-    const subscriber = auth().onAuthStateChanged((user) => {
-      console.log("user", JSON.stringify(user));
-      // setUser(user);
+      },
     });
 
+    setLoading(false);
+    console.log(medicinelist);
+  };
 
-    // Update the document title using the browser API
-    // axios
-    // .get("https://apimaternitycare.rezaulk.com/api/Login/login")
-    // .then(function (response) {
-    //   console.log(response);
-    // });
-  });
+  useEffect(() => {
+    fetchCSVData();
+  }, []);
 
-  return (
-    <View style={{flex: 1}}>
-      <ScrollView horizontal={false} persistentScrollbar={false}>
-        <Heading size="md" pt={2} paddingLeft={5} paddingBottom={2}>
-          Pregnant Mother Care {userName}
-        </Heading>
 
-        <Center>
-          <HStack space={5} justifyContent="center">
-            <Center w="45%" rounded="md" borderColor={'blueGray.900'}>
-              <Box w="100%" alignItems="center">
-                <Box
-                  rounded="lg"
-                  overflow="hidden"
-                  borderWidth={1}
+  const extractPrices = (text, pattern) => {
+    const regex = new RegExp(pattern, 'g');
+    const matches = [...text.matchAll(regex)];
+    const prices = {};
+    // debugger;
 
-                  _dark={{
-                    borderColor: 'coolGray.600',
-                    backgroundColor: 'gray.700',
-                  }}
-                  _web={{
-                    shadow: 2,
-                    borderWidth: 0,
-                  }}
-                  _light={{
-                    backgroundColor: 'gray.50',
-                  }}>
-                  <Pressable onPress={() => navigation.navigate('PrimaryCare')}>
-                    <HStack h={12} backgroundColor="#FD9999">
-                      <Center w="30%">
-                        <Image
-                          height={36}
-                          w={40}
-                        resizeMode="contain"
+    // Array to store extracted values
+const _matches = [];
+let match;
+while ((match = regex.exec(text)) !== null) {
 
-                          source={require('./assets/PrimaryCare.jpg')}
-                          alt="image"
-                        />
-                      </Center>
-
-                      <Center w="70%">
-                        <Text
-                          fontSize="14"
-                          paddingLeft={0}
-                          paddingRight={0}>
-                          Primary Care
-                        </Text>
-                      </Center>
-                    </HStack>
-                    <Stack   space={2} alignItems="center">
-                      <Text fontSize="14" ml="-1">
-                        Talk to Nurse {'\n'}online 24 hours
-                      </Text>
-                    </Stack>
-                  </Pressable>
-                </Box>
-              </Box>
-            </Center>
-
-            <Center w="45%" rounded="md" borderColor={'blueGray.900'}>
-              <Box w="100%" alignItems="center">
-                <Box
-                  rounded="lg"
-                  overflow="hidden"
-                  borderWidth={1}
-                  _dark={{
-                    borderColor: 'coolGray.600',
-                    backgroundColor: 'gray.700',
-                  }}
-                  _web={{
-                    shadow: 2,
-                    borderWidth: 0,
-                  }}
-                  _light={{
-                    backgroundColor: 'gray.50',
-                  }}>
-                  <Pressable onPress={() => navigation.navigate('DoctorList')}>
-                  <HStack h={12} backgroundColor="#FD9999">
-                    <Center w="30%">
-                      <Image
-                        height={36}
-                        w={40}
-                        resizeMode="contain"
-
-                        source={require('./assets/Gyconologist.png')}
-                        alt="image"
-                      />
-                    </Center>
-
-                    <Center w="70%">
-                      <Text
-                        fontSize="14"
-                        paddingLeft={0}
-                        paddingRight={0}>
-                        Consult with a Specialist
-                      </Text>
-                    </Center>
-                  </HStack>
-                  <Stack space={2} alignItems="center">
-                    <Text fontSize="14" ml="-1">
-                      Consult with {'\n'} best Gynecologist
-                    </Text>
-                  </Stack>
-                  </Pressable>
-                </Box>
-              </Box>
-            </Center>
-          </HStack>
-
-          <HStack space={5} justifyContent="center">
-            <Center w="45%" rounded="md" borderColor={'blueGray.900'}>
-              <Box w="100%" alignItems="center">
-                <Box
-                  rounded="lg"
-                  overflow="hidden"
-                  _dark={{
-                    borderColor: 'coolGray.600',
-                    backgroundColor: 'gray.700',
-                  }}
-                  _web={{
-                    shadow: 2,
-                    borderWidth: 0,
-                  }}
-                  _light={{
-                    backgroundColor: 'gray.50',
-                  }}>
-                  <Pressable onPress={() => navigation.navigate('NutrionScreen')}>
-                    <HStack h={12} backgroundColor="#FD9999">
-                      <Center w="30%">
-                        <Image
-                          h={36}
-                          w={40}
-                        resizeMode="contain"
-
-                          source={require('./assets/Nutrition.jpg')}
-                          alt="image"
-                        />
-                      </Center>
-
-                      <Center w="70%">
-                        <Text
-                          fontSize="14"
-                        
-                          paddingLeft={0}
-                          paddingRight={0}>
-                          Nutrion & Fitness
-                        </Text>
-                      </Center>
-                    </HStack>
-                    <Stack h={12} space={2} alignItems="center">
-                      <Text fontSize="14" ml="-1">
-                        Pregnency time food , diet
-                      </Text>
-                    </Stack>
-                  </Pressable>
-                </Box>
-              </Box>
-            </Center>
-
-            <Center w="45%" rounded="md" borderColor={'blueGray.900'}>
-              <Box w="100%" alignItems="center">
-                <Box
-                  rounded="lg"
-                  overflow="hidden"
-                  _dark={{
-                    borderColor: 'coolGray.600',
-                    backgroundColor: 'gray.700',
-                  }}
-                  _web={{
-                    shadow: 2,
-                    borderWidth: 0,
-                  }}
-                  _light={{
-                    backgroundColor: 'gray.50',
-                  }}>
-                  <Pressable onPress={() => navigation.navigate('BookingDeliveryScreen')}>
-
-                  <HStack h={12} backgroundColor="#FD9999">
-                    <Center w="30%">
-                      <Image
-                        height={36}
-                        w={40}
-                        resizeMode="contain"
-                        source={require('./assets/Clinic.jpg')}
-                        alt="image"
-                      />
-                    </Center>
-
-                    <Center w="70%">
-                      <Text
-                        fontSize="14"
-                        paddingLeft={0}
-                        paddingRight={0}>
-                        Clinic Appontments
-                      </Text>
-                    </Center>
-                  </HStack>
-                  <Stack h={12} space={2} alignItems="center">
-                    <Text fontSize="14" ml="-1">
-                      Booking clinic for delivery
-                    </Text>
-                  </Stack>
-                  </Pressable>
-                </Box>
-              </Box>
-            </Center>
-            {/* <Center h="40" w="20" bg="primary.700" rounded="md" shadow={3} /> */}
-          </HStack>
-
-          {/* <HStack
-            space={5}
-            w="100%"
-            px="5"
-            alignItems="center"
-            justifyContent="center">
-            <HStack alignItems="center">
-              <Box alignItems="center">
-                <Box
-                  // maxW="70"
-                  width="40"
-                  rounded="lg"
-                  overflow="hidden"
-                  borderColor="coolGray.200"
-                  borderWidth="1"
-                  _dark={{
-                    borderColor: 'coolGray.600',
-                    backgroundColor: 'gray.700',
-                  }}
-                  _web={{
-                    shadow: 2,
-                    borderWidth: 0,
-                  }}
-                  _light={{
-                    backgroundColor: 'gray.50',
-                  }}>
-                  <Pressable onPress={() => navigation.navigate('PrimaryCare')}>
-                    <Box>
-                      <HStack>
-                        <Center>
-                          <Image
-                            size={'sm'}
-                            source={require('./assets/PrimaryCare.jpg')}
-                            alt="image"
-                          />
-                        </Center>
-
-                        <Center>
-                          <Text
-                            fontSize="14"
-                            ml="-1"
-                            paddingLeft={3}
-                            paddingRight={5}>
-                            Primary Care
-                          </Text>
-                        </Center>
-                      </HStack>
-                    </Box>
-                  </Pressable>
-                  <Stack p="4" space={3}>
-                    <Stack space={2}>
-                      <Text fontSize="14" ml="-1">
-                        Talk to Nurse online 24 hours
-                      </Text>
-                    </Stack>
-                  </Stack>
-                </Box>
-              </Box>
-            </HStack>
-
-            <HStack alignItems="center">
-              <Box alignItems="center">
-                <Box
-                  maxW="40"
-                  rounded="lg"
-                  overflow="hidden"
-                  borderColor="coolGray.200"
-                  borderWidth="1"
-                  _dark={{
-                    borderColor: 'coolGray.600',
-                    backgroundColor: 'gray.700',
-                  }}
-                  _web={{
-                    shadow: 2,
-                    borderWidth: 0,
-                  }}
-                  _light={{
-                    backgroundColor: 'gray.50',
-                  }}>
-                  <Box>
-                    <HStack>
-                      <Center>
-                        <Image
-                          size={'sm'}
-                          source={require('./assets/Gyconologist.png')}
-                          alt="image"
-                        />
-                      </Center>
-
-                      <Center>
-                        <Text fontSize="14" ml="-1" paddingLeft={5}>
-                          Consult with a Specialist
-                        </Text>
-                      </Center>
-                    </HStack>
-                  </Box>
-                  <Stack p="4" space={3}>
-                    <Stack space={2}>
-                      <Text fontSize="14" ml="-1">
-                        Consult with best Gynecologist
-                      </Text>
-                    </Stack>
-                  </Stack>
-                </Box>
-              </Box>
-            </HStack>
-          </HStack>
-
-          <HStack
-            space={5}
-            w="100%"
-            px="5"
-            alignItems="center"
-            justifyContent="center">
-            <HStack alignItems="center">
-              <Box alignItems="center">
-                <Box
-                  maxW="40"
-                  rounded="lg"
-                  overflow="hidden"
-                  borderColor="coolGray.200"
-                  borderWidth="1"
-                  _dark={{
-                    borderColor: 'coolGray.600',
-                    backgroundColor: 'gray.700',
-                  }}
-                  _web={{
-                    shadow: 2,
-                    borderWidth: 0,
-                  }}
-                  _light={{
-                    backgroundColor: 'gray.50',
-                  }}>
-                  <Box>
-                    <HStack>
-                      <Center>
-                        <Image
-                          size={'sm'}
-                          source={require('./assets/Nutrition.jpg')}
-                          alt="image"
-                        />
-                      </Center>
-
-                      <Center>
-                        <Text fontSize="14" ml="-1" paddingLeft={3}>
-                          Nutrion & Fitness
-                        </Text>
-                      </Center>
-                    </HStack>
-                  </Box>
-                  <Stack p="4" space={3}>
-                    <Stack space={2}>
-                      <Text fontSize="14" ml="-1">
-                        pregnency time food,diet
-                      </Text>
-                    </Stack>
-                  </Stack>
-                </Box>
-              </Box>
-            </HStack>
-
-            <HStack alignItems="center">
-              <Box alignItems="center">
-                <Box
-                  maxW="40"
-                  rounded="lg"
-                  overflow="hidden"
-                  borderColor="coolGray.200"
-                  borderWidth="1"
-                  _dark={{
-                    borderColor: 'coolGray.600',
-                    backgroundColor: 'gray.700',
-                  }}
-                  _web={{
-                    shadow: 2,
-                    borderWidth: 0,
-                  }}
-                  _light={{
-                    backgroundColor: 'gray.50',
-                  }}>
-                  <Pressable
-                    onPress={() =>
-                      navigation.navigate('BookingDeliveryScreen')
-                    }>
-                    <Box>
-                      <HStack>
-                        <Center>
-                          <Image
-                            size={'sm'}
-                            source={require('./assets/Clinic.jpg')}
-                            alt="image"
-                          />
-                        </Center>
-
-                        <Center>
-                          <Text fontSize="14" ml="-1" paddingLeft={5}>
-                            Clinic Appontments
-                          </Text>
-                        </Center>
-                      </HStack>
-                    </Box>
-                  </Pressable>
-                  <Stack p="4" space={3}>
-                    <Stack space={2}>
-                      <Text fontSize="14" ml="-1">
-                        Booking click for delivery
-                      </Text>
-                    </Stack>
-                  </Stack>
-                </Box>
-              </Box>
-            </HStack>
-          </HStack> */}
-        </Center>
-
-        <Heading size="md" pt={2} paddingLeft={5} paddingBottom={0}>
-          Specialist Doctor
-        </Heading>
-
-        <Center>
-          <HStack space={5} w="100%" px="3" alignItems="center">
-            <ScrollView horizontal={true} persistentScrollbar={true}>
-              <HStack alignItems="center" p={1}>
-                <Box alignItems="center">
-                  <Pressable onPress={() => navigation.navigate('DoctorList')}>
-                    <Box
-                      // maxW="40"
-                      h={130}
-                    w={110}
-                      rounded="lg"
-                      overflow="hidden"
-                      borderColor="coolGray.200"
-                      borderWidth="1"
-                      _dark={{
-                        borderColor: 'coolGray.600',
-                        backgroundColor: 'gray.700',
-                      }}
-                      _web={{
-                        shadow: 2,
-                        borderWidth: 0,
-                      }}
-                      _light={{
-                        backgroundColor: 'gray.50',
-                      }}>
-                   
-                        <Center>
-                          <HStack p={2}>
-                            <Image
-                             h={60}
-                             w={60}
-                            resizeMode="contain"
-
-                              //size={'sm'}
-                              source={require('./assets/Pediatriction.jpg')}
-                              alt="image"
-                            />
-                          </HStack>
-                        </Center>
-                        <Box>
-                      <Center> 
-                      <Stack p="2" space={3}>
-                        <Stack space={2}>
-                          <Text fontSize="12" ml="-1">
-                            Pediatrician
-                          </Text>
-                        </Stack>
-                      </Stack>
-                      </Center>
-                    </Box>
-                    </Box>
-                  </Pressable>
-                </Box>
-              </HStack>
-
-              <HStack alignItems="center" p={1}>
-                <Box alignItems="center">
-                  <Box
-                    maxW="40"
-                    h={130}
-                    w={110}
-                    rounded="lg"
-                    overflow="hidden"
-                    borderColor="coolGray.200"
-                    borderWidth="1"
-                    _dark={{
-                      borderColor: 'coolGray.600',
-                      backgroundColor: 'gray.700',
-                    }}
-                    _web={{
-                      shadow: 2,
-                      borderWidth: 0,
-                    }}
-                    _light={{
-                      backgroundColor: 'gray.50',
-                    }}>
-                    <Box>
-                      <Center>
-                        <HStack p={2}>
-                          <Image
-                          //  size={'sm'}
-                          h={60}
-                          w={60}
-                          resizeMode="contain"
-
-                            source={require('./assets/Medicine.png')}
-                            alt="image"
-                          />
-                        </HStack>
-                      </Center>
-                    </Box>
-                    <Box>
-                      <Center>
-                    <Stack p="2" space={3}>
-                      <Stack space={2}>
-                        <Text fontSize="12" ml="-1">
-                          Medicine
-                        </Text>
-                      </Stack>
-                    </Stack>
-                    </Center>
-                    </Box>
-                  </Box>
-                </Box>
-              </HStack>
-
-              <HStack alignItems="center" p={1}>
-                <Box alignItems="center">
-                  <Box
-                 //   maxW="40"
-                 h={130}
-                 w={110}
-                    rounded="lg"
-                    overflow="hidden"
-                    borderColor="coolGray.200"
-                    borderWidth="1"
-                    _dark={{
-                      borderColor: 'coolGray.600',
-                      backgroundColor: 'gray.700',
-                    }}
-                    _web={{
-                      shadow: 2,
-                      borderWidth: 0,
-                    }}
-                    _light={{
-                      backgroundColor: 'gray.50',
-                    }}>
-                    <Box>
-                      <Center>
-                        <HStack p={2}>
-                          <Image
-                            h={60}
-                            w={60}
-                            resizeMode="contain"
-
-                           // size={'sm'}
-                            source={require('./assets/Heart.png')}
-                            alt="image"
-                          />
-                        </HStack>
-                      </Center>
-                    </Box>
-                    <Box>
-                      <Center>
-                    <Stack p="2" space={3}>
-                      <Stack space={2}>
-                        <Text fontSize="12" ml="-1">
-                          Pediatric heart disease
-                        </Text>
-                      </Stack>
-                    </Stack>
-                    </Center>
-                    </Box>
-                  </Box>
-                </Box>
-              </HStack>
-
-              <HStack alignItems="center" p={1}>
-                <Box alignItems="center">
-                  <Box
-                   // maxW="40"
-                   h={130}
-                   w={110}
-                    rounded="lg"
-                    overflow="hidden"
-                    borderColor="coolGray.200"
-                    borderWidth="1"
-                    _dark={{
-                      borderColor: 'coolGray.600',
-                      backgroundColor: 'gray.700',
-                    }}
-                    _web={{
-                      shadow: 2,
-                      borderWidth: 0,
-                    }}
-                    _light={{
-                      backgroundColor: 'gray.50',
-                    }}>
-                    <Box>
-                      <Center>
-                        <HStack p={2}>
-                          <Image
-                           // size={'sm'}
-                           h={60}
-                           w={60}
-                           resizeMode="contain"
-
-                            source={require('./assets/Gyconologist.png')}
-                            alt="image"
-                          />
-                        </HStack>
-                      </Center>
-                    </Box>
-                    <Box>
-                      <Center>
-                    <Stack p="2" space={3}>
-                      <Stack space={2}>
-                        <Text fontSize="12" ml="-1">
-                          Gynecology
-                        </Text>
-                      </Stack>
-                    </Stack>
-                    </Center>
-                    </Box>
-                  </Box>
-                </Box>
-              </HStack>
-
-             
-            </ScrollView>
-          </HStack>
-        </Center>
-
-        <Heading size="md" pt={2} paddingLeft={5} paddingBottom={0}>
-          Other Services
-        </Heading>
-
-        <Center>
-          <HStack space={5} w="100%" px="3" alignItems="center" >
-            <ScrollView horizontal={true} persistentScrollbar={true}>
-              <HStack alignItems="center" p={1}>
-                <Box alignItems="center">
-                  <Box
-                    h={130}
-                    w={110}
-                    rounded="lg"
-                    overflow="hidden"
-                    borderColor="coolGray.200"
-                    borderWidth="1"
-                    _dark={{
-                      borderColor: 'coolGray.600',
-                      backgroundColor: 'gray.700',
-                    }}
-                    _web={{
-                      shadow: 2,
-                      borderWidth: 0,
-                    }}
-                    _light={{
-                      backgroundColor: 'gray.50',
-                    }}>
-                    <Box>
-                      <Center>
-                        <HStack p={2}>
-                          <Image
-                           // size={'sm'}
-                            h={60}
-                            w={60}
-                            resizeMode="contain"
-                            source={require('./assets/shop.jpg')}
-                            alt="image"
-                          />
-                        </HStack>
-                      </Center>
-                    </Box>
-
-                    <Box>
-                      <Center>
-                    <Stack p="2" space={3}>
-                      <Stack space={2}>
-                        <Text fontSize="12" ml="-1">
-                          Shop
-                        </Text>
-                      </Stack>
-                    </Stack>
-                    </Center>
-                    </Box>
-                  </Box>
-                </Box>
-              </HStack>
-
-              <HStack alignItems="center" p={1}>
-                <Box alignItems="center">
-                  <Box
-                    h={130}
-                    w={110}
-                    rounded="lg"
-                    overflow="hidden"
-                    borderColor="coolGray.200"
-                    borderWidth="1"
-                    _dark={{
-                      borderColor: 'coolGray.600',
-                      backgroundColor: 'gray.700',
-                    }}
-                    _web={{
-                      shadow: 2,
-                      borderWidth: 0,
-                    }}
-                    _light={{
-                      backgroundColor: 'gray.50',
-                    }}>
-                    <Box>
-                      <Center>
-                        <HStack p={2}>
-                          <Image
-                            //size={'sm'}
-                            h={60}
-                            w={60}
-                            resizeMode="contain"
-                            source={require('./assets/blood.jpg')}
-                            alt="image"
-                          />
-                        </HStack>
-                      </Center>
-                    </Box>
-                    <Box>
-                      <Center>
-                    <Stack p="2" space={3}>
-                      <Stack space={2}>
-                        <Text fontSize="12" ml="-1">
-                          Blood
-                        </Text>
-                      </Stack>
-                    </Stack>
-                    </Center>
-                    </Box>
-                  </Box>
-                </Box>
-              </HStack>
-
-              <HStack alignItems="center">
-                <Box alignItems="center">
-                  <Box
-                    h={130}
-                    w={110}
-                    rounded="lg"
-                    overflow="hidden"
-                    borderColor="coolGray.200"
-                    borderWidth="1"
-                    _dark={{
-                      borderColor: 'coolGray.600',
-                      backgroundColor: 'gray.700',
-                    }}
-                    _web={{
-                      shadow: 2,
-                      borderWidth: 0,
-                    }}
-                    _light={{
-                      backgroundColor: 'gray.50',
-                    }}>
-                    <Box>
-                      <Center>
-                        <HStack p={2}>
-                          <Image
-                            //size={'sm'}
-                            h={60}
-                            w={60}
-                            resizeMode="contain"
-                            source={require('./assets/LaboratoryTest.png')}
-                            alt="image"
-                          />
-                        </HStack>
-                      </Center>
-                    </Box>
-                    <Box>
-                      <Center>
-                    <Stack p="2" space={3}>
-                      <Stack space={2}>
-                        <Text fontSize="12" ml="-1">
-                          Laboraotry Test
-                        </Text>
-                      </Stack>
-                    </Stack>
-                    </Center>
-                    </Box>
-                  </Box>
-                </Box>
-              </HStack>
-
-              <HStack alignItems="center" p={1}>
-                <Box alignItems="center">
-                  <Box
-                    h={130}
-                    w={110}
-                    rounded="lg"
-                    overflow="hidden"
-                    borderColor="coolGray.200"
-                    borderWidth="1"
-                    _dark={{
-                      borderColor: 'coolGray.600',
-                      backgroundColor: 'gray.700',
-                    }}
-                    _web={{
-                      shadow: 2,
-                      borderWidth: 0,
-                    }}
-                    _light={{
-                      backgroundColor: 'gray.50',
-                    }}>
-                    <Box>
-                      <Center>
-                        <HStack p={2}>
-                          <Image
-                            //size={'sm'}
-                            h={60}
-                            w={60}
-                            resizeMode="contain"
-                            source={require('./assets/article.jpg')}
-                            alt="image"
-                          />
-                        </HStack>
-                      </Center>
-                    </Box>
-                    <Box>
-                      <Center>
-                    <Stack p="2" space={1}>
-                      <Stack space={1}>
-                        <Text fontSize="12" ml="-1">
-                          Health concern Article & video
-                        </Text>
-                      </Stack>
-                    </Stack>
-                    </Center>
-                    </Box>
-                  </Box>
-                </Box>
-              </HStack>
-            </ScrollView>
-          </HStack>
-        </Center>
-      </ScrollView>
-    </View>
-  );
+  if(text.includes("Unit Price")){
+    _matches.push({
+      unitPrice: parseFloat(match[1]),
+     
+    });
+  }
+  else{
+    _matches.push({
+      // unitPrice: parseFloat(match[1]),
+      packSize: match[1],
+      packPrice: parseFloat(match[3])
+    });
+  }
+ 
 }
 
+
+    // matches.forEach(match => {
+    //   prices[match[0]] = match[1];
+    // });
+    return _matches;
+  };
+
+  function extractNumbers(input: string): { _medicine_list: Prices } | null {
+    // Regular expression to match numbers in the format specified
+    
+  //const text = "Unit Price: ৳ 5.00,(15's pack: ৳ 75.00)";
+  const unitPricePattern = "Unit Price: ৳ (\\d+\\.\\d{2})";
+  const packPricePattern = "\\((\\d+'s pack): ৳ (\\d+\\.\\d{2})\\)";
+  // const regex = /Unit Price: ৳ (\d+\.\d+).*\((\d+\'s (\w+)): ৳ (\d+\.\d+)/;
+  // const regex = /Unit Price: ৳ (\d+\.\d+).*\((\d+\'s pack): ৳ (\d+\.\d+)/;
+
+  const _medicine_list: Prices = [];
+  const _medicine: Prices = {};
+
+
+  if(input.includes("Unit Price")){
+    const unitPrice = extractPrices(input, unitPricePattern);
+    
+    const _unitPrice = extractPrices(input, packPricePattern);
+    // const _unitPrice1 = extractPrices(input, regex);
+
+    debugger;
+    
+    _medicine.price = unitPrice;
+    _medicine.volume = 1;
+
+    debugger;
+
+  }
+  // const packPrice = extractPrices(input, packPricePattern);
+
+
+  _medicine_list.push(_medicine);
+
+
+
+    return null; // Return null if the pattern does not match
+}
+
+
+
+
+
+//   function extractNumbers(input: string): { unitPrice: number, quantity: number, totalPrice: number } | null {
+//     // Regular expression to match numbers in the format specified
+//     const regex = /Unit Price: [^\d]*([\d,]+\.\d{2}),\s*\((\d+)'s pack: [^\d]*([\d,]+\.\d{2})\)/;
+//     const match = input.match(regex);
+
+//     const volumeregex = /(\d+)\s*ml\s*drop:\s*[^\d]*([\d,]+\.\d{2})/;
+//     const matchvolume = input.match(volumeregex);
+
+//     const pattern = "(\\d+ ml) bottle: ৳ (\\d+\\.\\d{2})";
+
+//     if (match) {
+//         const unitPrice = parseFloat(match[1].replace(/,/g, ''));
+//         const quantity = parseInt(match[2], 10);
+//         const totalPrice = parseFloat(match[3].replace(/,/g, ''));
+//         return { unitPrice, quantity, totalPrice };
+//     }
+//     else if (matchvolume) {
+//       const quantity = parseInt(matchvolume[1], 10);
+//       const unitPrice = parseFloat(matchvolume[2].replace(/,/g, ''));
+//       const totalPrice = parseFloat(matchvolume[2].replace(/,/g, ''));
+
+//       return { unitPrice, quantity, totalPrice };
+
+//   }
+  
+//  // const text = "100 ml bottle: ৳ 50.00,225 ml bottle: ৳ 90.00,450 ml bottle: ৳ 140.00";
+//  const prices = extractPrices(text, pattern);
+
+//     debugger;
+//     console.log(input);
+//     return null; // Return null if the pattern does not match
+// }
+
+
+const addToCart = async (id: number) => {
+  
+  console.log(id);
+
+  let medicine: Medicine = mainmedicinelist.find(x=> x.brand_id == id);
+  debugger;
+  
+  
+  let medicine_list = await getData();
+  if(medicine_list == null){
+
+    let medicine1: Medicine []= []; 
+    medicine1.push(medicine);
+
+   await storeData(JSON.stringify(medicine1));
+  }
+  else{
+    debugger;
+    let _medicine: Medicine[] = JSON.parse(medicine_list);
+    
+    let medicine_check = _medicine.find(x=> x.brand_id == id);
+    if(medicine_check == null){
+          _medicine.push(medicine);
+
+          await storeData(JSON.stringify(_medicine));
+    }
+  }
+   debugger;
+
+};
+
+const storeData = async (value: string) => {
+  try {
+    await AsyncStorage.setItem('@shoppingcart', value);
+  } catch (e) {
+    // saving error
+  }
+};
+
+const ResetCart = async () => {
+  try {
+    await AsyncStorage.removeItem('@shoppingcart');
+  } catch (e) {
+    // saving error
+  }
+};
+
+
+
+const getData = async () => {
+  try {
+    const value = await AsyncStorage.getItem('@shoppingcart');
+    // debugger;
+    if (value !== null) {
+      // value previously stored
+       return value;
+    }
+    else{
+      return null;
+    }
+  } catch (e) {
+    // error reading value
+  }
+};
+
+
+
+  const SearchFilterFunction = async (text: string) => {
+    // SearchFilterFunction(text) {
+
+    debugger;
+    //passing the inserted text in textinput
+    const newData = mainmedicinelist.filter(function (item: Medicine) {
+      //applying filter for the inserted text in search bar
+      const itemData = item.generic ? item.brand_name.toUpperCase() : ''.toUpperCase();
+      const textData = text.toUpperCase();
+      return itemData.indexOf(textData) > -1;
+    });
+
+    setmedicinelist(newData);
+    setText(text);
+    setDataSearching(true);
+  };
+
+  const searchDataCleaned = () => {
+    setText('');
+    setDataSearching(false);
+  };
+
+
+
+  return (
+    <NativeBaseProvider>
+      {loading ? (
+        <Center flex={1} px="3">
+          {" "}
+          <HStack space={2} alignItems="center">
+            <Spinner accessibilityLabel="Loading posts" />
+            <Heading color="primary.500" fontSize="md">
+              Loading
+            </Heading>
+          </HStack>{" "}
+        </Center>
+      ) : (
+        <ScrollView>
+
+<VStack w="100%" space={5} alignSelf="center" padding={5}>
+            <Input
+              placeholder="Search"
+              onChangeText={text => SearchFilterFunction(text)}
+              variant="filled"
+              width="100%"
+              borderRadius="10"
+              py="1"
+              px="2"
+              InputLeftElement={
+                <Icon
+                  ml="2"
+                  size="4"
+                  color="gray.400"
+                  as={<Ionicons name="ios-search" />}
+                />
+              }
+              InputRightElement={
+                dataSearching == true ? (
+                  <Icon
+                    onPress={() => searchDataCleaned()}
+                    ml="2"
+                    size="4"
+                    color="gray.400"
+                    as={<Ionicons name="trash" />}
+                  />
+                ) : undefined
+              }
+
+            // datafetched == true ? InputRightElement={ datafetched == true ? <Icon ml="2" size="4" color="gray.400" as={<Ionicons name="ios-search" />} />  : null }
+            />
+          </VStack>
+          
+          <Box alignItems="end">
+      <Button onPress={() =>  ResetCart()}>Reset</Button>
+    </Box>
+    <Box alignItems="end">
+      <Button onPress={() =>  navigation.navigate('ShoppingCart')}>Shopping Cart</Button>
+    </Box>
+
+          <FlatList
+            data={medicinelist}
+            renderItem={({ item }) => (
+              <Box
+                borderBottomWidth="1"
+                _dark={{
+                  borderColor: "muted.50",
+                }}
+                borderColor="muted.800"
+                pl={["0", "4"]}
+                pr={["0", "5"]}
+                py="2"
+                paddingLeft={5}
+                paddingRight={5}
+
+              >
+                <HStack space={[2, 3]} justifyContent="space-between">
+                  {/* <Avatar
+                    size="48px"
+                    source={{
+                      uri: item.brand_name,
+                    }}
+                  /> */}
+                  <VStack>
+                    <Text
+                      _dark={{
+                        color: "warmGray.50",
+                      }}
+                      color="coolGray.800"
+                      bold
+                    >
+                      {item.brand_name}
+                    </Text>
+                    <Text
+                      color="coolGray.600"
+                      _dark={{
+                        color: "warmGray.200",
+                      }}
+                    >
+                      {item.generic}
+                    </Text>
+                    <Text
+                      color="coolGray.600"
+                      _dark={{
+                        color: "warmGray.200",
+                      }}
+                    >
+                      {item.strength}
+                    </Text>
+                    <Text
+                      color="coolGray.600"
+                      _dark={{
+                        color: "warmGray.200",
+                      }}
+                    >
+                      {item.manufacturer}
+                    </Text>
+                    <Text
+                      color="coolGray.600"
+                      _dark={{
+                        color: "warmGray.200",
+                      }}
+                    >
+                      {item.package_container}
+                    </Text>
+                  </VStack>
+
+                  <Spacer />
+                 
+                    
+                  <Box alignItems="end">
+      <Button onPress={() =>  addToCart(item.brand_id)}>Add</Button>
+    </Box>
+                 
+
+
+                  <Spacer />
+                  
+                </HStack>
+              </Box>
+            )}
+            keyExtractor={(item) => item.brand_id}
+          />
+        </ScrollView>
+      )}
+    </NativeBaseProvider>
+  );
+};
+
 export default ShopScreen;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 16,
+    paddingTop: 30,
+    backgroundColor: "#fff",
+  },
+  row: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    marginBottom: 10,
+  },
+  cell: {
+    flex: 1,
+    margin: 3,
+  },
+});

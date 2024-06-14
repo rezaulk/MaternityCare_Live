@@ -67,6 +67,9 @@ import Meeting from './src/Jitsi/Meeting';
 import MapScreen from './src/MapScreen';
 import AppointmentDetailsScreen from './src/AppointmentDetailsScreen';
 import ShopScreen from './src/ShopScreen';
+import ShoppingCart from './src/ShoppingCart';
+
+
 
 function Header() {
   return (
@@ -185,6 +188,25 @@ export default function App() {
     <NavigationContainer>
       <NativeBaseProvider>
         <Stack.Navigator>
+
+        <Stack.Screen
+            name="ShopScreen"
+            options={{
+              title: 'Medicine',
+            }}
+            component={ShopScreen}
+          />
+
+<Stack.Screen
+            name="ShoppingCart"
+            options={{
+              title: 'Shopping Cart',
+            }}
+            component={ShoppingCart}
+          />
+
+
+
         <Stack.Screen
          
             name="InitalScreen"
@@ -344,14 +366,14 @@ export default function App() {
             component={AppointmentDetailsScreen}
           />
 
-<Stack.Screen
+{/* <Stack.Screen
             name="ShopScreen"
             options={{
-              title: 'ShopScreen',
+              title: 'Medicine',
             }}
             component={ShopScreen}
           />
-
+ */}
 
 
 
