@@ -140,6 +140,23 @@ const ShoppingCart = ({ navigation }: { navigation: any }) => {
     setModalVisible(false);
   };
 
+
+  const ProceedToCheckout = async () => {
+    const _address: Orders = {
+      medicines: medicinelist,
+      address: address?? null,
+      amountPayable: amountPayable,
+      createdAt: "",
+      status: ""
+    } ;
+
+    await storeData("@CurrentOrder", JSON.stringify(_address));
+
+    navigation.navigate("CheckoutScreen");
+  };
+
+  
+
   return (
     <NativeBaseProvider>
       {loading ? (
@@ -635,7 +652,7 @@ const ShoppingCart = ({ navigation }: { navigation: any }) => {
 
                 <Spacer />
 
-                <Button onPress={() => navigation.navigate("CheckoutScreen")}>
+                <Button onPress={() => ProceedToCheckout()  }>
                   Proceed to checkout
                 </Button>
 

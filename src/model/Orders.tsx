@@ -1,6 +1,7 @@
 interface Orders {
     medicines: Medicine[];
     address: Address;
+    amountPayable: number;
     createdAt: string;
     status: string;
    
