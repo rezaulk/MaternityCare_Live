@@ -39,7 +39,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createStackNavigator} from '@react-navigation/stack';
 
-import {HStack, Text, Icon, NativeBaseProvider, Image} from 'native-base';
+import {HStack, Text, Icon, NativeBaseProvider, Image, Pressable} from 'native-base';
 
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import HomeScreen from './src/HomeScreen';
@@ -68,6 +68,7 @@ import MapScreen from './src/MapScreen';
 import AppointmentDetailsScreen from './src/AppointmentDetailsScreen';
 import ShopScreen from './src/ShopScreen';
 import ShoppingCart from './src/ShoppingCart';
+import CheckoutScreen from './src/CheckoutScreen';
 
 
 
@@ -110,6 +111,53 @@ function Header() {
     </>
   );
 }
+
+// const ShoppingCart = ({navigation}: {navigation: any}) => {
+  function MedicineHeader({navigation}: {navigation: any}) {
+
+// function MedicineHeader= ({navigation}: {navigation: any}) => {
+  return (
+    <>
+      <HStack
+        px="3"
+        py="3"
+        justifyContent="space-between"
+        alignItems="center"
+        w="100%">
+        <HStack alignItems="center">
+          {/* <Image
+            size={'30px'}
+            source={require('./src/assets/logo.png')}
+            alt="image"
+          />
+            <Image
+            // size={'100px'}
+            width={180}
+            height={80}
+            source={require('./src/assets/maternity_logo.png')}
+            alt="image"
+            resizeMode="contain"
+          /> */}
+          <Text
+            color="black"
+            fontSize="20"
+            fontWeight="bold"
+            paddingLeft={'10px'}>
+            Medicine Care
+          </Text>
+        </HStack>
+        <HStack>
+          {/* <Icon as={Ionicons} name="notifications" size="lg" color="black" /> */}
+          <Pressable onPress={() => navigation.navigate('ShoppingCart')}>
+
+               <Icon as={Ionicons} name="cart" size="lg" color="black" />
+          </Pressable>
+        </HStack>
+      </HStack>
+    </>
+  );
+}
+
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -191,9 +239,10 @@ export default function App() {
 
         <Stack.Screen
             name="ShopScreen"
-            options={{
+            options={({ navigation }) => ({
               title: 'Medicine',
-            }}
+              headerTitle: props => <MedicineHeader navigation={navigation}/>,
+            })}
             component={ShopScreen}
           />
 
@@ -204,6 +253,15 @@ export default function App() {
             }}
             component={ShoppingCart}
           />
+
+<Stack.Screen
+            name="CheckoutScreen"
+            options={{
+              title: 'CheckOut',
+            }}
+            component={CheckoutScreen}
+          />
+
 
 
 

@@ -1,5 +1,6 @@
 
 interface Medicine {
+    id: number,
     brand_id: number, 
     brand_name: string,
     generic: string,
@@ -11,17 +12,18 @@ interface Medicine {
     strength: string,
     type: string,
     prices: Prices[],
-    volume: number,
-    price: number,
-    unit: string
-    select_quantity: string
- 
+    volume: number,  // 100
+    price: number, // 10
+    unit: string // ml
+    select_quantity: string,
+    descriptor: string // bottle
 }
 
 interface Prices {
-    volume: number,
+    quantity: number,
     price: number,
-    unit: string
+    unit: string,
+    descriptor: string,
     PriceVolume: PricesVolume[]
 }
 
