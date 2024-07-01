@@ -18,7 +18,8 @@ import {
 } from "native-base";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-const CheckoutScreen = () => {
+const CheckoutScreen = ({ navigation }: { navigation: any }) => {
+
   const [loading, setLoading] = useState(true);
   const [formData, setFormData] = React.useState(null);
   const [address, setAddress] = React.useState<Address>();
@@ -371,14 +372,7 @@ const CheckoutScreen = () => {
                 </VStack>
                 <Spacer />
 
-                <Button
-                  onPress={() => {
-                    // setModalVisible(!modalVisible);
-                  }}
-                >
-                  Place Order
-                </Button>
-
+              
                 {/* <Text
                   fontSize="xs"
                   _dark={{
@@ -392,6 +386,50 @@ const CheckoutScreen = () => {
               </HStack>
             </Box>
           </Box>
+          <Box alignItems="center" p={1}>
+            <Box
+              borderBottomWidth="2"
+              width={"95%"}
+              _dark={{
+                borderColor: "coolGray.600",
+                backgroundColor: "gray.700",
+              }}
+              _web={{
+                shadow: 2,
+                borderWidth: 2,
+              }}
+              _light={{
+                backgroundColor: "gray.50",
+              }}
+              // borderColor="muted.800"
+              rounded="lg"
+              overflow="hidden"
+              borderColor="coolGray.200"
+              pl={["0", "4"]}
+              pr={["0", "5"]}
+              py="2"
+              paddingLeft={5}
+              paddingRight={5}
+              //  p={12}
+            >
+              <HStack space={[2, 3]} justifyContent="center">
+              
+               
+                <Button
+                  onPress={() => {
+    navigation.navigate("ShopScreen");
+
+                    // setModalVisible(!modalVisible);
+                  }}
+                >
+                  Place Order
+                </Button>
+ 
+              </HStack>
+            </Box>
+          </Box>
+
+
         </ScrollView>
       )}
     </NativeBaseProvider>
