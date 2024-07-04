@@ -82,7 +82,7 @@ const ShopScreen = ({navigation}: {navigation: any}) => {
         // setmainmedicinelist(trimmedData1);
 
         const _medicine_list: Medicine[] = [];
-        let number =1;
+        let number =0;
         trimmedData.forEach(element => {
 
           if(element.package_container != undefined){
@@ -474,7 +474,7 @@ const addToCart = async (id: number) => {
   
   console.log(id);
 
-  let medicine: Medicine = mainmedicinelist.find(x=> x.brand_id == id);
+  let medicine: Medicine = mainmedicinelist.find(x=> x.id == id);
   debugger;
   
   
@@ -490,7 +490,7 @@ const addToCart = async (id: number) => {
     debugger;
     let _medicine: Medicine[] = JSON.parse(medicine_list);
     
-    let medicine_check = _medicine.find(x=> x.brand_id == id);
+    let medicine_check = _medicine.find(x=> x.id == id);
     if(medicine_check == null){
           _medicine.push(medicine);
 
@@ -708,7 +708,7 @@ const getData = async () => {
                  
                     
                   <Box alignItems="end">
-      <Button onPress={() =>  addToCart(item.brand_id)}>Add</Button>
+      <Button onPress={() =>  addToCart(item.id)}>Add</Button>
     </Box>
                  
 

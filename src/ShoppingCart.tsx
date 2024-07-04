@@ -69,25 +69,23 @@ const ShoppingCart = ({ navigation }: { navigation: any }) => {
     });
     setsubtotal(Number(subtotalPrice.toFixed(2)));
 
-    setdiscountApply((discountApply: Number) =>
-      Number(subtotalPrice * 0.05).toFixed(2)
-    );
-    setroundingoff((roundingoff: Number) =>
-      Number(
-        subtotalPrice -
-          discountApply -
-          Math.floor(subtotalPrice - discountApply)
-      ).toFixed(2)
-    );
+    var _discountApply =  Number(subtotalPrice * 0.05).toFixed(2);
+    setdiscountApply(_discountApply);
+
+    var roundingoff =   Number(subtotalPrice - discountApply - Math.floor(subtotalPrice - discountApply)).toFixed(2);
+    setroundingoff(roundingoff);
+
     setamountPayable((amountPayable: Number) =>
       Math.floor(subtotalPrice - discountApply)
     );
+
+    
   }, [valueUpdating]);
 
   const handleSelectQuantity = async (itemId, quantity) => {
     setmedicinelist((prevData) =>
       medicinelist.map((item) =>
-        item.brand_id === itemId ? { ...item, select_quantity: quantity } : item
+        item.id === itemId ? { ...item, select_quantity: quantity } : item
       )
     );
 
@@ -262,7 +260,7 @@ const ShoppingCart = ({ navigation }: { navigation: any }) => {
                         }}
                         mt={1}
                         onValueChange={(itemValue) =>
-                          handleSelectQuantity(item.brand_id, itemValue)
+                          handleSelectQuantity(item.id, itemValue)
                         }
                       >
                         <Select.Item label="1 Qty" value="1" />
