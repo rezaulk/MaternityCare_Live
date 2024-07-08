@@ -1,74 +1,40 @@
-// import React from 'react';
-
-// import {NavigationContainer} from '@react-navigation/native';
-// import {createStackNavigator} from '@react-navigation/stack';
-
-// import Home from './components/Home';
-// import Meeting from './components/Meeting';
-
-// const RootStack = createStackNavigator();
-
-// const App = () => (
-//     <NavigationContainer>
-//       <RootStack.Navigator initialRouteName="Home">
-//         <RootStack.Screen
-//           component={Home}
-//           name="Home"
-//           options={{
-//             headerShown: false,
-//           }}
-//         />
-//         <RootStack.Screen
-//           component={Meeting}
-//           name="Meeting"
-//           options={{
-//             headerShown: false,
-//           }}
-//         />
-//       </RootStack.Navigator>
-//     </NavigationContainer>
-// );
-
-// export default App;
-
-
-
-
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createStackNavigator} from '@react-navigation/stack';
 
-import {HStack, Text, Icon, NativeBaseProvider, Image, Pressable} from 'native-base';
+import {HStack, Text, Icon, NativeBaseProvider, Image, Pressable, Avatar} from 'native-base';
 
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import HomeScreen from './src/HomeScreen';
-import AppointmentScreen from './src/AppointmentScreen';
-import DoctorListScreen from './src/DoctorListScreen';
-import SignInScreen from './src/SignInScreen';
-import SignUpScreen from './src/SignUpScreen';
-import ProfileScreen from './src/ProfileScreen';
-import CalendarScreen from './src/CalendarScreen';
-import PatientDetailsScreen from './src/PatientDetailsScreen';
-import PaymentScreen from './src/PaymentScreen';
-import BookingDeliveryScreen from './src/BookingDeliveryScreen';
-import BookingScreen from './src/BookingScreen';
-import BookingPatientDetailsScreen from './src/BookingPatientDetailsScreen';
-import PrimaryCareScreen from './src/PrimaryCareScreen';
-import BookingDeliveryCalendarScreen from './src/BookingDeliveryCalendarScreen';
-import NutrionScreen from './src/NutrionScreen';
-import ChatScreen from './src/ChatScreen';
-import LoginScreen from './src/loginScreen';
-import EmergencyCall from './src/EmergencyCall';
-import NutrionScreenDetails from './src/NutrionScreenDetails';
-import InitalScreen from './src/InitalScreen';
+import HomeScreen from './src/screens/HomeScreen';
+import AppointmentScreen from './src/screens/AppointmentScreen';
+import DoctorListScreen from './src/screens/DoctorListScreen';
+import SignInScreen from './src/screens/SignInScreen';
+import SignUpScreen from './src/screens/SignUpScreen';
+import ProfileScreen from './src/screens/ProfileScreen';
+import CalendarScreen from './src/screens/CalendarScreen';
+import PatientDetailsScreen from './src/screens/PatientDetailsScreen';
+import PaymentScreen from './src/screens/PaymentScreen';
+import BookingDeliveryScreen from './src/screens/BookingDeliveryScreen';
+import BookingScreen from './src/screens/BookingScreen';
+import BookingPatientDetailsScreen from './src/screens/BookingPatientDetailsScreen';
+import PrimaryCareScreen from './src/screens/PrimaryCareScreen';
+import BookingDeliveryCalendarScreen from './src/screens/BookingDeliveryCalendarScreen';
+import NutrionScreen from './src/screens/NutrionScreen';
+import ChatScreen from './src/screens/ChatScreen';
+import LoginScreen from './src/screens/loginScreen';
+import EmergencyCall from './src/screens/EmergencyCall';
+import NutrionScreenDetails from './src/screens/NutrionScreenDetails';
+import InitalScreen from './src/screens/InitalScreen';
 
 import Meeting from './src/Jitsi/Meeting';
-import MapScreen from './src/MapScreen';
-import AppointmentDetailsScreen from './src/AppointmentDetailsScreen';
-import ShopScreen from './src/ShopScreen';
-import ShoppingCart from './src/ShoppingCart';
-import CheckoutScreen from './src/CheckoutScreen';
+import MapScreen from './src/screens/MapScreen';
+import AppointmentDetailsScreen from './src/screens/AppointmentDetailsScreen';
+import ShopScreen from './src/screens/medicine/ShopScreen';
+import ShoppingCart from './src/screens/medicine/ShoppingCart';
+import CheckoutScreen from './src/screens/medicine/CheckoutScreen';
+import OrderScreen from './src/screens/medicine/OrderScreen';
+
 
 
 
@@ -147,9 +113,32 @@ function Header() {
           </Text>
         </HStack>
         <HStack>
+        <Pressable onPress={() => navigation.navigate('OrderScreen')}>
+
+        {/* <Avatar
+                    size="40px"
+                    source={require('./src/assets/checkout.png')}
+                    // source={{
+                    //   uri: item.brand_name,
+                    // }}
+                  /> */}
+{/* <ion-icon name="checkbox-outline"></ion-icon> */}
+{/* <ion-icon name="shield-checkmark-outline"></ion-icon> */}
+{/* <ion-icon name="bag-check-outline"></ion-icon>1674086295 */}
+<Icon as={Ionicons} name="bag-check-outline" size="lg" color="black" />
+</Pressable>
+
           {/* <Icon as={Ionicons} name="notifications" size="lg" color="black" /> */}
           <Pressable onPress={() => navigation.navigate('ShoppingCart')}>
 
+          {/* <Avatar
+                    size="40px"
+                    source={require('./src/assets/shopping-cart.png')}
+                    // source={{
+                    //   uri: item.brand_name,
+                    // }}
+                  /> */}
+{/* <ion-icon name="bag-check-outline"></ion-icon> */}
                <Icon as={Ionicons} name="cart" size="lg" color="black" />
           </Pressable>
         </HStack>
@@ -237,6 +226,7 @@ export default function App() {
       <NativeBaseProvider>
         <Stack.Navigator>
 
+      
         <Stack.Screen
             name="ShopScreen"
             options={({ navigation }) => ({
@@ -245,25 +235,6 @@ export default function App() {
             })}
             component={ShopScreen}
           />
-
-<Stack.Screen
-            name="ShoppingCart"
-            options={{
-              title: 'Shopping Cart',
-            }}
-            component={ShoppingCart}
-          />
-
-<Stack.Screen
-            name="CheckoutScreen"
-            options={{
-              title: 'CheckOut',
-            }}
-            component={CheckoutScreen}
-          />
-
-
-
 
         <Stack.Screen
          
@@ -291,6 +262,35 @@ export default function App() {
             }}
             component={MapScreen}
           />
+
+
+
+
+<Stack.Screen
+            name="OrderScreen"
+            options={({ navigation }) => ({
+              title: 'Orders',
+              // headerTitle: props => <MedicineHeader navigation={navigation}/>,
+            })}
+            component={OrderScreen}
+          />
+
+<Stack.Screen
+            name="ShoppingCart"
+            options={{
+              title: 'Shopping Cart',
+            }}
+            component={ShoppingCart}
+          />
+
+<Stack.Screen
+            name="CheckoutScreen"
+            options={{
+              title: 'CheckOut',
+            }}
+            component={CheckoutScreen}
+          />
+
 
 
 
