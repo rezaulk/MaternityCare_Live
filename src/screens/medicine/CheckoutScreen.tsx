@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { ScrollView, StyleSheet } from "react-native";
+import { ScrollView,  StyleSheet } from "react-native";
 import {
   Avatar,
   Box,
@@ -17,6 +17,7 @@ import {
   VStack,
 } from "native-base";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import Share from 'react-native-share';
 
 const CheckoutScreen = ({ navigation }: { navigation: any }) => {
 
@@ -92,6 +93,21 @@ const CheckoutScreen = ({ navigation }: { navigation: any }) => {
 
   const onSubmit = async () => {
     
+
+  //   const shareOptions = {
+  //     title: 'Share via',
+  //     message: 'some message',
+  //     url: 'some share url',
+  //     social: Share.Social.WHATSAPP,
+  //     whatsAppNumber: "+8801674086295",  // country code + phone number
+  //     filename: 'test' , // only for base64 file in Android
+  // };
+  
+  // Share.shareSingle(shareOptions)
+  //     .then((res) => { console.log(res) })
+  //     .catch((err) => { err && console.log(err); });
+
+
     debugger;
     let currentOrder = await getData("@CurrentOrder");
     if (currentOrder != null) {

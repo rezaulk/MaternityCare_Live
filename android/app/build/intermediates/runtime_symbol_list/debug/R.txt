@@ -7608,8 +7608,9 @@ int styleable include_constraintSet 0
 int xml file_provider_paths 0x7f140000
 int xml image_share_filepaths 0x7f140001
 int xml rn_dev_preferences 0x7f140002
-int xml standalone_badge 0x7f140003
-int xml standalone_badge_gravity_bottom_end 0x7f140004
-int xml standalone_badge_gravity_bottom_start 0x7f140005
-int xml standalone_badge_gravity_top_start 0x7f140006
-int xml standalone_badge_offset 0x7f140007
+int xml share_download_paths 0x7f140003
+int xml standalone_badge 0x7f140004
+int xml standalone_badge_gravity_bottom_end 0x7f140005
+int xml standalone_badge_gravity_bottom_start 0x7f140006
+int xml standalone_badge_gravity_top_start 0x7f140007
+int xml standalone_badge_offset 0x7f140008

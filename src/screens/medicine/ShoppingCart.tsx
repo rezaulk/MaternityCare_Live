@@ -20,6 +20,7 @@ import {
   VStack,
 } from "native-base";
 
+import moment from 'moment';
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const ShoppingCart = ({ navigation }: { navigation: any }) => {
@@ -74,11 +75,11 @@ const ShoppingCart = ({ navigation }: { navigation: any }) => {
     var _discountApply =  Number(subtotalPrice * 0.05).toFixed(2);
     setdiscountApply(_discountApply);
 
-    var roundingoff =   Number(subtotalPrice - discountApply - Math.floor(subtotalPrice - discountApply)).toFixed(2);
+    var roundingoff =   Number(subtotalPrice - _discountApply - Math.floor(subtotalPrice - _discountApply)).toFixed(2);
     setroundingoff(roundingoff);
 
     setamountPayable((amountPayable: Number) =>
-      Math.floor(subtotalPrice - discountApply)
+      Math.floor(subtotalPrice - _discountApply)
     );
 
     
@@ -161,11 +162,11 @@ const ShoppingCart = ({ navigation }: { navigation: any }) => {
       medicines: medicinelist,
       address: address?.address,
       amountPayable: amountPayable,
-      createdAt: Date.now(),
+      createdAt: moment(Date.now()).format('DD-MM-YYYY'),
       status: "Pending",
       customerName: address?.userName,
       phoneNumber: address?.phoneNumber,
-      orderId: "INV-"+ address?.phoneNumber.slice(-6) + "-" + orders
+      orderId: "#"+ address?.phoneNumber.slice(-6) + "-" + orders
     } ;
 
     await storeData("@CurrentOrder", JSON.stringify(_address));

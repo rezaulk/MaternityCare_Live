@@ -20,6 +20,9 @@ import {
 } from "native-base";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { firebase } from "@react-native-firebase/database";
+import RNFS from 'react-native-fs';
+
 
 const ShopScreen = ({ navigation }: { navigation: any }) => {
   const [loading, setLoading] = useState(true);
@@ -34,7 +37,7 @@ const ShopScreen = ({ navigation }: { navigation: any }) => {
 
   const fetchCSVData = async () => {
     setLoading(true);
-
+    // ResetCart();
     const response = await fetch(
       "https://raw.githubusercontent.com/rezaulk/Barrons333/main/medicine.csv"
     );
@@ -99,12 +102,40 @@ const ShopScreen = ({ navigation }: { navigation: any }) => {
 
         setmedicinelist(_medicine_list);
         setmainmedicinelist(_medicine_list);
+
+        uploadJson(_medicine_list);
       },
     });
 
     setLoading(false);
     console.log(medicinelist);
   };
+
+  // const ObjectsToCsv = require('objects-to-csv');
+
+  const uploadJson = async (file: Medicine[]) => {
+
+    const parsedData = Papa.unparse(file, {
+      header: true,
+    });
+
+    debugger;
+    saveCSVToFile(parsedData);
+  }
+
+  const saveCSVToFile = async (csvString: string) => {
+    const path = `../../files/data.csv`;
+  
+    try {
+      await RNFS.writeFile(path, csvString, 'utf8');
+      // Alert.alert('Success', `CSV file saved to ${path}`);
+    } catch (error) {
+      debugger;
+      // Alert.alert('Error', `Failed to save CSV file: ${error.message}`);
+    }
+  };
+
+
 
   useEffect(() => {
     fetchCSVData();
@@ -397,6 +428,8 @@ const ShopScreen = ({ navigation }: { navigation: any }) => {
     let medicine_list = await getData();
     if (medicine_list == null) {
       let medicine1: Medicine[] = [];
+      medicine.select_quantity = "1";
+
       medicine1.push(medicine);
 
       await storeData(JSON.stringify(medicine1));
@@ -406,6 +439,7 @@ const ShopScreen = ({ navigation }: { navigation: any }) => {
 
       let medicine_check = _medicine.find((x) => x.id == id);
       if (medicine_check == null) {
+        medicine.select_quantity = "1";
         _medicine.push(medicine);
 
         await storeData(JSON.stringify(_medicine));
@@ -425,7 +459,11 @@ const ShopScreen = ({ navigation }: { navigation: any }) => {
   const ResetCart = async () => {
     try {
       await AsyncStorage.removeItem("@shoppingcart");
-      await AsyncStorage.removeItem("@shippingAddress");
+      await AsyncStorage.removeItem("@CurrentOrder");
+      await AsyncStorage.removeItem("@TotalOrder");
+
+
+      // await AsyncStorage.removeItem("@shippingAddress");
     } catch (e) {
       // saving error
     }

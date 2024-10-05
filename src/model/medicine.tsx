@@ -12,11 +12,13 @@ interface Medicine {
     strength: string,
     type: string,
     prices: Prices[],
-    volume: number,  // 100
+    volume: number,  // 100  etc: 100 ml
     price: number, // 10
     unit: string // ml
     select_quantity: string,
-    descriptor: string // bottle
+    descriptor: string, // bottle
+    stripSize: number,
+    stripPrice: number
 }
 
 interface Prices {

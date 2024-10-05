@@ -34,6 +34,7 @@ import ShopScreen from './src/screens/medicine/ShopScreen';
 import ShoppingCart from './src/screens/medicine/ShoppingCart';
 import CheckoutScreen from './src/screens/medicine/CheckoutScreen';
 import OrderScreen from './src/screens/medicine/OrderScreen';
+import OrderDetails from './src/screens/medicine/OrderDetails';
 
 
 
@@ -227,14 +228,8 @@ export default function App() {
         <Stack.Navigator>
 
       
-        <Stack.Screen
-            name="ShopScreen"
-            options={({ navigation }) => ({
-              title: 'Medicine',
-              headerTitle: props => <MedicineHeader navigation={navigation}/>,
-            })}
-            component={ShopScreen}
-          />
+  
+
 
         <Stack.Screen
          
@@ -264,6 +259,23 @@ export default function App() {
           />
 
 
+<Stack.Screen
+            name="ShopScreen"
+            options={({ navigation }) => ({
+              title: 'Medicine',
+              headerTitle: props => <MedicineHeader navigation={navigation}/>,
+            })}
+            component={ShopScreen}
+          />
+
+<Stack.Screen
+            name="OrderDetails"
+            options={({ navigation }) => ({
+              title: 'OrderDetails',
+              // headerTitle: props => <MedicineHeader navigation={navigation}/>,
+            })}
+            component={OrderDetails}
+          />
 
 
 <Stack.Screen

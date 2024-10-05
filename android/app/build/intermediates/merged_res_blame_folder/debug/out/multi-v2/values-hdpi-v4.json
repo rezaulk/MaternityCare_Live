@@ -15,6 +15,22 @@
                     }
                 }
             ]
+        },
+        {
+            "outputFile": "C:\\Users\\rezau\\.gradle\\daemon\\8.0.1\\com.maternitycare_demo.app-mergeDebugResources-49:\\values-hdpi-v4\\values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\rezau\\.gradle\\caches\\transforms-3\\21363363444ebb7e04faa9d13ed584eb\\transformed\\appcompat-1.6.1\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
         }
     ]
 }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { ScrollView, StyleSheet } from "react-native";
+import { Pressable, ScrollView, StyleSheet } from "react-native";
 import {
   Avatar,
   Box,
@@ -11,6 +11,7 @@ import {
   HStack,
   Heading,
   Input,
+  Link,
   Modal,
   NativeBaseProvider,
   Select,
@@ -200,16 +201,20 @@ const OrderScreen = ({ navigation }: { navigation: any }) => {
                 pl={["0", "4"]}
                 pr={["0", "5"]}
                 py="2"
-                paddingLeft={5}
+                // paddingLeft={5}
                 paddingRight={5}
               >
-                <HStack space={[2, 3]} justifyContent="space-between">
+                <HStack space={3} justifyContent="space-between">
                   {/* <Avatar
                     size="48px"
                     source={require("../../assets/capsules.png")}
                   /> */}
                   {/* <VStack>  */}
-                    <Text
+                  
+                  <Center  w="20%"  >
+                  <Pressable onPress={() => navigation.navigate('OrderDetails')}>
+                  <Text
+                    underline
                       _dark={{
                         color: "warmGray.50",
                       }}
@@ -218,9 +223,13 @@ const OrderScreen = ({ navigation }: { navigation: any }) => {
                     >
                       {item.orderId}
                     </Text>
+                  </Pressable>
+                  </Center>
+                  
+                  
 
                    
-                     
+                  <Center  w="10%"  >
 
                     <Text
                       color="coolGray.600"
@@ -231,6 +240,10 @@ const OrderScreen = ({ navigation }: { navigation: any }) => {
                       {item.amountPayable}
                     </Text>
 
+                    </Center>
+
+                    <Center  w="20%" >
+
                     <Text
                       color="coolGray.600"
                       _dark={{
@@ -238,9 +251,12 @@ const OrderScreen = ({ navigation }: { navigation: any }) => {
                       }}
                     >
                       {item.createdAt}
+                      
                     </Text>
+                    </Center>
                    
                   
+                    <Center  w="20%">
 
                     <Text
                       color="coolGray.600"
@@ -251,16 +267,23 @@ const OrderScreen = ({ navigation }: { navigation: any }) => {
                       {item.status}
                     </Text>
 
+                    </Center>
+
+                    <Center  w="30%"  alignItems={'left'}  >
+
                     <Text
                       color="coolGray.600"
                       _dark={{
                         color: "warmGray.200",
                       }}
                     >
-                      {item.customerName}
+                      {item.customerName.substring(0, 10) + "..."}
                     </Text>
                   {/* </VStack> */}
+                  </Center>
 
+                  
+              
 
 
                   <Spacer />

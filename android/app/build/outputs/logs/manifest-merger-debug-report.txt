@@ -18,6 +18,7 @@ MERGED from [:react-native-community_slider] D:\Git\_Github\Maternity\MaternityC
 MERGED from [:react-native-firebase_auth] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-firebase_database] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\database\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-firebase_firestore] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\firestore\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-firebase_storage] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-firebase_app] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-30:12
 MERGED from [:react-native-google-signin_google-signin] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-google-signin\google-signin\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:lottie-react-native] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\lottie-react-native\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
@@ -25,6 +26,7 @@ MERGED from [:react-native-background-timer] D:\Git\_Github\Maternity\MaternityC
 MERGED from [:react-native-calendar-events] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-calendar-events\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-10:12
 MERGED from [:react-native-default-preference] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-default-preference\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-device-info] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-device-info\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-fs] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-fs\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-gesture-handler] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-get-random-values] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-get-random-values\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-immersive-mode] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-immersive-mode\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
@@ -35,6 +37,7 @@ MERGED from [:react-native-pager-view] D:\Git\_Github\Maternity\MaternityCare_Li
 MERGED from [:react-native-performance] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-15:12
 MERGED from [:react-native-safe-area-context] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-screens] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-share] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-19:12
 MERGED from [:react-native-splash-screen] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-splash-screen\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-svg] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-svg\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-vector-icons] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
@@ -59,6 +62,7 @@ MERGED from [com.google.android.gms:play-services-iid:17.0.0] C:\Users\rezau\.gr
 MERGED from [com.google.maps.android:android-maps-utils:3.8.2] C:\Users\rezau\.gradle\caches\transforms-3\740be784ebc34c39c43671d441792fcb\transformed\jetified-android-maps-utils-3.8.2\AndroidManifest.xml:2:1-13:12
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\rezau\.gradle\caches\transforms-3\8fd091a0a0e63d7f7a193444ded7fcee\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:17:1-44:12
 MERGED from [com.google.android.gms:play-services-location:21.0.1] C:\Users\rezau\.gradle\caches\transforms-3\a64cae924e0cb159ee05b2cf97f6450f\transformed\jetified-play-services-location-21.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\rezau\.gradle\caches\transforms-3\8f31b6d953bee01be93e9da67ee13024\transformed\jetified-firebase-storage-20.1.0\AndroidManifest.xml:15:1-38:12
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\rezau\.gradle\caches\transforms-3\abb619f7892805b6546b87207ebf7a5f\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:15:1-37:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\rezau\.gradle\caches\transforms-3\938a2af11d2e9d77f309549a9dbcff98\transformed\jetified-play-services-auth-api-phone-18.0.1\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\rezau\.gradle\caches\transforms-3\bb424601e65ecb2da81bc3a27bfd87f3\transformed\jetified-play-services-auth-base-18.0.4\AndroidManifest.xml:2:1-7:12
@@ -194,6 +198,8 @@ MERGED from [:react-native-firebase_auth] D:\Git\_Github\Maternity\MaternityCare
 MERGED from [:react-native-firebase_auth] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
 MERGED from [:react-native-firebase_database] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\database\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
 MERGED from [:react-native-firebase_database] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\database\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
+MERGED from [:react-native-firebase_storage] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
+MERGED from [:react-native-firebase_storage] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
 MERGED from [com.giphy.sdk:ui:2.3.4] C:\Users\rezau\.gradle\caches\transforms-3\4a851c99f70975e4cef6ad337eae199c\transformed\jetified-ui-2.3.4\AndroidManifest.xml:9:5-67
 MERGED from [com.giphy.sdk:ui:2.3.4] C:\Users\rezau\.gradle\caches\transforms-3\4a851c99f70975e4cef6ad337eae199c\transformed\jetified-ui-2.3.4\AndroidManifest.xml:9:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.4.5] C:\Users\rezau\.gradle\caches\transforms-3\70ddba8747dc9aafb99f987c2727d09a\transformed\jetified-firebase-firestore-24.4.5\AndroidManifest.xml:13:5-67
@@ -204,6 +210,8 @@ MERGED from [com.google.android.gms:play-services-iid:17.0.0] C:\Users\rezau\.gr
 MERGED from [com.google.android.gms:play-services-iid:17.0.0] C:\Users\rezau\.gradle\caches\transforms-3\7d0b38d5fc59e6fea88aed7859817bc5\transformed\jetified-play-services-iid-17.0.0\AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\rezau\.gradle\caches\transforms-3\8fd091a0a0e63d7f7a193444ded7fcee\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\rezau\.gradle\caches\transforms-3\8fd091a0a0e63d7f7a193444ded7fcee\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\rezau\.gradle\caches\transforms-3\8f31b6d953bee01be93e9da67ee13024\transformed\jetified-firebase-storage-20.1.0\AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\rezau\.gradle\caches\transforms-3\8f31b6d953bee01be93e9da67ee13024\transformed\jetified-firebase-storage-20.1.0\AndroidManifest.xml:26:5-67
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\rezau\.gradle\caches\transforms-3\abb619f7892805b6546b87207ebf7a5f\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\rezau\.gradle\caches\transforms-3\abb619f7892805b6546b87207ebf7a5f\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:25:5-67
 MERGED from [com.amplitude:android-sdk:2.34.0] C:\Users\rezau\.gradle\caches\transforms-3\860340d4a4c5908ef1447bc0c3d51e63\transformed\jetified-android-sdk-2.34.0\AndroidManifest.xml:9:5-67
@@ -220,12 +228,16 @@ MERGED from [:react-native-firebase_auth] D:\Git\_Github\Maternity\MaternityCare
 MERGED from [:react-native-firebase_auth] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
 MERGED from [:react-native-firebase_database] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\database\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
 MERGED from [:react-native-firebase_database] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\database\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
+MERGED from [:react-native-firebase_storage] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
+MERGED from [:react-native-firebase_storage] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.4.5] C:\Users\rezau\.gradle\caches\transforms-3\70ddba8747dc9aafb99f987c2727d09a\transformed\jetified-firebase-firestore-24.4.5\AndroidManifest.xml:12:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.4.5] C:\Users\rezau\.gradle\caches\transforms-3\70ddba8747dc9aafb99f987c2727d09a\transformed\jetified-firebase-firestore-24.4.5\AndroidManifest.xml:12:5-79
 MERGED from [com.google.firebase:firebase-auth:21.2.0] C:\Users\rezau\.gradle\caches\transforms-3\4783990546ed5850a0718170e9370d74\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:26:5-79
 MERGED from [com.google.firebase:firebase-auth:21.2.0] C:\Users\rezau\.gradle\caches\transforms-3\4783990546ed5850a0718170e9370d74\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:26:5-79
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\rezau\.gradle\caches\transforms-3\8fd091a0a0e63d7f7a193444ded7fcee\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\rezau\.gradle\caches\transforms-3\8fd091a0a0e63d7f7a193444ded7fcee\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\rezau\.gradle\caches\transforms-3\8f31b6d953bee01be93e9da67ee13024\transformed\jetified-firebase-storage-20.1.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\rezau\.gradle\caches\transforms-3\8f31b6d953bee01be93e9da67ee13024\transformed\jetified-firebase-storage-20.1.0\AndroidManifest.xml:25:5-79
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\rezau\.gradle\caches\transforms-3\abb619f7892805b6546b87207ebf7a5f\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\rezau\.gradle\caches\transforms-3\abb619f7892805b6546b87207ebf7a5f\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:24:5-79
 MERGED from [androidx.work:work-runtime:2.7.1] C:\Users\rezau\.gradle\caches\transforms-3\5549b419e83c0e9275f0abfa7e08250e\transformed\work-runtime-2.7.1\AndroidManifest.xml:26:5-79
@@ -276,6 +288,8 @@ MERGED from [:react-native-firebase_auth] D:\Git\_Github\Maternity\MaternityCare
 MERGED from [:react-native-firebase_auth] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-68
 MERGED from [:react-native-firebase_database] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\database\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-68
 MERGED from [:react-native-firebase_database] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\database\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-68
+MERGED from [:react-native-firebase_storage] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-68
+MERGED from [:react-native-firebase_storage] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-68
 MERGED from [:react-native-background-timer] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-background-timer\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-68
 MERGED from [:react-native-background-timer] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-background-timer\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-68
 MERGED from [androidx.work:work-runtime:2.7.1] C:\Users\rezau\.gradle\caches\transforms-3\5549b419e83c0e9275f0abfa7e08250e\transformed\work-runtime-2.7.1\AndroidManifest.xml:25:5-68
@@ -308,6 +322,8 @@ MERGED from [:react-native-firebase_app] D:\Git\_Github\Maternity\MaternityCare_
 MERGED from [:react-native-firebase_app] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-28:19
 MERGED from [:react-native-performance] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-13:19
 MERGED from [:react-native-performance] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:react-native-share] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-17:19
+MERGED from [:react-native-share] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-17:19
 MERGED from [:react-native-webview] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-17:19
 MERGED from [:react-native-webview] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-17:19
 MERGED from [com.giphy.sdk:ui:2.3.4] C:\Users\rezau\.gradle\caches\transforms-3\4a851c99f70975e4cef6ad337eae199c\transformed\jetified-ui-2.3.4\AndroidManifest.xml:11:5-21:19
@@ -334,6 +350,8 @@ MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\rezau\.g
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\rezau\.gradle\caches\transforms-3\8fd091a0a0e63d7f7a193444ded7fcee\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:36:5-42:19
 MERGED from [com.google.android.gms:play-services-location:21.0.1] C:\Users\rezau\.gradle\caches\transforms-3\a64cae924e0cb159ee05b2cf97f6450f\transformed\jetified-play-services-location-21.0.1\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-location:21.0.1] C:\Users\rezau\.gradle\caches\transforms-3\a64cae924e0cb159ee05b2cf97f6450f\transformed\jetified-play-services-location-21.0.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\rezau\.gradle\caches\transforms-3\8f31b6d953bee01be93e9da67ee13024\transformed\jetified-firebase-storage-20.1.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\rezau\.gradle\caches\transforms-3\8f31b6d953bee01be93e9da67ee13024\transformed\jetified-firebase-storage-20.1.0\AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\rezau\.gradle\caches\transforms-3\abb619f7892805b6546b87207ebf7a5f\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:27:5-35:19
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\rezau\.gradle\caches\transforms-3\abb619f7892805b6546b87207ebf7a5f\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:27:5-35:19
 MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\rezau\.gradle\caches\transforms-3\351af7fe7978040e99d78d9f444bf768\transformed\jetified-play-services-fido-20.0.1\AndroidManifest.xml:7:5-8:19
@@ -464,6 +482,8 @@ MERGED from [:react-native-firebase_database] D:\Git\_Github\Maternity\Maternity
 MERGED from [:react-native-firebase_database] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\database\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:react-native-firebase_firestore] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\firestore\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:react-native-firebase_firestore] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\firestore\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-firebase_storage] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-firebase_storage] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:react-native-firebase_app] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-44
 MERGED from [:react-native-firebase_app] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-44
 MERGED from [:react-native-google-signin_google-signin] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-google-signin\google-signin\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
@@ -478,6 +498,8 @@ MERGED from [:react-native-default-preference] D:\Git\_Github\Maternity\Maternit
 MERGED from [:react-native-default-preference] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-default-preference\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:react-native-device-info] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-device-info\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:react-native-device-info] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-device-info\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-fs] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-fs\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-fs] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-fs\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:react-native-gesture-handler] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:react-native-gesture-handler] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:react-native-get-random-values] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-get-random-values\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
@@ -498,6 +520,8 @@ MERGED from [:react-native-safe-area-context] D:\Git\_Github\Maternity\Maternity
 MERGED from [:react-native-safe-area-context] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:react-native-screens] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:react-native-screens] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-share] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-share] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:react-native-splash-screen] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-splash-screen\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:react-native-splash-screen] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-splash-screen\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:react-native-svg] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-svg\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
@@ -546,6 +570,8 @@ MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\rezau\.g
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\rezau\.gradle\caches\transforms-3\8fd091a0a0e63d7f7a193444ded7fcee\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-location:21.0.1] C:\Users\rezau\.gradle\caches\transforms-3\a64cae924e0cb159ee05b2cf97f6450f\transformed\jetified-play-services-location-21.0.1\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-location:21.0.1] C:\Users\rezau\.gradle\caches\transforms-3\a64cae924e0cb159ee05b2cf97f6450f\transformed\jetified-play-services-location-21.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\rezau\.gradle\caches\transforms-3\8f31b6d953bee01be93e9da67ee13024\transformed\jetified-firebase-storage-20.1.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\rezau\.gradle\caches\transforms-3\8f31b6d953bee01be93e9da67ee13024\transformed\jetified-firebase-storage-20.1.0\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\rezau\.gradle\caches\transforms-3\abb619f7892805b6546b87207ebf7a5f\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\rezau\.gradle\caches\transforms-3\abb619f7892805b6546b87207ebf7a5f\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\rezau\.gradle\caches\transforms-3\938a2af11d2e9d77f309549a9dbcff98\transformed\jetified-play-services-auth-api-phone-18.0.1\AndroidManifest.xml:5:5-44
@@ -790,6 +816,8 @@ MERGED from [com.google.firebase:firebase-firestore:24.4.5] C:\Users\rezau\.grad
 MERGED from [com.google.firebase:firebase-firestore:24.4.5] C:\Users\rezau\.gradle\caches\transforms-3\70ddba8747dc9aafb99f987c2727d09a\transformed\jetified-firebase-firestore-24.4.5\AndroidManifest.xml:16:9-22:19
 MERGED from [com.google.firebase:firebase-auth:21.2.0] C:\Users\rezau\.gradle\caches\transforms-3\4783990546ed5850a0718170e9370d74\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:66:9-72:19
 MERGED from [com.google.firebase:firebase-auth:21.2.0] C:\Users\rezau\.gradle\caches\transforms-3\4783990546ed5850a0718170e9370d74\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:66:9-72:19
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\rezau\.gradle\caches\transforms-3\8f31b6d953bee01be93e9da67ee13024\transformed\jetified-firebase-storage-20.1.0\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\rezau\.gradle\caches\transforms-3\8f31b6d953bee01be93e9da67ee13024\transformed\jetified-firebase-storage-20.1.0\AndroidManifest.xml:29:9-35:19
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\rezau\.gradle\caches\transforms-3\abb619f7892805b6546b87207ebf7a5f\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:28:9-34:19
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\rezau\.gradle\caches\transforms-3\abb619f7892805b6546b87207ebf7a5f\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:28:9-34:19
 MERGED from [com.google.firebase:firebase-common:20.3.2] C:\Users\rezau\.gradle\caches\transforms-3\c3c3297f2ca11a9294576fd2470fd579\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:32:9-36:35
@@ -826,6 +854,12 @@ uses-permission#android.permission.READ_CALENDAR
 ADDED from [:react-native-calendar-events] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-calendar-events\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-72
 	android:name
 		ADDED from [:react-native-calendar-events] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-calendar-events\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:22-69
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [:react-native-fs] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-fs\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from [:react-native-fs] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-fs\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:2:1-24:12 reason: com.rnfs requested WRITE_EXTERNAL_STORAGE
 provider#com.oblador.performance.StartTimeProvider
 ADDED from [:react-native-performance] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-12:39
 	android:authorities
@@ -836,6 +870,22 @@ ADDED from [:react-native-performance] D:\Git\_Github\Maternity\MaternityCare_Li
 		ADDED from [:react-native-performance] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-36
 	android:name
 		ADDED from [:react-native-performance] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-69
+provider#cl.json.RNShareFileProvider
+ADDED from [:react-native-share] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
+	android:grantUriPermissions
+		ADDED from [:react-native-share] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-47
+	android:authorities
+		ADDED from [:react-native-share] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [:react-native-share] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [:react-native-share] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-55
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:react-native-share] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:64
+	android:resource
+		ADDED from [:react-native-share] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-61
+	android:name
+		ADDED from [:react-native-share] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-67
 provider#com.reactnativecommunity.webview.RNCWebViewFileProvider
 ADDED from [:react-native-webview] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
 	android:grantUriPermissions
@@ -846,12 +896,6 @@ ADDED from [:react-native-webview] D:\Git\_Github\Maternity\MaternityCare_Live\n
 		ADDED from [:react-native-webview] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
 	android:name
 		ADDED from [:react-native-webview] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-83
-meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:react-native-webview] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:63
-	android:resource
-		ADDED from [:react-native-webview] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-60
-	android:name
-		ADDED from [:react-native-webview] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-67
 uses-library#android.test.runner
 ADDED from [com.giphy.sdk:ui:2.3.4] C:\Users\rezau\.gradle\caches\transforms-3\4a851c99f70975e4cef6ad337eae199c\transformed\jetified-ui-2.3.4\AndroidManifest.xml:12:9-14:40
 	android:required
@@ -980,6 +1024,12 @@ ADDED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\rezau\.gr
 		ADDED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\rezau\.gradle\caches\transforms-3\8fd091a0a0e63d7f7a193444ded7fcee\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:41:13-37
 	android:name
 		ADDED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\rezau\.gradle\caches\transforms-3\8fd091a0a0e63d7f7a193444ded7fcee\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:40:13-50
+meta-data#com.google.firebase.components:com.google.firebase.storage.StorageRegistrar
+ADDED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\rezau\.gradle\caches\transforms-3\8f31b6d953bee01be93e9da67ee13024\transformed\jetified-firebase-storage-20.1.0\AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\rezau\.gradle\caches\transforms-3\8f31b6d953bee01be93e9da67ee13024\transformed\jetified-firebase-storage-20.1.0\AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\rezau\.gradle\caches\transforms-3\8f31b6d953bee01be93e9da67ee13024\transformed\jetified-firebase-storage-20.1.0\AndroidManifest.xml:33:17-107
 meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
 ADDED from [com.google.firebase:firebase-database:20.1.0] C:\Users\rezau\.gradle\caches\transforms-3\abb619f7892805b6546b87207ebf7a5f\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:31:13-33:85
 	android:value

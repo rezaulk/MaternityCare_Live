@@ -33,6 +33,8 @@ import io.invertase.firebase.auth.ReactNativeFirebaseAuthPackage;
 import io.invertase.firebase.database.ReactNativeFirebaseDatabasePackage;
 // @react-native-firebase/firestore
 import io.invertase.firebase.firestore.ReactNativeFirebaseFirestorePackage;
+// @react-native-firebase/storage
+import io.invertase.firebase.storage.ReactNativeFirebaseStoragePackage;
 // @react-native-google-signin/google-signin
 import com.reactnativegooglesignin.RNGoogleSigninPackage;
 // lottie-react-native
@@ -45,6 +47,8 @@ import com.calendarevents.RNCalendarEventsPackage;
 import com.kevinresol.react_native_default_preference.RNDefaultPreferencePackage;
 // react-native-device-info
 import com.learnium.RNDeviceInfo.RNDeviceInfo;
+// react-native-fs
+import com.rnfs.RNFSPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.RNGestureHandlerPackage;
 // react-native-get-random-values
@@ -65,6 +69,8 @@ import com.oblador.performance.PerformancePackage;
 import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 // react-native-screens
 import com.swmansion.rnscreens.RNScreensPackage;
+// react-native-share
+import cl.json.RNSharePackage;
 // react-native-sound
 import com.zmxv.RNSound.RNSoundPackage;
 // react-native-splash-screen
@@ -135,12 +141,14 @@ public class PackageList {
       new ReactNativeFirebaseAuthPackage(),
       new ReactNativeFirebaseDatabasePackage(),
       new ReactNativeFirebaseFirestorePackage(),
+      new ReactNativeFirebaseStoragePackage(),
       new RNGoogleSigninPackage(),
       new LottiePackage(),
       new BackgroundTimerPackage(),
       new RNCalendarEventsPackage(),
       new RNDefaultPreferencePackage(),
       new RNDeviceInfo(),
+      new RNFSPackage(),
       new RNGestureHandlerPackage(),
       new RNGetRandomValuesPackage(),
       new RNImmersiveModePackage(),
@@ -151,6 +159,7 @@ public class PackageList {
       new PerformancePackage(),
       new SafeAreaContextPackage(),
       new RNScreensPackage(),
+      new RNSharePackage(),
       new RNSoundPackage(),
       new SplashScreenReactPackage(),
       new SvgPackage(),
