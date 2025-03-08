@@ -35,6 +35,7 @@ import ShoppingCart from './src/screens/medicine/ShoppingCart';
 import CheckoutScreen from './src/screens/medicine/CheckoutScreen';
 import OrderScreen from './src/screens/medicine/OrderScreen';
 import OrderDetails from './src/screens/medicine/OrderDetails';
+import ShopCategoryScreen from './src/screens/medicine/ShopCategoryScreen';
 
 
 
@@ -267,6 +268,17 @@ export default function App() {
             })}
             component={ShopScreen}
           />
+
+
+<Stack.Screen
+            name="ShopCategoryScreen"
+            options={({ navigation }) => ({
+              title: 'Medicine',
+              headerTitle: props => <MedicineHeader navigation={navigation}/>,
+            })}
+            component={ShopCategoryScreen}
+          />
+
 
 <Stack.Screen
             name="OrderDetails"

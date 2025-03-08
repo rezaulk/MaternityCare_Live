@@ -1,21 +1,6 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\rezau\\.gradle\\daemon\\8.0.1\\com.maternitycare_demo.app-mergeDebugResources-49:\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\rezau\\.gradle\\caches\\transforms-3\\2a493e717a44309eefb8078e6ed3e3c3\\transformed\\material-1.6.1\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "75",
-                        "endOffsets": "126"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "com.maternitycare_demo.app-mergeDebugResources-49:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
             "map": [
                 {

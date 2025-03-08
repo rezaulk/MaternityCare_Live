@@ -39,7 +39,8 @@ const ShopScreen = ({ navigation }: { navigation: any }) => {
     setLoading(true);
     // ResetCart();
     const response = await fetch(
-      "https://raw.githubusercontent.com/rezaulk/Barrons333/main/medicine.csv"
+      //"https://raw.githubusercontent.com/rezaulk/Barrons333/main/medicine.csv"
+       "https://raw.githubusercontent.com/rezaulk/Barrons333/refs/heads/main/MedicineListOfBangladesh.csv"
     );
     const csvData = await response.text();
 
@@ -64,15 +65,46 @@ const ShopScreen = ({ navigation }: { navigation: any }) => {
         
         const _medicine_list: Medicine[] = [];
         let number = 0;
+        // trimmedData.forEach((element) => {
+        //   if (element.package_container != undefined) {
+        //     let price = extractNumbers(element.package_container);
+
+        //     if (element.brand_name == "Amlacid") {
+        //       debugger;
+        //     }
+
+        //     price.forEach((elementprice) => {
+        //       // debugger;
+        //       const _medicine: Medicine = {
+        //         id: number + 1,
+        //         brand_id: 0,
+        //         brand_name: element.brand_name,
+        //         generic: element.generic,
+        //         manufacturer: element.manufacturer,
+        //         Package_Size: element.Package_Size,
+        //         dosage_form: element.dosage_form,
+        //         package_container: element.package_container,
+        //         slug: element.slug,
+        //         strength: element.strength,
+        //         type: "",
+        //         prices: [],
+        //         volume: elementprice.quantity,
+        //         price: elementprice.price,
+        //         unit: elementprice.unit,
+        //         select_quantity: "",
+        //         descriptor: elementprice.descriptor,
+        //       };
+
+        //       _medicine_list.push(_medicine);
+        //       number++;
+        //     });
+        //   }
+        // });
+
+
         trimmedData.forEach((element) => {
           if (element.package_container != undefined) {
-            let price = extractNumbers(element.package_container);
-
-            if (element.brand_name == "Amlacid") {
-              debugger;
-            }
-
-            price.forEach((elementprice) => {
+           
               // debugger;
               const _medicine: Medicine = {
                 id: number + 1,
@@ -87,19 +119,20 @@ const ShopScreen = ({ navigation }: { navigation: any }) => {
                 strength: element.strength,
                 type: "",
                 prices: [],
-                volume: elementprice.quantity,
-                price: elementprice.price,
-                unit: elementprice.unit,
+                volume: element.quantity,
+                price: element.price,
+                unit: element.unit,
                 select_quantity: "",
-                descriptor: elementprice.descriptor,
+                descriptor: element.descriptor,
+                stripSize: 0,
+                stripPrice: 0
               };
 
               _medicine_list.push(_medicine);
               number++;
-            });
           }
         });
-
+        
         setmedicinelist(_medicine_list);
         setmainmedicinelist(_medicine_list);
 

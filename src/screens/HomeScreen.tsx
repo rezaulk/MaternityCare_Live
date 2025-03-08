@@ -709,7 +709,7 @@ function HomeScreen({navigation}: {navigation: any}) {
                       backgroundColor: 'gray.50',
                     }}>
                     <Box>
-                    <Pressable onPress={() => navigation.navigate('ShopScreen')}>
+                    <Pressable onPress={() => navigation.navigate('ShopCategoryScreen')}>
               
                       <Center>
                         <HStack p={2}>

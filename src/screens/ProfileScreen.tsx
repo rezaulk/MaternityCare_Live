@@ -31,17 +31,17 @@ function ProfileScreen({navigation}: {navigation: any}) {
 
     const subscriber = auth().onAuthStateChanged((user) => {
       debugger;
-      if(user != null){
-        // navigation.navigate('Home');
+      // if(user != null){
+      //   // navigation.navigate('Home');
 
-        setUser(user._user);
-        console.log("user", JSON.stringify(user));
-        console.log("user", user._user);
-      }
-      else{
-        navigation.navigate('loginScreen');
+      //   setUser(user._user);
+      //   console.log("user", JSON.stringify(user));
+      //   console.log("user", user._user);
+      // }
+      // else{
+      //   navigation.navigate('loginScreen');
 
-      }
+      // }
      
 
       // setUser(user);

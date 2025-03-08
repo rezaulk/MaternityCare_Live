@@ -56,8 +56,8 @@ function PrimaryCareScreen({navigation}: {navigation: any}) {
                 <VStack>
 {/* <ion-icon name="chatbubble-outline"></ion-icon> */}
 <Icon onPress={() => {
-  console.log("calling1");
-  // navigation.navigate('MeetingScreen');
+  // console.log("calling1");
+   navigation.navigate('MeetingScreen');
 }} size="xl" as={Ionicons} name="videocam-outline" color="coolGray.800" _dark={{
         color: "warmGray.50"
       }} />
