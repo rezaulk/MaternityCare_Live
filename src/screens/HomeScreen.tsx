@@ -40,6 +40,137 @@ function HomeScreen({navigation}: {navigation: any}) {
     // });
   });
 
+
+  const ServiceCard = ({ title, subtitle, image, onPress }) => (
+  <Pressable onPress={onPress}>
+    <Box
+      rounded="lg"
+      overflow="hidden"
+      borderWidth={1}
+      borderColor="coolGray.200"
+      _dark={{ borderColor: 'coolGray.600', backgroundColor: 'gray.700' }}
+      _web={{ shadow: 2, borderWidth: 0 }}
+      _light={{ backgroundColor: 'gray.50' }}
+      w="100%"
+      alignItems="center"
+    >
+      <HStack h={12} backgroundColor="#FD9999">
+        <Center w="30%">
+          <Image
+            height={36}
+            width={40}
+            resizeMode="contain"
+            source={image}
+            alt="image"
+          />
+        </Center>
+        <Center w="70%">
+          <Text fontSize="14" textAlign="center">
+            {title}
+          </Text>
+        </Center>
+      </HStack>
+      <Stack space={2} alignItems="center" p="2">
+        <Text fontSize="14" textAlign="center">
+          {subtitle}
+        </Text>
+      </Stack>
+    </Box>
+  </Pressable>
+);
+
+
+const services = [
+  {
+    title: 'Pediatrician',
+    image: require('../assets/Pediatriction.jpg'),
+    navigateTo: 'DoctorList',
+  },
+  {
+    title: 'Medicine',
+    image: require('../assets/Medicine.png'),
+    navigateTo: 'ShopScreen',
+
+  },
+  {
+    title: 'Pediatric heart disease',
+    image: require('../assets/Heart.png'),
+  },
+  {
+    title: 'Gynecology',
+    image: require('../assets/Gyconologist.png'),
+  },
+];
+
+const otherservices = [
+  {
+    title: 'Shop',
+    image: require('../assets/shop.jpg'),
+    navigateTo: 'ShopScreen',
+
+  },
+  {
+    title: 'Blood',
+    image: require('../assets/blood.jpg'),
+  },
+  {
+    title: 'Laboratory Test',
+    image: require('../assets/LaboratoryTest.png'),
+  },
+  {
+    title: 'Health concern Article & video',
+    image: require('../assets/article.jpg'),
+  },
+];
+
+
+const ServiceCardDoctor = ({ title, image, onPress }) => (
+  <Pressable onPress={onPress}>
+    <Box
+      h={130}
+      w={110}
+      rounded="lg"
+      overflow="hidden"
+      borderColor="coolGray.200"
+      borderWidth="1"
+      _dark={{
+        borderColor: 'coolGray.600',
+        backgroundColor: 'gray.700',
+      }}
+      _web={{
+        shadow: 2,
+        borderWidth: 0,
+      }}
+      _light={{
+        backgroundColor: 'gray.50',
+      }}
+      mx={1} // spacing between cards
+    >
+      <Center>
+        <HStack p={2}>
+          <Image
+            source={image}
+            style={{ width: 60, height: 60, resizeMode: 'contain' }}
+            alt="service"
+          />
+        </HStack>
+      </Center>
+      <Center>
+        <Stack p="2" space={3}>
+          <Stack space={2}>
+            <Text fontSize="12" ml="-1" textAlign="center">
+              {title}
+            </Text>
+          </Stack>
+        </Stack>
+      </Center>
+    </Box>
+  </Pressable>
+);
+
+
+
+
   return (
     <View style={{flex: 1}}>
       <ScrollView horizontal={false} persistentScrollbar={false}>
@@ -47,849 +178,96 @@ function HomeScreen({navigation}: {navigation: any}) {
           Pregnant Mother Care {userName}
         </Heading>
 
-        <Center>
-          <HStack space={5} justifyContent="center">
-            <Center w="45%" rounded="md" borderColor={'blueGray.900'}>
-              <Box w="100%" alignItems="center">
-                <Box
-                  rounded="lg"
-                  overflow="hidden"
-                  borderWidth={1}
+       <Center flex={1}>
+    <HStack space={5} justifyContent="center" mb="5">
+      <Center w="45%">
+        <ServiceCard
+          title="Primary Care"
+          subtitle="Talk to Nurse online 24 hours"
+          image={require('../assets/PrimaryCare.jpg')}
+          onPress={() => navigation.navigate('PrimaryCare')}
+        />
+      </Center>
+      <Center w="45%">
+        <ServiceCard
+          title="Consult with a Specialist"
+          subtitle="Consult with best Gynecologist"
+          image={require('../assets/Gyconologist.png')}
+          onPress={() => navigation.navigate('DoctorList')}
+        />
+      </Center>
+    </HStack>
 
-                  _dark={{
-                    borderColor: 'coolGray.600',
-                    backgroundColor: 'gray.700',
-                  }}
-                  _web={{
-                    shadow: 2,
-                    borderWidth: 0,
-                  }}
-                  _light={{
-                    backgroundColor: 'gray.50',
-                  }}>
-                  <Pressable onPress={() => navigation.navigate('PrimaryCare')}>
-                    <HStack h={12} backgroundColor="#FD9999">
-                      <Center w="30%">
-                        <Image
-                          height={36}
-                          w={40}
-                        resizeMode="contain"
-
-                          source={require('../assets/PrimaryCare.jpg')}
-                          alt="image"
-                        />
-                      </Center>
-
-                      <Center w="70%">
-                        <Text
-                          fontSize="14"
-                          paddingLeft={0}
-                          paddingRight={0}>
-                          Primary Care
-                        </Text>
-                      </Center>
-                    </HStack>
-                    <Stack   space={2} alignItems="center">
-                      <Text fontSize="14" ml="-1">
-                        Talk to Nurse {'\n'}online 24 hours
-                      </Text>
-                    </Stack>
-                  </Pressable>
-                </Box>
-              </Box>
-            </Center>
-
-            <Center w="45%" rounded="md" borderColor={'blueGray.900'}>
-              <Box w="100%" alignItems="center">
-                <Box
-                  rounded="lg"
-                  overflow="hidden"
-                  borderWidth={1}
-                  _dark={{
-                    borderColor: 'coolGray.600',
-                    backgroundColor: 'gray.700',
-                  }}
-                  _web={{
-                    shadow: 2,
-                    borderWidth: 0,
-                  }}
-                  _light={{
-                    backgroundColor: 'gray.50',
-                  }}>
-                  <Pressable onPress={() => navigation.navigate('DoctorList')}>
-                  <HStack h={12} backgroundColor="#FD9999">
-                    <Center w="30%">
-                      <Image
-                        height={36}
-                        w={40}
-                        resizeMode="contain"
-
-                        source={require('../assets/Gyconologist.png')}
-                        alt="image"
-                      />
-                    </Center>
-
-                    <Center w="70%">
-                      <Text
-                        fontSize="14"
-                        paddingLeft={0}
-                        paddingRight={0}>
-                        Consult with a Specialist
-                      </Text>
-                    </Center>
-                  </HStack>
-                  <Stack space={2} alignItems="center">
-                    <Text fontSize="14" ml="-1">
-                      Consult with {'\n'} best Gynecologist
-                    </Text>
-                  </Stack>
-                  </Pressable>
-                </Box>
-              </Box>
-            </Center>
-          </HStack>
-
-          <HStack space={5} justifyContent="center">
-            <Center w="45%" rounded="md" borderColor={'blueGray.900'}>
-              <Box w="100%" alignItems="center">
-                <Box
-                  rounded="lg"
-                  overflow="hidden"
-                  _dark={{
-                    borderColor: 'coolGray.600',
-                    backgroundColor: 'gray.700',
-                  }}
-                  _web={{
-                    shadow: 2,
-                    borderWidth: 0,
-                  }}
-                  _light={{
-                    backgroundColor: 'gray.50',
-                  }}>
-                  <Pressable onPress={() => navigation.navigate('NutrionScreen')}>
-                    <HStack h={12} backgroundColor="#FD9999">
-                      <Center w="30%">
-                        <Image
-                          h={36}
-                          w={40}
-                        resizeMode="contain"
-
-                          source={require('../assets/Nutrition.jpg')}
-                          alt="image"
-                        />
-                      </Center>
-
-                      <Center w="70%">
-                        <Text
-                          fontSize="14"
-                        
-                          paddingLeft={0}
-                          paddingRight={0}>
-                          Nutrion & Fitness
-                        </Text>
-                      </Center>
-                    </HStack>
-                    <Stack h={12} space={2} alignItems="center">
-                      <Text fontSize="14" ml="-1">
-                        Pregnency time food , diet
-                      </Text>
-                    </Stack>
-                  </Pressable>
-                </Box>
-              </Box>
-            </Center>
-
-            <Center w="45%" rounded="md" borderColor={'blueGray.900'}>
-              <Box w="100%" alignItems="center">
-                <Box
-                  rounded="lg"
-                  overflow="hidden"
-                  _dark={{
-                    borderColor: 'coolGray.600',
-                    backgroundColor: 'gray.700',
-                  }}
-                  _web={{
-                    shadow: 2,
-                    borderWidth: 0,
-                  }}
-                  _light={{
-                    backgroundColor: 'gray.50',
-                  }}>
-                  <Pressable onPress={() => navigation.navigate('BookingDeliveryScreen')}>
-
-                  <HStack h={12} backgroundColor="#FD9999">
-                    <Center w="30%">
-                      <Image
-                        height={36}
-                        w={40}
-                        resizeMode="contain"
-                        source={require('../assets/Clinic.jpg')}
-                        alt="image"
-                      />
-                    </Center>
-
-                    <Center w="70%">
-                      <Text
-                        fontSize="14"
-                        paddingLeft={0}
-                        paddingRight={0}>
-                        Clinic Appontments
-                      </Text>
-                    </Center>
-                  </HStack>
-                  <Stack h={12} space={2} alignItems="center">
-                    <Text fontSize="14" ml="-1">
-                      Booking clinic for delivery
-                    </Text>
-                  </Stack>
-                  </Pressable>
-                </Box>
-              </Box>
-            </Center>
-            {/* <Center h="40" w="20" bg="primary.700" rounded="md" shadow={3} /> */}
-          </HStack>
-
-          {/* <HStack
-            space={5}
-            w="100%"
-            px="5"
-            alignItems="center"
-            justifyContent="center">
-            <HStack alignItems="center">
-              <Box alignItems="center">
-                <Box
-                  // maxW="70"
-                  width="40"
-                  rounded="lg"
-                  overflow="hidden"
-                  borderColor="coolGray.200"
-                  borderWidth="1"
-                  _dark={{
-                    borderColor: 'coolGray.600',
-                    backgroundColor: 'gray.700',
-                  }}
-                  _web={{
-                    shadow: 2,
-                    borderWidth: 0,
-                  }}
-                  _light={{
-                    backgroundColor: 'gray.50',
-                  }}>
-                  <Pressable onPress={() => navigation.navigate('PrimaryCare')}>
-                    <Box>
-                      <HStack>
-                        <Center>
-                          <Image
-                            size={'sm'}
-                            source={require('../assets/PrimaryCare.jpg')}
-                            alt="image"
-                          />
-                        </Center>
-
-                        <Center>
-                          <Text
-                            fontSize="14"
-                            ml="-1"
-                            paddingLeft={3}
-                            paddingRight={5}>
-                            Primary Care
-                          </Text>
-                        </Center>
-                      </HStack>
-                    </Box>
-                  </Pressable>
-                  <Stack p="4" space={3}>
-                    <Stack space={2}>
-                      <Text fontSize="14" ml="-1">
-                        Talk to Nurse online 24 hours
-                      </Text>
-                    </Stack>
-                  </Stack>
-                </Box>
-              </Box>
-            </HStack>
-
-            <HStack alignItems="center">
-              <Box alignItems="center">
-                <Box
-                  maxW="40"
-                  rounded="lg"
-                  overflow="hidden"
-                  borderColor="coolGray.200"
-                  borderWidth="1"
-                  _dark={{
-                    borderColor: 'coolGray.600',
-                    backgroundColor: 'gray.700',
-                  }}
-                  _web={{
-                    shadow: 2,
-                    borderWidth: 0,
-                  }}
-                  _light={{
-                    backgroundColor: 'gray.50',
-                  }}>
-                  <Box>
-                    <HStack>
-                      <Center>
-                        <Image
-                          size={'sm'}
-                          source={require('../assets/Gyconologist.png')}
-                          alt="image"
-                        />
-                      </Center>
-
-                      <Center>
-                        <Text fontSize="14" ml="-1" paddingLeft={5}>
-                          Consult with a Specialist
-                        </Text>
-                      </Center>
-                    </HStack>
-                  </Box>
-                  <Stack p="4" space={3}>
-                    <Stack space={2}>
-                      <Text fontSize="14" ml="-1">
-                        Consult with best Gynecologist
-                      </Text>
-                    </Stack>
-                  </Stack>
-                </Box>
-              </Box>
-            </HStack>
-          </HStack>
-
-          <HStack
-            space={5}
-            w="100%"
-            px="5"
-            alignItems="center"
-            justifyContent="center">
-            <HStack alignItems="center">
-              <Box alignItems="center">
-                <Box
-                  maxW="40"
-                  rounded="lg"
-                  overflow="hidden"
-                  borderColor="coolGray.200"
-                  borderWidth="1"
-                  _dark={{
-                    borderColor: 'coolGray.600',
-                    backgroundColor: 'gray.700',
-                  }}
-                  _web={{
-                    shadow: 2,
-                    borderWidth: 0,
-                  }}
-                  _light={{
-                    backgroundColor: 'gray.50',
-                  }}>
-                  <Box>
-                    <HStack>
-                      <Center>
-                        <Image
-                          size={'sm'}
-                          source={require('../assets/Nutrition.jpg')}
-                          alt="image"
-                        />
-                      </Center>
-
-                      <Center>
-                        <Text fontSize="14" ml="-1" paddingLeft={3}>
-                          Nutrion & Fitness
-                        </Text>
-                      </Center>
-                    </HStack>
-                  </Box>
-                  <Stack p="4" space={3}>
-                    <Stack space={2}>
-                      <Text fontSize="14" ml="-1">
-                        pregnency time food,diet
-                      </Text>
-                    </Stack>
-                  </Stack>
-                </Box>
-              </Box>
-            </HStack>
-
-            <HStack alignItems="center">
-              <Box alignItems="center">
-                <Box
-                  maxW="40"
-                  rounded="lg"
-                  overflow="hidden"
-                  borderColor="coolGray.200"
-                  borderWidth="1"
-                  _dark={{
-                    borderColor: 'coolGray.600',
-                    backgroundColor: 'gray.700',
-                  }}
-                  _web={{
-                    shadow: 2,
-                    borderWidth: 0,
-                  }}
-                  _light={{
-                    backgroundColor: 'gray.50',
-                  }}>
-                  <Pressable
-                    onPress={() =>
-                      navigation.navigate('BookingDeliveryScreen')
-                    }>
-                    <Box>
-                      <HStack>
-                        <Center>
-                          <Image
-                            size={'sm'}
-                            source={require('../assets/Clinic.jpg')}
-                            alt="image"
-                          />
-                        </Center>
-
-                        <Center>
-                          <Text fontSize="14" ml="-1" paddingLeft={5}>
-                            Clinic Appontments
-                          </Text>
-                        </Center>
-                      </HStack>
-                    </Box>
-                  </Pressable>
-                  <Stack p="4" space={3}>
-                    <Stack space={2}>
-                      <Text fontSize="14" ml="-1">
-                        Booking click for delivery
-                      </Text>
-                    </Stack>
-                  </Stack>
-                </Box>
-              </Box>
-            </HStack>
-          </HStack> */}
-        </Center>
+    <HStack space={5} justifyContent="center">
+      <Center w="45%">
+        <ServiceCard
+          title="Nutrition & Fitness"
+          subtitle="Pregnancy time food, diet"
+          image={require('../assets/Nutrition.jpg')}
+          onPress={() => navigation.navigate('NutrionScreen')}
+        />
+      </Center>
+      <Center w="45%">
+        <ServiceCard
+          title="Clinic Appointments"
+          subtitle="Booking clinic for delivery"
+          image={require('../assets/Clinic.jpg')}
+          onPress={() => navigation.navigate('BookingDeliveryScreen')}
+        />
+      </Center>
+    </HStack>
+  </Center>
 
         <Heading size="md" pt={2} paddingLeft={5} paddingBottom={0}>
           Specialist Doctor
         </Heading>
 
-        <Center>
-          <HStack space={5} w="100%" px="3" alignItems="center">
-            <ScrollView horizontal={true} persistentScrollbar={true}>
-              <HStack alignItems="center" p={1}>
-                <Box alignItems="center">
-                  <Pressable onPress={() => navigation.navigate('DoctorList')}>
-                    <Box
-                      // maxW="40"
-                      h={130}
-                    w={110}
-                      rounded="lg"
-                      overflow="hidden"
-                      borderColor="coolGray.200"
-                      borderWidth="1"
-                      _dark={{
-                        borderColor: 'coolGray.600',
-                        backgroundColor: 'gray.700',
-                      }}
-                      _web={{
-                        shadow: 2,
-                        borderWidth: 0,
-                      }}
-                      _light={{
-                        backgroundColor: 'gray.50',
-                      }}>
-                   
-                        <Center>
-                          <HStack p={2}>
-                            <Image
-                             h={60}
-                             w={60}
-                            resizeMode="contain"
-
-                              //size={'sm'}
-                              source={require('../assets/Pediatriction.jpg')}
-                              alt="image"
-                            />
-                          </HStack>
-                        </Center>
-                        <Box>
-                      <Center> 
-                      <Stack p="2" space={3}>
-                        <Stack space={2}>
-                          <Text fontSize="12" ml="-1">
-                            Pediatrician
-                          </Text>
-                        </Stack>
-                      </Stack>
-                      </Center>
-                    </Box>
-                    </Box>
-                  </Pressable>
-                </Box>
-              </HStack>
-
-              <HStack alignItems="center" p={1}>
-                <Box alignItems="center">
-                  <Box
-                    maxW="40"
-                    h={130}
-                    w={110}
-                    rounded="lg"
-                    overflow="hidden"
-                    borderColor="coolGray.200"
-                    borderWidth="1"
-                    _dark={{
-                      borderColor: 'coolGray.600',
-                      backgroundColor: 'gray.700',
-                    }}
-                    _web={{
-                      shadow: 2,
-                      borderWidth: 0,
-                    }}
-                    _light={{
-                      backgroundColor: 'gray.50',
-                    }}>
-                    <Box>
-                      <Center>
-                        <HStack p={2}>
-                          <Image
-                          //  size={'sm'}
-                          h={60}
-                          w={60}
-                          resizeMode="contain"
-
-                            source={require('../assets/Medicine.png')}
-                            alt="image"
-                          />
-                        </HStack>
-                      </Center>
-                    </Box>
-                    <Box>
-                      <Center>
-                    <Stack p="2" space={3}>
-                      <Stack space={2}>
-                        <Text fontSize="12" ml="-1">
-                          Medicine
-                        </Text>
-                      </Stack>
-                    </Stack>
-                    </Center>
-                    </Box>
-                  </Box>
-                </Box>
-              </HStack>
-
-              <HStack alignItems="center" p={1}>
-                <Box alignItems="center">
-                  <Box
-                 //   maxW="40"
-                 h={130}
-                 w={110}
-                    rounded="lg"
-                    overflow="hidden"
-                    borderColor="coolGray.200"
-                    borderWidth="1"
-                    _dark={{
-                      borderColor: 'coolGray.600',
-                      backgroundColor: 'gray.700',
-                    }}
-                    _web={{
-                      shadow: 2,
-                      borderWidth: 0,
-                    }}
-                    _light={{
-                      backgroundColor: 'gray.50',
-                    }}>
-                    <Box>
-                      <Center>
-                        <HStack p={2}>
-                          <Image
-                            h={60}
-                            w={60}
-                            resizeMode="contain"
-
-                           // size={'sm'}
-                            source={require('../assets/Heart.png')}
-                            alt="image"
-                          />
-                        </HStack>
-                      </Center>
-                    </Box>
-                    <Box>
-                      <Center>
-                    <Stack p="2" space={3}>
-                      <Stack space={2}>
-                        <Text fontSize="12" ml="-1">
-                          Pediatric heart disease
-                        </Text>
-                      </Stack>
-                    </Stack>
-                    </Center>
-                    </Box>
-                  </Box>
-                </Box>
-              </HStack>
-
-              <HStack alignItems="center" p={1}>
-                <Box alignItems="center">
-                  <Box
-                   // maxW="40"
-                   h={130}
-                   w={110}
-                    rounded="lg"
-                    overflow="hidden"
-                    borderColor="coolGray.200"
-                    borderWidth="1"
-                    _dark={{
-                      borderColor: 'coolGray.600',
-                      backgroundColor: 'gray.700',
-                    }}
-                    _web={{
-                      shadow: 2,
-                      borderWidth: 0,
-                    }}
-                    _light={{
-                      backgroundColor: 'gray.50',
-                    }}>
-                    <Box>
-                      <Center>
-                        <HStack p={2}>
-                          <Image
-                           // size={'sm'}
-                           h={60}
-                           w={60}
-                           resizeMode="contain"
-
-                            source={require('../assets/Gyconologist.png')}
-                            alt="image"
-                          />
-                        </HStack>
-                      </Center>
-                    </Box>
-                    <Box>
-                      <Center>
-                    <Stack p="2" space={3}>
-                      <Stack space={2}>
-                        <Text fontSize="12" ml="-1">
-                          Gynecology
-                        </Text>
-                      </Stack>
-                    </Stack>
-                    </Center>
-                    </Box>
-                  </Box>
-                </Box>
-              </HStack>
-
-             
-            </ScrollView>
+      <Center>
+      <HStack w="100%" px="3" alignItems="center">
+        <ScrollView horizontal persistentScrollbar showsHorizontalScrollIndicator={false}>
+          <HStack alignItems="center" py={1}>
+            {services.map((service, index) => (
+              <ServiceCardDoctor
+                key={index}
+                title={service.title}
+                image={service.image}
+                onPress={
+                  service.navigateTo
+                    ? () => navigation.navigate(service.navigateTo)
+                    : undefined
+                }
+              />
+            ))}
           </HStack>
-        </Center>
-
+        </ScrollView>
+      </HStack>
+    </Center>
         <Heading size="md" pt={2} paddingLeft={5} paddingBottom={0}>
           Other Services
         </Heading>
 
-        <Center>
-          <HStack space={5} w="100%" px="3" alignItems="center" >
-            <ScrollView horizontal={true} persistentScrollbar={true}>
-              <HStack alignItems="center" p={1}>
-                <Box alignItems="center">
-                  <Box
-                    h={130}
-                    w={110}
-                    rounded="lg"
-                    overflow="hidden"
-                    borderColor="coolGray.200"
-                    borderWidth="1"
-                    _dark={{
-                      borderColor: 'coolGray.600',
-                      backgroundColor: 'gray.700',
-                    }}
-                    _web={{
-                      shadow: 2,
-                      borderWidth: 0,
-                    }}
-                    _light={{
-                      backgroundColor: 'gray.50',
-                    }}>
-                    <Box>
-                    <Pressable onPress={() => navigation.navigate('ShopCategoryScreen')}>
-              
-                      <Center>
-                        <HStack p={2}>
-                          <Image
-                           // size={'sm'}
-                            h={60}
-                            w={60}
-                            resizeMode="contain"
-                            source={require('../assets/shop.jpg')}
-                            alt="image"
-                          />
-                        </HStack>
-                      </Center>
-                      </Pressable>
-                    </Box>
-
-                    <Box>
-                      <Center>
-                    <Stack p="2" space={3}>
-                      <Stack space={2}>
-                        <Text fontSize="12" ml="-1">
-                          Shop
-                        </Text>
-                      </Stack>
-                    </Stack>
-                    </Center>
-                    </Box>
-                  </Box>
-                </Box>
-              </HStack>
-
-              <HStack alignItems="center" p={1}>
-                <Box alignItems="center">
-                  <Box
-                    h={130}
-                    w={110}
-                    rounded="lg"
-                    overflow="hidden"
-                    borderColor="coolGray.200"
-                    borderWidth="1"
-                    _dark={{
-                      borderColor: 'coolGray.600',
-                      backgroundColor: 'gray.700',
-                    }}
-                    _web={{
-                      shadow: 2,
-                      borderWidth: 0,
-                    }}
-                    _light={{
-                      backgroundColor: 'gray.50',
-                    }}>
-                    <Box>
-                      <Center>
-                        <HStack p={2}>
-                          <Image
-                            //size={'sm'}
-                            h={60}
-                            w={60}
-                            resizeMode="contain"
-                            source={require('../assets/blood.jpg')}
-                            alt="image"
-                          />
-                        </HStack>
-                      </Center>
-                    </Box>
-                    <Box>
-                      <Center>
-                    <Stack p="2" space={3}>
-                      <Stack space={2}>
-                        <Text fontSize="12" ml="-1">
-                          Blood
-                        </Text>
-                      </Stack>
-                    </Stack>
-                    </Center>
-                    </Box>
-                  </Box>
-                </Box>
-              </HStack>
-
-              <HStack alignItems="center">
-                <Box alignItems="center">
-                  <Box
-                    h={130}
-                    w={110}
-                    rounded="lg"
-                    overflow="hidden"
-                    borderColor="coolGray.200"
-                    borderWidth="1"
-                    _dark={{
-                      borderColor: 'coolGray.600',
-                      backgroundColor: 'gray.700',
-                    }}
-                    _web={{
-                      shadow: 2,
-                      borderWidth: 0,
-                    }}
-                    _light={{
-                      backgroundColor: 'gray.50',
-                    }}>
-                    <Box>
-                      <Center>
-                        <HStack p={2}>
-                          <Image
-                            //size={'sm'}
-                            h={60}
-                            w={60}
-                            resizeMode="contain"
-                            source={require('../assets/LaboratoryTest.png')}
-                            alt="image"
-                          />
-                        </HStack>
-                      </Center>
-                    </Box>
-                    <Box>
-                      <Center>
-                    <Stack p="2" space={3}>
-                      <Stack space={2}>
-                        <Text fontSize="12" ml="-1">
-                          Laboraotry Test
-                        </Text>
-                      </Stack>
-                    </Stack>
-                    </Center>
-                    </Box>
-                  </Box>
-                </Box>
-              </HStack>
-
-              <HStack alignItems="center" p={1}>
-                <Box alignItems="center">
-                  <Box
-                    h={130}
-                    w={110}
-                    rounded="lg"
-                    overflow="hidden"
-                    borderColor="coolGray.200"
-                    borderWidth="1"
-                    _dark={{
-                      borderColor: 'coolGray.600',
-                      backgroundColor: 'gray.700',
-                    }}
-                    _web={{
-                      shadow: 2,
-                      borderWidth: 0,
-                    }}
-                    _light={{
-                      backgroundColor: 'gray.50',
-                    }}>
-                    <Box>
-                      <Center>
-                        <HStack p={2}>
-                          <Image
-                            //size={'sm'}
-                            h={60}
-                            w={60}
-                            resizeMode="contain"
-                            source={require('../assets/article.jpg')}
-                            alt="image"
-                          />
-                        </HStack>
-                      </Center>
-                    </Box>
-                    <Box>
-                      <Center>
-                    <Stack p="2" space={1}>
-                      <Stack space={1}>
-                        <Text fontSize="12" ml="-1">
-                          Health concern Article & video
-                        </Text>
-                      </Stack>
-                    </Stack>
-                    </Center>
-                    </Box>
-                  </Box>
-                </Box>
-              </HStack>
-            </ScrollView>
+    <Center>
+      <HStack w="100%" px="3" alignItems="center">
+        <ScrollView horizontal persistentScrollbar showsHorizontalScrollIndicator={false}>
+          <HStack alignItems="center" py={1}>
+            {otherservices.map((service, index) => (
+              <ServiceCardDoctor
+                key={index}
+                title={service.title}
+                image={service.image}
+                onPress={
+                  service.navigateTo
+                    ? () => navigation.navigate(service.navigateTo)
+                    : undefined
+                }
+              />
+            ))}
           </HStack>
-        </Center>
+        </ScrollView>
+      </HStack>
+    </Center>
+
+
       </ScrollView>
     </View>
   );
