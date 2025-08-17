@@ -1,705 +1,303 @@
-import React, { useEffect, useState } from "react";
-import { ScrollView, StyleSheet } from "react-native";
-import Papa from "papaparse";
+import React, { useEffect, useRef, useState } from "react";
+import { Dimensions } from "react-native";
 import {
   Avatar,
   Box,
-  Button,
   Center,
   FlatList,
   HStack,
   Heading,
   Icon,
-  Image,
   Input,
   NativeBaseProvider,
-  Spacer,
-  Spinner,
   Text,
   VStack,
+  Pressable,
+  Spinner,
+  Actionsheet,
+  useDisclose,
+  Select,
+  CheckIcon,
 } from "native-base";
 import Ionicons from "react-native-vector-icons/Ionicons";
-import AsyncStorage from "@react-native-async-storage/async-storage";
-import { firebase } from "@react-native-firebase/database";
-import RNFS from 'react-native-fs';
 
+export type Medicine = {
+  id: number;
+  brand_name: string;
+  generic: string;
+  manufacturer: string;
+  strength: string;
+  price: string;
+  unit: string;
+  descriptor: string;
+  _brand_lc?: string;
+  _generic_lc?: string;
+  _manu_lc?: string;
+};
 
-const ShopScreen = ({ navigation }: { navigation: any }) => {
+const CSV_URL =
+  "https://raw.githubusercontent.com/rezaulk/Barrons333/refs/heads/main/MedicineListOfBangladesh.csv";
+
+const { width } = Dimensions.get("window");
+const CARD_WIDTH = width / 2 - 20;
+
+const ShopScreen = () => {
   const [loading, setLoading] = useState(true);
-  const [dataSearching, setDataSearching] = React.useState(false);
+  const [list, setList] = useState<Medicine[]>([]);
+  const [query, setQuery] = useState("");
+  const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
+  const [sortOption, setSortOption] = useState("default");
 
-  const [medicinelist, setmedicinelist] = React.useState<Medicine[]>([]);
-  const [mainmedicinelist, setmainmedicinelist] = React.useState<Medicine[]>(
-    []
-  );
-
-  const [text, setText] = React.useState("");
-
-  const fetchCSVData = async () => {
-    setLoading(true);
-    // ResetCart();
-    const response = await fetch(
-      //"https://raw.githubusercontent.com/rezaulk/Barrons333/main/medicine.csv"
-       "https://raw.githubusercontent.com/rezaulk/Barrons333/refs/heads/main/MedicineListOfBangladesh.csv"
-    );
-    const csvData = await response.text();
-
-    const parsedData = Papa.parse(csvData, {
-      header: true,
-      complete: (results) => {
-        debugger;
-        const data = results.data;
-        const meta = results.meta;
-        const trimmedKeys = meta.fields.map((field) =>
-          field.replace(/\s/g, "_")
-        );
-
-        const trimmedData = data.map((row) => {
-          const trimmedRow = {};
-          trimmedKeys.forEach((key, index) => {
-            trimmedRow[key] = row[meta.fields[index]];
-          });
-          return trimmedRow;
-        });
-
-        
-        const _medicine_list: Medicine[] = [];
-        let number = 0;
-        // trimmedData.forEach((element) => {
-        //   if (element.package_container != undefined) {
-        //     let price = extractNumbers(element.package_container);
-
-        //     if (element.brand_name == "Amlacid") {
-        //       debugger;
-        //     }
-
-        //     price.forEach((elementprice) => {
-        //       // debugger;
-        //       const _medicine: Medicine = {
-        //         id: number + 1,
-        //         brand_id: 0,
-        //         brand_name: element.brand_name,
-        //         generic: element.generic,
-        //         manufacturer: element.manufacturer,
-        //         Package_Size: element.Package_Size,
-        //         dosage_form: element.dosage_form,
-        //         package_container: element.package_container,
-        //         slug: element.slug,
-        //         strength: element.strength,
-        //         type: "",
-        //         prices: [],
-        //         volume: elementprice.quantity,
-        //         price: elementprice.price,
-        //         unit: elementprice.unit,
-        //         select_quantity: "",
-        //         descriptor: elementprice.descriptor,
-        //       };
-
-        //       _medicine_list.push(_medicine);
-        //       number++;
-        //     });
-        //   }
-        // });
-
-
-        trimmedData.forEach((element) => {
-          if (element.package_container != undefined) {
-           
-              // debugger;
-              const _medicine: Medicine = {
-                id: number + 1,
-                brand_id: 0,
-                brand_name: element.brand_name,
-                generic: element.generic,
-                manufacturer: element.manufacturer,
-                Package_Size: element.Package_Size,
-                dosage_form: element.dosage_form,
-                package_container: element.package_container,
-                slug: element.slug,
-                strength: element.strength,
-                type: "",
-                prices: [],
-                volume: element.quantity,
-                price: element.price,
-                unit: element.unit,
-                select_quantity: "",
-                descriptor: element.descriptor,
-                stripSize: 0,
-                stripPrice: 0
-              };
-
-              _medicine_list.push(_medicine);
-              number++;
-          }
-        });
-        
-        setmedicinelist(_medicine_list);
-        setmainmedicinelist(_medicine_list);
-
-        uploadJson(_medicine_list);
-      },
-    });
-
-    setLoading(false);
-    console.log(medicinelist);
-  };
-
-  // const ObjectsToCsv = require('objects-to-csv');
-
-  const uploadJson = async (file: Medicine[]) => {
-
-    const parsedData = Papa.unparse(file, {
-      header: true,
-    });
-
-    debugger;
-    saveCSVToFile(parsedData);
-  }
-
-  const saveCSVToFile = async (csvString: string) => {
-    const path = `../../files/data.csv`;
-  
-    try {
-      await RNFS.writeFile(path, csvString, 'utf8');
-      // Alert.alert('Success', `CSV file saved to ${path}`);
-    } catch (error) {
-      debugger;
-      // Alert.alert('Error', `Failed to save CSV file: ${error.message}`);
-    }
-  };
-
-
+  const { isOpen, onOpen, onClose } = useDisclose();
+  const fullRef = useRef<Medicine[]>([]);
+  const searchTimer = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
-    fetchCSVData();
+    fetchAndParseCSV();
   }, []);
 
-  const extractPrices = (text, pattern) => {
-    const regex = new RegExp(pattern, "g");
-    const matches = [...text.matchAll(regex)];
-    const prices = {};
-    // debugger;
+  const fetchAndParseCSV = async () => {
+    try {
+      setLoading(true);
+      const res = await fetch(CSV_URL);
+      const text = await res.text();
 
-    // Array to store extracted values
-    const _matches = [];
-    let match;
-    while ((match = regex.exec(text)) !== null) {
-      if (text.includes("Unit Price")) {
-        _matches.push({
-          unitPrice: parseFloat(match[1]),
+      const rows = text
+        .split("\n")
+        .map((r) => r.trim())
+        .filter((r) => r.length > 0);
+      const headers = rows[0].split(",").map((h) => h.trim());
+
+      const medicines: Medicine[] = rows.slice(1).map((row, idx) => {
+        const cols = row.split(",");
+        const obj: any = {};
+        headers.forEach((h, i) => {
+          obj[h] = (cols[i] || "").trim();
         });
-      } else {
-        _matches.push({
-          // unitPrice: parseFloat(match[1]),
-          packSize: match[1],
-          packPrice: parseFloat(match[3]),
-        });
-      }
-    }
-
-    // matches.forEach(match => {
-    //   prices[match[0]] = match[1];
-    // });
-    return _matches;
-  };
-
-  function extractNumbers(input: string) {
-    // Regular expression to match numbers in the format specified
-
-    const _medicine_list: Prices[] = [];
-
-    if (input.includes("Unit Price")) {
-      //const text = "Unit Price: ৳ 5.00,(15's pack: ৳ 75.00)";
-
-      const unitPriceRegex = /Unit Price: ৳ (\d+,\d+\.\d+|\d+\.\d+)/;
-      const match = input.match(unitPriceRegex);
-      if (match) {
-        const _medicine: Prices = {
-          quantity: 1,
-          price: parseFloat(match[1]),
-          unit: "Unit",
-          descriptor: "",
-          PriceVolume: [],
+        return {
+          id: idx + 1,
+          brand_name: obj["brand_name"] || "",
+          generic: obj["generic"] || "",
+          manufacturer: obj["manufacturer"] || "",
+          strength: obj["strength"] || "",
+          price: obj["price"] || "0",
+          unit: obj["unit"] || "",
+          descriptor: obj["descriptor"] || "",
+          _brand_lc: (obj["brand_name"] || "").toLowerCase(),
+          _generic_lc: (obj["generic"] || "").toLowerCase(),
+          _manu_lc: (obj["manufacturer"] || "").toLowerCase(),
         };
-        _medicine_list.push(_medicine);
-      } else {
-        console.log("No match found: " + input);
-      }
-    } else if (input.includes("bottle")) {
-      // Regular expressions to match volume, unit, price, and currency
+      });
 
-      // "100 ml bottle: ৳ 40.12" //10 ml bottle: ৳ 20.00
-      const regex =
-        /(\d+)\s*(mg|ml?|liters?|gallons?|oz)\s*bottle:\s*৳\s*(\d+\.\d{2})/gi;
-      let match;
-
-      while ((match = regex.exec(input)) !== null) {
-        const _medicine: Prices = {
-          quantity: parseFloat(match[1]),
-          price: parseFloat(match[3]),
-          unit: match[2],
-          descriptor: "bottle",
-          PriceVolume: [],
-        };
-        _medicine_list.push(_medicine);
-      }
-    } else if (
-      input.includes("vial") ||
-      input.includes("container") ||
-      input.includes("drop") ||
-      input.includes("tube") ||
-      input.includes("sprays")
-    ) {
-      // const text = "30 mg vial: ৳ 1,700.00,100 mg vial: ৳ 4,900.00,300 mg vial: ৳ 11,500.00";
-      const regex =
-        /(\d+)\s*(mg|gm|ml|metered)\s*(vial|container|drop|tube|sprays):\s*৳\s*([\d,]+\.\d+)/g;
-      // Use the regex pattern to find all matches in the text
-      let match;
-      while ((match = regex.exec(input)) !== null) {
-        const _medicine: Prices = {
-          quantity: parseFloat(match[1]),
-          price: parseFloat(match[4]),
-          unit: match[2],
-          descriptor: match[2],
-          PriceVolume: [],
-        };
-
-        _medicine_list.push(_medicine);
-      }
-    } else if (input.includes("pre-filled syringe")) {
-      const pattern =
-        /(([\d.]+) (mg|ml) pre-filled syringe): ৳ ([\d,]+\.\d+)(?:,\((\d+'s pack): ৳ ([\d,]+\.\d+)\))?/g;
-
-      let match: RegExpExecArray | null;
-
-      while ((match = pattern.exec(input)) !== null) {
-        const _medicine: Prices = {
-          quantity: parseFloat(match[4]),
-          price: parseFloat(match[4]),
-          unit: match[4],
-          descriptor: match[4],
-          PriceVolume: [],
-        };
-
-        _medicine_list.push(_medicine);
-      }
-    } else if (
-      input.includes("pre-filled pen") ||
-      input.includes("Pre-filled Pen")
-    ) {
-      const pattern = /(\d+) (\w+) (\w+ \w+): ৳ ([\d,.]+)/;
-
-      let match: RegExpExecArray | null;
-
-      while ((match = pattern.exec(input)) !== null) {
-        const _medicine: Prices = {
-          quantity: parseInt(match[4], 10),
-          price: parseInt(match[4], 10),
-          unit: match[2],
-          descriptor: match[2],
-          PriceVolume: [],
-        };
-
-        _medicine_list.push(_medicine);
-      }
-    } else if (
-      input.includes("tablet") ||
-      input.includes("bag") ||
-      input.includes("ampoule") ||
-      input.includes("solution") ||
-      input.includes("sachet") ||
-      input.includes("cartridge") ||
-      input.includes("pack") ||
-      input.includes("pot") ||
-      input.includes("jar") ||
-      input.includes("Jar") ||
-      input.includes("PenSet") ||
-      input.includes("syrup") ||
-      input.includes("KwikPen") ||
-      input.includes("pen") ||
-      input.includes("Pen") ||
-      input.includes("bar")
-    ) {
-      const pattern = /(\d+) (\w+) (\w+): ৳ ([\d,.]+)/g;
-
-      let match1: RegExpExecArray | null;
-      const units = [];
-
-      while ((match1 = pattern.exec(input)) !== null) {
-        const _medicine: Prices = {
-          quantity: parseInt(match1[1]),
-          price: parseInt(match1[4], 10),
-          unit: match1[2],
-          descriptor: "",
-          PriceVolume: [],
-        };
-
-        _medicine_list.push(_medicine);
-      }
-    } else if (
-      input.includes("strip") ||
-      input.includes("blister") ||
-      input.includes("can") ||
-      input.includes("puffs")
-    ) {
-      const pattern1 = /(\d+)'?s (\w+): ৳ ([\d.]+)/g;
-
-      let match1: RegExpExecArray | null;
-      const units = [];
-
-      while ((match1 = pattern1.exec(input)) !== null) {
-        const _medicine: Prices = {
-          quantity: 0,
-          price: 0,
-          unit: "",
-          descriptor: "",
-          PriceVolume: [],
-        };
-
-        // debugger;
-
-        // (_medicine.price = parseInt(match1[4])), // Extract and parse quantity as integer
-        //   (_medicine.unit = match1[2]), // Extract unit type
-        //   (_medicine.quantity = match1[1]), // Extract descriptor (strip, pot, etc.)
-        //   //  _medicine.price= parseFloat(match1[4]) // Extract and parse price as float
-
-        _medicine_list.push(_medicine);
-      }
-    } else if (input.includes("mg:")) {
-      const pattern1 = /(\d+) (\w+): ৳ ([\d.]+)/;
-
-      let match1: RegExpExecArray | null;
-      const units = [];
-
-      const match5 = input.match(pattern1);
-
-      if (match5) {
-        const unitPrice = parseFloat(match5[1]);
-
-        const _medicine: Prices = {
-          quantity: parseFloat(match5[1]),
-          price: parseFloat(match5[3]),
-          unit: match5[2],
-          descriptor: "",
-          PriceVolume: [],
-        };
-
-        _medicine_list.push(_medicine);
-      }
-    } else if (input.includes("dose") || input.includes("spray")) {
-      const pattern = /(\d+) (\w+(?: \w+)*) ?(?:\((\w+)\))? ?: ৳ ([\d.]+)/g;
-
-      let match;
-      const units = [];
-
-      while ((match = pattern.exec(input)) !== null) {
-        const _medicine: Prices = {
-          quantity: 0,
-          price: 0,
-          unit: "",
-          descriptor: "",
-          PriceVolume: [],
-        };
-
-        // debugger;
-
-        // (_medicine.price = parseInt(match[4])), // Extract and parse quantity as integer
-        //   (_medicine.unit = match[2]), // Extract unit type
-        //   (_medicine.quantity = parseInt(match[1])), // Extract descriptor (strip, pot, etc.)
-        //   //  _medicine.price= parseFloat(match1[4]) // Extract and parse price as float
-
-        _medicine_list.push(_medicine);
-      }
-    } else {
-      // setCount((count) => count + 1);
-      console.log("input: " + input);
-    }
-
-    return _medicine_list; // Return null if the pattern does not match
-  }
-
-  function extractNumbers1(input: string): { _medicine_list: Prices } | null {
-    // Regular expression to match numbers in the format specified
-
-    //const text = "Unit Price: ৳ 5.00,(15's pack: ৳ 75.00)";
-    const unitPricePattern = "Unit Price: ৳ (\\d+\\.\\d{2})";
-    const packPricePattern = "\\((\\d+'s pack): ৳ (\\d+\\.\\d{2})\\)";
-    // const regex = /Unit Price: ৳ (\d+\.\d+).*\((\d+\'s (\w+)): ৳ (\d+\.\d+)/;
-    // const regex = /Unit Price: ৳ (\d+\.\d+).*\((\d+\'s pack): ৳ (\d+\.\d+)/;
-
-    const _medicine_list: Prices = [];
-    const _medicine: Prices = {};
-
-    if (input.includes("Unit Price")) {
-      const unitPrice = extractPrices(input, unitPricePattern);
-
-      const _unitPrice = extractPrices(input, packPricePattern);
-      // const _unitPrice1 = extractPrices(input, regex);
-
-      debugger;
-
-      _medicine.price = unitPrice;
-      _medicine.volume = 1;
-
-      debugger;
-    }
-    // const packPrice = extractPrices(input, packPricePattern);
-
-    _medicine_list.push(_medicine);
-
-    return null; // Return null if the pattern does not match
-  }
-
-   
-
-  const addToCart = async (id: number) => {
-    console.log(id);
-
-    let medicine: Medicine = mainmedicinelist.find((x) => x.id == id);
-    debugger;
-
-    let medicine_list = await getData();
-    if (medicine_list == null) {
-      let medicine1: Medicine[] = [];
-      medicine.select_quantity = "1";
-
-      medicine1.push(medicine);
-
-      await storeData(JSON.stringify(medicine1));
-    } else {
-      debugger;
-      let _medicine: Medicine[] = JSON.parse(medicine_list);
-
-      let medicine_check = _medicine.find((x) => x.id == id);
-      if (medicine_check == null) {
-        medicine.select_quantity = "1";
-        _medicine.push(medicine);
-
-        await storeData(JSON.stringify(_medicine));
-      }
-    }
-    debugger;
-  };
-
-  const storeData = async (value: string) => {
-    try {
-      await AsyncStorage.setItem("@shoppingcart", value);
-    } catch (e) {
-      // saving error
+      fullRef.current = medicines;
+      setList(medicines.slice(0, 60));
+      setLoading(false);
+    } catch (err) {
+      console.error("Fetch error:", err);
+      setLoading(false);
     }
   };
 
-  const ResetCart = async () => {
-    try {
-      await AsyncStorage.removeItem("@shoppingcart");
-      await AsyncStorage.removeItem("@CurrentOrder");
-      await AsyncStorage.removeItem("@TotalOrder");
-
-
-      // await AsyncStorage.removeItem("@shippingAddress");
-    } catch (e) {
-      // saving error
+  const applySort = (data: Medicine[]) => {
+    switch (sortOption) {
+      case "price_low":
+        return [...data].sort(
+          (a, b) => parseFloat(a.price) - parseFloat(b.price)
+        );
+      case "price_high":
+        return [...data].sort(
+          (a, b) => parseFloat(b.price) - parseFloat(a.price)
+        );
+      case "az":
+        return [...data].sort((a, b) =>
+          a.brand_name.localeCompare(b.brand_name)
+        );
+      case "za":
+        return [...data].sort((a, b) =>
+          b.brand_name.localeCompare(a.brand_name)
+        );
+      default:
+        return data;
     }
   };
 
-  const getData = async () => {
-    try {
-      const value = await AsyncStorage.getItem("@shoppingcart");
-      // debugger;
-      if (value !== null) {
-        // value previously stored
-        return value;
-      } else {
-        return null;
+  const onSearchChange = (text: string) => {
+    setQuery(text);
+    if (searchTimer.current) clearTimeout(searchTimer.current);
+
+    searchTimer.current = setTimeout(() => {
+      const q = text.trim().toLowerCase();
+      let filtered = fullRef.current;
+      if (q) {
+        filtered = fullRef.current.filter(
+          (m) =>
+            m._brand_lc?.includes(q) ||
+            m._generic_lc?.includes(q) ||
+            m._manu_lc?.includes(q)
+        );
       }
-    } catch (e) {
-      // error reading value
-    }
+      setList(applySort(filtered));
+    }, 250);
   };
 
-  const SearchFilterFunction = async (text: string) => {
-    // SearchFilterFunction(text) {
-
-    debugger;
-    //passing the inserted text in textinput
-    const newData = mainmedicinelist.filter(function (item: Medicine) {
-      //applying filter for the inserted text in search bar
-      const itemData = item.generic
-        ? item.brand_name.toUpperCase()
-        : "".toUpperCase();
-      const textData = text.toUpperCase();
-      return itemData.indexOf(textData) > -1;
-    });
-
-    setmedicinelist(newData);
-    setText(text);
-    setDataSearching(true);
+  const clearSearch = () => {
+    setQuery("");
+    setList(applySort(fullRef.current.slice(0, 60)));
   };
 
-  const searchDataCleaned = () => {
-    setText("");
-    setDataSearching(false);
-  };
+  const renderGridItem = ({ item }: { item: Medicine }) => (
+    <Box
+      borderWidth={1}
+      borderColor="coolGray.200"
+      borderRadius="10"
+      m={2}
+      p={3}
+      w={CARD_WIDTH}
+      bg="white"
+      shadow={1}
+    >
+      <Center>
+        <Avatar size="64px" source={require("../../assets/capsules.png")} />
+        <Text bold mt={2} fontSize="sm" textAlign="center">
+          {item.brand_name}
+        </Text>
+        <Text fontSize="xs" color="gray.500">
+          {item.price} {item.unit}
+        </Text>
+      </Center>
+    </Box>
+  );
+
+  const renderListItem = ({ item }: { item: Medicine }) => (
+    <Box borderBottomWidth={1} borderColor="coolGray.100" p={3} bg="white">
+      <HStack space={3} alignItems="center">
+        <Avatar size="48px" source={require("../../assets/capsules.png")} />
+        <VStack flex={1}>
+          <Text bold>{item.brand_name}</Text>
+          <Text fontSize="xs" color="gray.500">
+            {item.generic}
+          </Text>
+          <Text fontSize="xs" color="gray.500">
+            {item.price} {item.unit}
+          </Text>
+        </VStack>
+      </HStack>
+    </Box>
+  );
 
   return (
     <NativeBaseProvider>
       {loading ? (
         <Center flex={1} px="3">
-          {" "}
           <HStack space={2} alignItems="center">
-            <Spinner accessibilityLabel="Loading posts" />
+            <Spinner />
             <Heading color="primary.500" fontSize="md">
-              Loading
+              Loading…
             </Heading>
-          </HStack>{" "}
+          </HStack>
         </Center>
       ) : (
-        <ScrollView>
-          <VStack w="100%" space={5} alignSelf="center" padding={5}>
-            <Input
-              placeholder="Search"
-              onChangeText={(text) => SearchFilterFunction(text)}
-              variant="filled"
-              width="100%"
-              borderRadius="10"
-              py="1"
-              px="2"
-              InputLeftElement={
+        <VStack flex={1} padding={3} space={3} bg="gray.50">
+          {/* 🔍 Search Bar */}
+          <Input
+            placeholder="Search medicine..."
+            value={query}
+            onChangeText={onSearchChange}
+            variant="filled"
+            borderRadius="12"
+            py="1"
+            px="2"
+            bg="white"
+            shadow={1}
+            InputLeftElement={
+              <Icon
+                ml="2"
+                size="4"
+                color="gray.400"
+                as={<Ionicons name="search-outline" />}
+              />
+            }
+            InputRightElement={
+              query ? (
                 <Icon
+                  onPress={clearSearch}
                   ml="2"
                   size="4"
                   color="gray.400"
-                  as={<Ionicons name="search-outline" />}
+                  as={<Ionicons name="close-circle" />}
                 />
-              }
-              InputRightElement={
-                dataSearching == true ? (
-                  <Icon
-                    onPress={() => searchDataCleaned()}
-                    ml="2"
-                    size="4"
-                    color="gray.400"
-                    as={<Ionicons name="trash" />}
-                  />
-                ) : undefined
-              }
-
-              // datafetched == true ? InputRightElement={ datafetched == true ? <Icon ml="2" size="4" color="gray.400" as={<Ionicons name="ios-search" />} />  : null }
-            />
-          </VStack>
-
-          <FlatList
-            data={medicinelist}
-            renderItem={({ item }) => (
-              <Box
-                borderBottomWidth="1"
-                _dark={{
-                  borderColor: "muted.50",
-                }}
-                borderColor="muted.800"
-                pl={["0", "4"]}
-                pr={["0", "5"]}
-                py="2"
-                paddingLeft={5}
-                paddingRight={5}
-              >
-                <HStack space={[2, 3]} justifyContent="space-between">
-                  <Avatar
-                    size="48px"
-                    source={require("../../assets/capsules.png")}
-                    // source={{
-                    //   uri: item.brand_name,
-                    // }}
-                  />
-                  <VStack w={"70%"}>
-                    <Text
-                      _dark={{
-                        color: "warmGray.50",
-                      }}
-                      color="coolGray.800"
-                      bold
-                    >
-                      {item.brand_name}
-                    </Text>
-                    <Text
-                      color="coolGray.600"
-                      _dark={{
-                        color: "warmGray.200",
-                      }}
-                    >
-                      {item.strength} - {item.descriptor}
-                    </Text>
-
-                    <Text
-                      color="coolGray.600"
-                      _dark={{
-                        color: "warmGray.200",
-                      }}
-                    >
-                      {item.manufacturer}
-                    </Text>
-                    <Text
-                      color="coolGray.600"
-                      _dark={{
-                        color: "warmGray.200",
-                      }}
-                    >
-                      {item.generic}
-                    </Text>
-                    <Text
-                      color="coolGray.600"
-                      _dark={{
-                        color: "warmGray.200",
-                      }}
-                    >
-                      {item.package_container}
-                    </Text>
-                    {item.descriptor == "bottle" ? (
-                      <Text
-                        color="coolGray.600"
-                        _dark={{
-                          color: "warmGray.200",
-                        }}
-                      >
-                        1 X {item.volume} {item.unit} {item.descriptor}
-                      </Text>
-                    ) : null}
-                  </VStack>
-
-                  <Spacer />
-
-                  <Box alignItems="end">
-                    <Button onPress={() => addToCart(item.id)}>Add</Button>
-                  </Box>
-
-                  <Spacer />
-                </HStack>
-              </Box>
-            )}
-            keyExtractor={(item) => item.id}
+              ) : undefined
+            }
           />
-        </ScrollView>
+
+          {/* ⚙️ Sort / Filter / View */}
+          <HStack
+            justifyContent="space-between"
+            alignItems="center"
+            bg="white"
+            p={2}
+            borderRadius="12"
+            shadow={1}
+          >
+            {/* Sort dropdown inline */}
+            <Select
+              selectedValue={sortOption}
+              minWidth="120"
+              placeholder="Sort"
+              _selectedItem={{ bg: "teal.600", endIcon: <CheckIcon size="5" /> }}
+              onValueChange={(v) => {
+                setSortOption(v);
+                setList(applySort(list));
+              }}
+            >
+              <Select.Item label="Default" value="default" />
+              <Select.Item label="Price: Low to High" value="price_low" />
+              <Select.Item label="Price: High to Low" value="price_high" />
+              <Select.Item label="A-Z" value="az" />
+              <Select.Item label="Z-A" value="za" />
+            </Select>
+
+            {/* Filter button */}
+            <Pressable onPress={onOpen}>
+              <HStack alignItems="center" space={1}>
+                <Icon as={Ionicons} name="options-outline" size="5" color="gray.600" />
+                <Text fontSize="sm" color="gray.700">Filter</Text>
+              </HStack>
+            </Pressable>
+
+            {/* View toggle */}
+            <Pressable onPress={() => setViewMode(viewMode === "grid" ? "list" : "grid")}>
+              <Icon
+                as={Ionicons}
+                name={viewMode === "grid" ? "list" : "grid"}
+                size="6"
+                color="gray.600"
+              />
+            </Pressable>
+          </HStack>
+
+          {/* Medicine List */}
+          <FlatList
+            data={list}
+            renderItem={viewMode === "grid" ? renderGridItem : renderListItem}
+            keyExtractor={(item) => item.id.toString()}
+            numColumns={viewMode === "grid" ? 2 : 1}
+            key={viewMode}
+            showsVerticalScrollIndicator={false}
+          />
+
+          {/* Filter ActionSheet (can add category/price filters later) */}
+          <Actionsheet isOpen={isOpen} onClose={onClose}>
+            <Actionsheet.Content>
+              <Text bold mb={2}>
+                Filters coming soon…
+              </Text>
+            </Actionsheet.Content>
+          </Actionsheet>
+        </VStack>
       )}
     </NativeBaseProvider>
   );
 };
 
 export default ShopScreen;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 16,
-    paddingTop: 30,
-    backgroundColor: "#fff",
-  },
-  row: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    marginBottom: 10,
-  },
-  cell: {
-    flex: 1,
-    margin: 3,
-  },
-});

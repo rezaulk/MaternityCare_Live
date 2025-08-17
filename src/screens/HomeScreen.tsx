@@ -89,7 +89,7 @@ const services = [
   {
     title: 'Medicine',
     image: require('../assets/Medicine.png'),
-    navigateTo: 'ShopScreen',
+    navigateTo: 'ShopCategoryScreen',
 
   },
   {
