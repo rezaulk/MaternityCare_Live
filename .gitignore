@@ -95,3 +95,4 @@ fastlane/readme.md
 android/.gradle/file-system.probe
 /android/app/build/generated
 /android/app/build
+/android/.gradle/8.0.1
