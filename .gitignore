@@ -1,81 +1,68 @@
-# React Native
+# React Native standard ignores
 
 # Node
 node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-yarn.lock
 package-lock.json
+yarn.lock
 
 # Logs
 *.log
-logs
+logs/
 *.pid
 *.seed
 *.pid.lock
 
-# Metro bundler
-.expo
-.expo-shared
-.expo/*
-.expo-shared/*
-.expo-dev
-
-# React Native Packager
-/packager-info.json
-/.rncache
-/metro-cache
-/metro-cache/*
-/react-native.config.js
+# React Native / Metro
+.expo/
+.expo-shared/
+.expo-dev/
+.rncache/
+metro-cache/
+*.bundle
+*.map
 
 # iOS
 ios/build/
 ios/Pods/
 ios/Podfile.lock
-ios/Podfile
 ios/*.xcworkspace
-ios/*.xcuserstate
-ios/.DS_Store
 ios/*/xcuserdata
 ios/*/build
-
-# Xcode
-*.mode1v3
-*.mode2v3
-*.perspectivev3
-*.pbxuser
-*.xcworkspace
-xcuserdata/
+ios/.DS_Store
 DerivedData/
-*.hmap
-*.ipa
-*.xcuserstate
-project.xcworkspace/
-!default.mode1v3
-!default.mode2v3
-!default.perspectivev3
-!default.pbxuser
 
 # Android
 android/.gradle/
+android/.gradle/*
+android/.idea/
+android/local.properties
 android/app/build/
 android/build/
+android/captures/
+android/.cxx/
 *.iml
-.gradle
-local.properties
+
+# Sometimes Gradle caches go into project root
+.gradle/
+gradle-app.setting
+build/
+**/build/
+**/bin/
+**/obj/
+
+# APK / ARTIFACTS
 *.apk
-*.ap_ 
+*.ap_
+*.aab
 *.dex
 *.class
+*.so
 *.jar
 *.war
 *.ear
-*.db
-
-# Bundling
-*.bundle
-*.map
 
 # IDEs
 .vscode/
@@ -86,11 +73,8 @@ local.properties
 *.suo
 *.ntvs*
 *.njsproj
-*.sln
 *.xcodeproj
 *.xcworkspace
-*.cxxproj
-*.orig
 
 # Fastlane
 fastlane/report.xml
@@ -104,11 +88,6 @@ fastlane/readme.md
 .env
 .env.local
 .env.*.local
-
-# Watchman
 .watchmanconfig
-
-# Misc cache
 *.tmp
 *.temp
-.tmp/
