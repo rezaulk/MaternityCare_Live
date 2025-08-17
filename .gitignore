@@ -1,78 +1,114 @@
-# OSX
-#
-.DS_Store
+# React Native
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+yarn.lock
+package-lock.json
+
+# Logs
+*.log
+logs
+*.pid
+*.seed
+*.pid.lock
+
+# Metro bundler
+.expo
+.expo-shared
+.expo/*
+.expo-shared/*
+.expo-dev
+
+# React Native Packager
+/packager-info.json
+/.rncache
+/metro-cache
+/metro-cache/*
+/react-native.config.js
+
+# iOS
+ios/build/
+ios/Pods/
+ios/Podfile.lock
+ios/Podfile
+ios/*.xcworkspace
+ios/*.xcuserstate
+ios/.DS_Store
+ios/*/xcuserdata
+ios/*/build
 
 # Xcode
-#
-build/
-*.pbxuser
-!default.pbxuser
 *.mode1v3
-!default.mode1v3
 *.mode2v3
-!default.mode2v3
 *.perspectivev3
-!default.perspectivev3
-xcuserdata
-*.xccheckout
-*.moved-aside
-DerivedData
+*.pbxuser
+*.xcworkspace
+xcuserdata/
+DerivedData/
 *.hmap
 *.ipa
 *.xcuserstate
-ios/.xcode.env.local
+project.xcworkspace/
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3
+!default.pbxuser
 
-# Android/IntelliJ
-#
-build/
-.idea
+# Android
+android/.gradle/
+android/app/build/
+android/build/
+*.iml
 .gradle
 local.properties
-*.iml
-*.hprof
-.cxx/
-*.keystore
-!debug.keystore
+*.apk
+*.ap_ 
+*.dex
+*.class
+*.jar
+*.war
+*.ear
+*.db
 
-# node.js
-#
-node_modules/
-npm-debug.log
-yarn-error.log
+# Bundling
+*.bundle
+*.map
 
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
-# screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sln
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.xcodeproj
+*.xcworkspace
+*.cxxproj
+*.orig
 
-**/fastlane/report.xml
-**/fastlane/Preview.html
-**/fastlane/screenshots
-**/fastlane/test_output
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md
 
-# Bundle artifact
-*.jsbundle
+# Misc
+.DS_Store
+.env
+.env.local
+.env.*.local
 
-# Ruby / CocoaPods
-/ios/Pods/
-/vendor/bundle/
+# Watchman
+.watchmanconfig
 
-# Temporary files created by Metro to check the health of the file watcher
-.metro-health-check*
-android/.gradle/8.0.1/executionHistory/executionHistory.bin
-android/.gradle/8.0.1/executionHistory/executionHistory.bin
-android/app/build/intermediates/processed_res/debug/out/output-metadata.json
-android/.gradle/8.0.1/executionHistory/executionHistory.bin
-android/.gradle/8.0.1/executionHistory/executionHistory.lock
-android/.gradle/8.0.1/fileHashes/fileHashes.bin
-android/.gradle/8.0.1/fileHashes/fileHashes.lock
-android/.gradle/buildOutputCleanup/buildOutputCleanup.lock
-android/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt
-android/app/build/intermediates/processed_res/debug/out/output-metadata.json
-android/app/build/intermediates/runtime_symbol_list/debug/R.txt
-android/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt
-android/app/build/intermediates/merged_manifest/debug/AndroidManifest.xml
-android/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml
-android/app/build/intermediates/packaged_manifests/debug/AndroidManifest.xml
+# Misc cache
+*.tmp
+*.temp
+.tmp/
