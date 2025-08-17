@@ -91,3 +91,7 @@ fastlane/readme.md
 .watchmanconfig
 *.tmp
 *.temp
+/android/.gradle/8.0.1
+android/.gradle/file-system.probe
+/android/app/build/generated
+/android/app/build
