@@ -4178,6 +4178,8 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string media_projection_notification_text
+string media_projection_notification_title
 string menu_description
 string menubar_description
 string menuitem_description
@@ -4217,6 +4219,7 @@ string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string mtrl_timepicker_confirm
+string ongoing_notification_channel_name
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through

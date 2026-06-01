@@ -36,7 +36,7 @@ import CheckoutScreen from './src/screens/medicine/CheckoutScreen';
 import OrderScreen from './src/screens/medicine/OrderScreen';
 import OrderDetails from './src/screens/medicine/OrderDetails';
 import ShopCategoryScreen from './src/screens/medicine/ShopCategoryScreen';
-
+import CallScreen from './src/screens/CallScreen';
 
 
 
@@ -414,6 +414,16 @@ export default function App() {
             }}
             component={Meeting}
           />
+
+<Stack.Screen
+            name="CallScreen"
+            options={{
+              title: 'CallScreen',
+            }}
+            component={CallScreen}
+          />
+
+          
 
           <Stack.Screen
             name="ChatScreen"

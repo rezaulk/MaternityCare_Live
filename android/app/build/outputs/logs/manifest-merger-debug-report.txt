@@ -1,52 +1,52 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:1:1-40:12
-INJECTED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:1:1-40:12
-INJECTED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:1:1-40:12
-INJECTED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:1:1-40:12
-MERGED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:1:1-40:12
+ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:1:1-40:12
+INJECTED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:1:1-40:12
+INJECTED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:1:1-40:12
+INJECTED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:1:1-40:12
+MERGED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:1:1-40:12
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.182.0] C:\Users\rezau\.gradle\caches\transforms-3\d192af5cebd5b7edd26f83f9d6ed8585\transformed\jetified-flipper-network-plugin-0.182.0\AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.182.0] C:\Users\rezau\.gradle\caches\transforms-3\795a622740cba963847dfe988b2d1ccd\transformed\jetified-flipper-fresco-plugin-0.182.0\AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper:0.182.0] C:\Users\rezau\.gradle\caches\transforms-3\57670af1a9368179ca89ad5361b747b0\transformed\jetified-flipper-0.182.0\AndroidManifest.xml:8:1-18:12
-MERGED from [:amplitude_react-native] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@amplitude\react-native\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:giphy_react-native-sdk] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@giphy\react-native-sdk\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:jitsi_react-native-sdk] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@jitsi\react-native-sdk\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:react-native-async-storage_async-storage] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-async-storage\async-storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:react-native-community_clipboard] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-community\clipboard\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:react-native-community_netinfo] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-10:12
-MERGED from [:react-native-community_slider] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-community\slider\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:react-native-firebase_auth] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-firebase_database] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\database\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-firebase_firestore] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\firestore\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:react-native-firebase_storage] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-firebase_app] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-30:12
-MERGED from [:react-native-google-signin_google-signin] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-google-signin\google-signin\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:lottie-react-native] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\lottie-react-native\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:react-native-background-timer] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-background-timer\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-calendar-events] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-calendar-events\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-10:12
-MERGED from [:react-native-default-preference] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-default-preference\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:react-native-device-info] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-device-info\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:react-native-fs] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-fs\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-gesture-handler] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:react-native-get-random-values] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-get-random-values\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:react-native-immersive-mode] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-immersive-mode\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:react-native-keep-awake] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-keep-awake\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:react-native-maps] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-maps\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:react-native-orientation-locker] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-orientation-locker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:react-native-pager-view] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-pager-view\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:react-native-performance] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-15:12
-MERGED from [:react-native-safe-area-context] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:react-native-screens] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:react-native-share] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-19:12
-MERGED from [:react-native-splash-screen] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-splash-screen\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:react-native-svg] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-svg\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:react-native-vector-icons] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:react-native-video] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-video\android\buildOutput_2fa6559e287e4da3850b9bacddcac0fe\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:react-native-webrtc] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-webrtc\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:react-native-webview] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-19:12
+MERGED from [:amplitude_react-native] D:\Git\_Github\MaternityCare_Live\node_modules\@amplitude\react-native\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:giphy_react-native-sdk] D:\Git\_Github\MaternityCare_Live\node_modules\@giphy\react-native-sdk\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:jitsi_react-native-sdk] D:\Git\_Github\MaternityCare_Live\node_modules\@jitsi\react-native-sdk\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-async-storage_async-storage] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-async-storage\async-storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-community_clipboard] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-community\clipboard\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-community_netinfo] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-10:12
+MERGED from [:react-native-community_slider] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-community\slider\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-firebase_auth] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-firebase_database] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\database\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-firebase_firestore] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\firestore\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-firebase_storage] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-firebase_app] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-30:12
+MERGED from [:react-native-google-signin_google-signin] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-google-signin\google-signin\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:lottie-react-native] D:\Git\_Github\MaternityCare_Live\node_modules\lottie-react-native\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-background-timer] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-background-timer\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-calendar-events] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-calendar-events\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-10:12
+MERGED from [:react-native-default-preference] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-default-preference\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-device-info] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-device-info\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-fs] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-fs\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-gesture-handler] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-get-random-values] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-get-random-values\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-immersive-mode] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-immersive-mode\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-keep-awake] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-keep-awake\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-maps] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-maps\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-orientation-locker] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-orientation-locker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-pager-view] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-pager-view\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-performance] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:react-native-safe-area-context] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-screens] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-share] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-19:12
+MERGED from [:react-native-splash-screen] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-splash-screen\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-svg] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-svg\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-vector-icons] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-video] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-video\android\buildOutput_2fa6559e287e4da3850b9bacddcac0fe\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-webrtc] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-webrtc\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:react-native-webview] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-19:12
 MERGED from [com.facebook.react:react-android:0.72.3] C:\Users\rezau\.gradle\caches\transforms-3\07dda0d5c23854d613e1c30a8f0101f6\transformed\jetified-react-android-0.72.3-debug\AndroidManifest.xml:2:1-7:12
 MERGED from [com.facebook.react:hermes-android:0.72.3] C:\Users\rezau\.gradle\caches\transforms-3\c90f95a0796270537fc6b7b00519d7e3\transformed\jetified-hermes-android-0.72.3-debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:react-native-sound] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-sound\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-8:12
+MERGED from [:react-native-sound] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-sound\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-8:12
 MERGED from [com.giphy.sdk:ui:2.3.4] C:\Users\rezau\.gradle\caches\transforms-3\4a851c99f70975e4cef6ad337eae199c\transformed\jetified-ui-2.3.4\AndroidManifest.xml:2:1-23:12
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.6.0] C:\Users\rezau\.gradle\caches\transforms-3\a1978e87d401680598024145cb0ac00d\transformed\jetified-imagepipeline-okhttp3-2.6.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.airbnb.android:lottie:6.4.0] C:\Users\rezau\.gradle\caches\transforms-3\6188ed8b22a5916867beb62f07437be7\transformed\jetified-lottie-6.4.0\AndroidManifest.xml:2:1-9:12
@@ -166,40 +166,40 @@ MERGED from [com.amplitude:android-sdk:2.34.0] C:\Users\rezau\.gradle\caches\tra
 MERGED from [com.squareup.duktape:duktape-android:1.3.0] C:\Users\rezau\.gradle\caches\transforms-3\5579d31bcc2837b5211807af106b3067\transformed\jetified-duktape-android-1.3.0\AndroidManifest.xml:2:1-14:12
 MERGED from [com.jakewharton.timber:timber:4.7.1] C:\Users\rezau\.gradle\caches\transforms-3\7064afb6bc96c3e41a28b375c0f5c93b\transformed\jetified-timber-4.7.1\AndroidManifest.xml:2:1-9:12
 MERGED from [com.android.installreferrer:installreferrer:1.1.2] C:\Users\rezau\.gradle\caches\transforms-3\fecf1d63e910b7e865cbe6a72ccd06b3\transformed\jetified-installreferrer-1.1.2\AndroidManifest.xml:2:1-13:12
-MERGED from [org.jitsi:webrtc:111.0.1] C:\Users\rezau\.gradle\caches\transforms-3\882e12047b37d485572163a0fcd654ae\transformed\jetified-webrtc-111.0.1\AndroidManifest.xml:2:1-11:12
+MERGED from [org.jitsi:webrtc:124.0.0] C:\Users\rezau\.gradle\caches\transforms-3\82bf46d5f5997730f31770010b277514\transformed\jetified-webrtc-124.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.fresco:fbcore:2.6.0] C:\Users\rezau\.gradle\caches\transforms-3\8e1baf0d23863a4b534b24773d610902\transformed\jetified-fbcore-2.6.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\rezau\.gradle\caches\transforms-3\38e5784e732166e9cfc981803b5fe152\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
-INJECTED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\Git\_Github\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\Git\_Github\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\Git\_Github\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:2:1-24:12
 	package
-		INJECTED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:1:1-40:12
-		INJECTED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml
+		INJECTED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:1:1-40:12
+		INJECTED from D:\Git\_Github\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:1:1-40:12
-		INJECTED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml
+		INJECTED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:1:1-40:12
+		INJECTED from D:\Git\_Github\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml
 	xmlns:tools
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:3:5-51
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:1:1-40:12
-		INJECTED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml
+		INJECTED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:1:1-40:12
+		INJECTED from D:\Git\_Github\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:1:11-69
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:3:5-67
-MERGED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:3:5-67
-MERGED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:3:5-67
+ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:3:5-67
+MERGED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:3:5-67
+MERGED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:3:5-67
 MERGED from [com.facebook.flipper:flipper:0.182.0] C:\Users\rezau\.gradle\caches\transforms-3\57670af1a9368179ca89ad5361b747b0\transformed\jetified-flipper-0.182.0\AndroidManifest.xml:15:5-67
 MERGED from [com.facebook.flipper:flipper:0.182.0] C:\Users\rezau\.gradle\caches\transforms-3\57670af1a9368179ca89ad5361b747b0\transformed\jetified-flipper-0.182.0\AndroidManifest.xml:15:5-67
-MERGED from [:react-native-firebase_auth] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
-MERGED from [:react-native-firebase_auth] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
-MERGED from [:react-native-firebase_database] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\database\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
-MERGED from [:react-native-firebase_database] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\database\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
-MERGED from [:react-native-firebase_storage] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
-MERGED from [:react-native-firebase_storage] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
+MERGED from [:react-native-firebase_auth] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
+MERGED from [:react-native-firebase_auth] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
+MERGED from [:react-native-firebase_database] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\database\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
+MERGED from [:react-native-firebase_database] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\database\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
+MERGED from [:react-native-firebase_storage] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
+MERGED from [:react-native-firebase_storage] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
 MERGED from [com.giphy.sdk:ui:2.3.4] C:\Users\rezau\.gradle\caches\transforms-3\4a851c99f70975e4cef6ad337eae199c\transformed\jetified-ui-2.3.4\AndroidManifest.xml:9:5-67
 MERGED from [com.giphy.sdk:ui:2.3.4] C:\Users\rezau\.gradle\caches\transforms-3\4a851c99f70975e4cef6ad337eae199c\transformed\jetified-ui-2.3.4\AndroidManifest.xml:9:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.4.5] C:\Users\rezau\.gradle\caches\transforms-3\70ddba8747dc9aafb99f987c2727d09a\transformed\jetified-firebase-firestore-24.4.5\AndroidManifest.xml:13:5-67
@@ -217,19 +217,19 @@ MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\rezau\.gradl
 MERGED from [com.amplitude:android-sdk:2.34.0] C:\Users\rezau\.gradle\caches\transforms-3\860340d4a4c5908ef1447bc0c3d51e63\transformed\jetified-android-sdk-2.34.0\AndroidManifest.xml:9:5-67
 MERGED from [com.amplitude:android-sdk:2.34.0] C:\Users\rezau\.gradle\caches\transforms-3\860340d4a4c5908ef1447bc0c3d51e63\transformed\jetified-android-sdk-2.34.0\AndroidManifest.xml:9:5-67
 	android:name
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:3:22-64
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:3:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:5:5-79
-MERGED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:5:5-79
-MERGED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:5:5-79
-MERGED from [:react-native-community_netinfo] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-79
-MERGED from [:react-native-community_netinfo] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-79
-MERGED from [:react-native-firebase_auth] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
-MERGED from [:react-native-firebase_auth] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
-MERGED from [:react-native-firebase_database] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\database\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
-MERGED from [:react-native-firebase_database] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\database\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
-MERGED from [:react-native-firebase_storage] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
-MERGED from [:react-native-firebase_storage] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
+ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:5:5-79
+MERGED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:5:5-79
+MERGED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:5:5-79
+MERGED from [:react-native-community_netinfo] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-79
+MERGED from [:react-native-community_netinfo] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-79
+MERGED from [:react-native-firebase_auth] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
+MERGED from [:react-native-firebase_auth] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
+MERGED from [:react-native-firebase_database] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\database\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
+MERGED from [:react-native-firebase_database] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\database\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
+MERGED from [:react-native-firebase_storage] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
+MERGED from [:react-native-firebase_storage] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.4.5] C:\Users\rezau\.gradle\caches\transforms-3\70ddba8747dc9aafb99f987c2727d09a\transformed\jetified-firebase-firestore-24.4.5\AndroidManifest.xml:12:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.4.5] C:\Users\rezau\.gradle\caches\transforms-3\70ddba8747dc9aafb99f987c2727d09a\transformed\jetified-firebase-firestore-24.4.5\AndroidManifest.xml:12:5-79
 MERGED from [com.google.firebase:firebase-auth:21.2.0] C:\Users\rezau\.gradle\caches\transforms-3\4783990546ed5850a0718170e9370d74\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:26:5-79
@@ -249,83 +249,85 @@ MERGED from [com.google.android.exoplayer:exoplayer-common:2.18.1] C:\Users\reza
 MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\rezau\.gradle\caches\transforms-3\aa4bcbe3b5c216c655a7ba510cee633d\transformed\jetified-grpc-android-1.52.1\AndroidManifest.xml:9:5-79
 MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\rezau\.gradle\caches\transforms-3\aa4bcbe3b5c216c655a7ba510cee633d\transformed\jetified-grpc-android-1.52.1\AndroidManifest.xml:9:5-79
 	android:name
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:5:22-76
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:5:22-76
 uses-permission#android.permission.BLUETOOTH
-ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:6:5-68
-MERGED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:6:5-68
-MERGED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:6:5-68
+ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:6:5-68
+MERGED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:6:5-68
+MERGED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:6:5-68
 	android:name
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:6:22-65
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:6:22-65
 uses-permission#android.permission.CAMERA
-ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:7:5-65
-MERGED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:7:5-65
-MERGED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:7:5-65
+ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:7:5-65
+MERGED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:7:5-65
+MERGED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:7:5-65
 	android:name
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:7:22-62
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:7:22-62
 uses-permission#android.permission.MANAGE_OWN_CALLS
-ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:8:5-75
-MERGED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:8:5-75
-MERGED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:8:5-75
+ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:8:5-75
+MERGED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:8:5-75
+MERGED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:8:5-75
 	android:name
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:8:22-72
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:8:22-72
 uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
-ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:9:5-80
-MERGED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:9:5-80
-MERGED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:9:5-80
+ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:9:5-80
+MERGED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:9:5-80
+MERGED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:9:5-80
 	android:name
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:9:22-77
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:9:22-77
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:10:5-71
-MERGED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:10:5-71
-MERGED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:10:5-71
+ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:10:5-71
+MERGED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:10:5-71
+MERGED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:10:5-71
 	android:name
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:10:22-68
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:10:22-68
 uses-permission#android.permission.WAKE_LOCK
-ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:11:5-68
-MERGED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:11:5-68
-MERGED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:11:5-68
-MERGED from [:react-native-firebase_auth] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-68
-MERGED from [:react-native-firebase_auth] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-68
-MERGED from [:react-native-firebase_database] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\database\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-68
-MERGED from [:react-native-firebase_database] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\database\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-68
-MERGED from [:react-native-firebase_storage] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-68
-MERGED from [:react-native-firebase_storage] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-68
-MERGED from [:react-native-background-timer] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-background-timer\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-68
-MERGED from [:react-native-background-timer] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-background-timer\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-68
+ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:11:5-68
+MERGED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:11:5-68
+MERGED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:11:5-68
+MERGED from [:react-native-firebase_auth] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-68
+MERGED from [:react-native-firebase_auth] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-68
+MERGED from [:react-native-firebase_database] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\database\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-68
+MERGED from [:react-native-firebase_database] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\database\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-68
+MERGED from [:react-native-firebase_storage] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-68
+MERGED from [:react-native-firebase_storage] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-68
+MERGED from [:react-native-background-timer] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-background-timer\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-68
+MERGED from [:react-native-background-timer] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-background-timer\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-68
 MERGED from [androidx.work:work-runtime:2.7.1] C:\Users\rezau\.gradle\caches\transforms-3\5549b419e83c0e9275f0abfa7e08250e\transformed\work-runtime-2.7.1\AndroidManifest.xml:25:5-68
 MERGED from [androidx.work:work-runtime:2.7.1] C:\Users\rezau\.gradle\caches\transforms-3\5549b419e83c0e9275f0abfa7e08250e\transformed\work-runtime-2.7.1\AndroidManifest.xml:25:5-68
 	android:name
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:11:22-65
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:11:22-65
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:12:5-76
-MERGED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:12:5-76
-MERGED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:12:5-76
+ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:12:5-76
+MERGED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:12:5-76
+MERGED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:12:5-76
 MERGED from [com.facebook.flipper:flipper:0.182.0] C:\Users\rezau\.gradle\caches\transforms-3\57670af1a9368179ca89ad5361b747b0\transformed\jetified-flipper-0.182.0\AndroidManifest.xml:16:5-76
 MERGED from [com.facebook.flipper:flipper:0.182.0] C:\Users\rezau\.gradle\caches\transforms-3\57670af1a9368179ca89ad5361b747b0\transformed\jetified-flipper-0.182.0\AndroidManifest.xml:16:5-76
-MERGED from [:react-native-community_netinfo] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-76
-MERGED from [:react-native-community_netinfo] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-76
+MERGED from [:react-native-community_netinfo] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-76
+MERGED from [:react-native-community_netinfo] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-76
 	android:name
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:12:22-73
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:12:22-73
 uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:13:5-77
-MERGED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:13:5-77
-MERGED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:13:5-77
+ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:13:5-77
+MERGED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:13:5-77
+MERGED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:13:5-77
 MERGED from [androidx.work:work-runtime:2.7.1] C:\Users\rezau\.gradle\caches\transforms-3\5549b419e83c0e9275f0abfa7e08250e\transformed\work-runtime-2.7.1\AndroidManifest.xml:28:5-77
 MERGED from [androidx.work:work-runtime:2.7.1] C:\Users\rezau\.gradle\caches\transforms-3\5549b419e83c0e9275f0abfa7e08250e\transformed\work-runtime-2.7.1\AndroidManifest.xml:28:5-77
 	android:name
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:13:22-74
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:13:22-74
 application
-ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:15:5-39:19
-MERGED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:15:5-39:19
-MERGED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:15:5-39:19
-MERGED from [:react-native-firebase_app] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-28:19
-MERGED from [:react-native-firebase_app] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-28:19
-MERGED from [:react-native-performance] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-13:19
-MERGED from [:react-native-performance] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-13:19
-MERGED from [:react-native-share] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-17:19
-MERGED from [:react-native-share] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-17:19
-MERGED from [:react-native-webview] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-17:19
-MERGED from [:react-native-webview] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-17:19
+ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:15:5-39:19
+MERGED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:15:5-39:19
+MERGED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:15:5-39:19
+MERGED from [:react-native-firebase_app] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-28:19
+MERGED from [:react-native-firebase_app] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-28:19
+MERGED from [:react-native-performance] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:react-native-performance] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:react-native-share] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-17:19
+MERGED from [:react-native-share] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-17:19
+MERGED from [:react-native-webrtc] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-webrtc\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-13:19
+MERGED from [:react-native-webrtc] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-webrtc\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-13:19
+MERGED from [:react-native-webview] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-17:19
+MERGED from [:react-native-webview] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-17:19
 MERGED from [com.giphy.sdk:ui:2.3.4] C:\Users\rezau\.gradle\caches\transforms-3\4a851c99f70975e4cef6ad337eae199c\transformed\jetified-ui-2.3.4\AndroidManifest.xml:11:5-21:19
 MERGED from [com.giphy.sdk:ui:2.3.4] C:\Users\rezau\.gradle\caches\transforms-3\4a851c99f70975e4cef6ad337eae199c\transformed\jetified-ui-2.3.4\AndroidManifest.xml:11:5-21:19
 MERGED from [com.airbnb.android:lottie:6.4.0] C:\Users\rezau\.gradle\caches\transforms-3\6188ed8b22a5916867beb62f07437be7\transformed\jetified-lottie-6.4.0\AndroidManifest.xml:7:5-20
@@ -399,147 +401,147 @@ MERGED from [com.android.installreferrer:installreferrer:1.1.2] C:\Users\rezau\.
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] C:\Users\rezau\.gradle\caches\transforms-3\01554370bd78c7048635cb3f320861f1\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 	android:label
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:17:7-39
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:17:7-39
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:17:7-39
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:17:7-39
 	tools:ignore
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:21:9-48
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:21:9-48
 	android:roundIcon
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:19:7-46
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:19:7-46
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:19:7-46
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:19:7-46
 	tools:targetApi
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:20:9-29
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:20:9-29
 	android:icon
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:18:7-41
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:18:7-41
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:18:7-41
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:18:7-41
 	android:allowBackup
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:20:7-34
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:20:7-34
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:20:7-34
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:20:7-34
 	android:theme
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:21:7-38
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:21:7-38
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:21:7-38
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:21:7-38
 	android:usesCleartextTraffic
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:19:9-44
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:19:9-44
 	android:name
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:16:7-38
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:16:7-38
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:16:7-38
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:16:7-38
 activity#com.maternitycare_demo.MainActivity
-ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:22:7-33:18
+ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:22:7-33:18
 	android:label
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:24:9-41
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:24:9-41
 	android:launchMode
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:26:9-40
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:26:9-40
 	android:windowSoftInputMode
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:27:9-51
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:27:9-51
 	android:exported
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:28:9-32
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:28:9-32
 	android:configChanges
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:25:9-118
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:25:9-118
 	android:name
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:23:9-37
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:23:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:29:9-32:25
+ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:29:9-32:25
 action#android.intent.action.MAIN
-ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:30:13-65
+ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:30:13-65
 	android:name
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:30:21-62
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:30:21-62
 category#android.intent.category.LAUNCHER
-ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:31:13-73
+ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:31:13-73
 	android:name
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:31:23-70
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:31:23-70
 meta-data#com.google.android.geo.API_KEY
-ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:35:9-37:63
+ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:35:9-37:63
 	android:value
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:37:6-61
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:37:6-61
 	android:name
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:36:6-51
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml:36:6-51
 uses-sdk
-INJECTED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml
-INJECTED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml
+INJECTED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml
+INJECTED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.182.0] C:\Users\rezau\.gradle\caches\transforms-3\d192af5cebd5b7edd26f83f9d6ed8585\transformed\jetified-flipper-network-plugin-0.182.0\AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.182.0] C:\Users\rezau\.gradle\caches\transforms-3\d192af5cebd5b7edd26f83f9d6ed8585\transformed\jetified-flipper-network-plugin-0.182.0\AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.182.0] C:\Users\rezau\.gradle\caches\transforms-3\795a622740cba963847dfe988b2d1ccd\transformed\jetified-flipper-fresco-plugin-0.182.0\AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.182.0] C:\Users\rezau\.gradle\caches\transforms-3\795a622740cba963847dfe988b2d1ccd\transformed\jetified-flipper-fresco-plugin-0.182.0\AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper:0.182.0] C:\Users\rezau\.gradle\caches\transforms-3\57670af1a9368179ca89ad5361b747b0\transformed\jetified-flipper-0.182.0\AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper:0.182.0] C:\Users\rezau\.gradle\caches\transforms-3\57670af1a9368179ca89ad5361b747b0\transformed\jetified-flipper-0.182.0\AndroidManifest.xml:11:5-13:41
-MERGED from [:amplitude_react-native] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@amplitude\react-native\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:amplitude_react-native] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@amplitude\react-native\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:giphy_react-native-sdk] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@giphy\react-native-sdk\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:giphy_react-native-sdk] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@giphy\react-native-sdk\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:jitsi_react-native-sdk] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@jitsi\react-native-sdk\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:jitsi_react-native-sdk] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@jitsi\react-native-sdk\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-async-storage_async-storage] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-async-storage\async-storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-async-storage_async-storage] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-async-storage\async-storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-community_clipboard] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-community\clipboard\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-community_clipboard] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-community\clipboard\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-community_netinfo] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-community_netinfo] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-community_slider] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-community\slider\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-community_slider] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-community\slider\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-firebase_auth] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-firebase_auth] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-firebase_database] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\database\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-firebase_database] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\database\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-firebase_firestore] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\firestore\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-firebase_firestore] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\firestore\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-firebase_storage] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-firebase_storage] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-firebase_app] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-44
-MERGED from [:react-native-firebase_app] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-44
-MERGED from [:react-native-google-signin_google-signin] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-google-signin\google-signin\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-google-signin_google-signin] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-google-signin\google-signin\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:lottie-react-native] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\lottie-react-native\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:lottie-react-native] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\lottie-react-native\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-background-timer] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-background-timer\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-background-timer] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-background-timer\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-calendar-events] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-calendar-events\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-calendar-events] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-calendar-events\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-default-preference] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-default-preference\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-default-preference] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-default-preference\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-device-info] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-device-info\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-device-info] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-device-info\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-fs] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-fs\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-fs] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-fs\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-gesture-handler] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-gesture-handler] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-get-random-values] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-get-random-values\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-get-random-values] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-get-random-values\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-immersive-mode] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-immersive-mode\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-immersive-mode] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-immersive-mode\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-keep-awake] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-keep-awake\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-keep-awake] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-keep-awake\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-maps] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-maps\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-maps] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-maps\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-orientation-locker] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-orientation-locker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-orientation-locker] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-orientation-locker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-pager-view] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-pager-view\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-pager-view] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-pager-view\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-performance] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-performance] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-safe-area-context] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-safe-area-context] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-screens] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-screens] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-share] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-share] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-splash-screen] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-splash-screen\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-splash-screen] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-splash-screen\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-svg] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-svg\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-svg] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-svg\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-vector-icons] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-vector-icons] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-video] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-video\android\buildOutput_2fa6559e287e4da3850b9bacddcac0fe\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-video] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-video\android\buildOutput_2fa6559e287e4da3850b9bacddcac0fe\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-webrtc] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-webrtc\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-webrtc] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-webrtc\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-webview] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-webview] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:amplitude_react-native] D:\Git\_Github\MaternityCare_Live\node_modules\@amplitude\react-native\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:amplitude_react-native] D:\Git\_Github\MaternityCare_Live\node_modules\@amplitude\react-native\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:giphy_react-native-sdk] D:\Git\_Github\MaternityCare_Live\node_modules\@giphy\react-native-sdk\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:giphy_react-native-sdk] D:\Git\_Github\MaternityCare_Live\node_modules\@giphy\react-native-sdk\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:jitsi_react-native-sdk] D:\Git\_Github\MaternityCare_Live\node_modules\@jitsi\react-native-sdk\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:jitsi_react-native-sdk] D:\Git\_Github\MaternityCare_Live\node_modules\@jitsi\react-native-sdk\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-async-storage_async-storage] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-async-storage\async-storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-async-storage_async-storage] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-async-storage\async-storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-community_clipboard] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-community\clipboard\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-community_clipboard] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-community\clipboard\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-community_netinfo] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-community_netinfo] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-community_slider] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-community\slider\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-community_slider] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-community\slider\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-firebase_auth] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-firebase_auth] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\auth\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-firebase_database] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\database\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-firebase_database] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\database\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-firebase_firestore] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\firestore\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-firebase_firestore] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\firestore\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-firebase_storage] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-firebase_storage] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-firebase_app] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-44
+MERGED from [:react-native-firebase_app] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-44
+MERGED from [:react-native-google-signin_google-signin] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-google-signin\google-signin\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-google-signin_google-signin] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-google-signin\google-signin\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:lottie-react-native] D:\Git\_Github\MaternityCare_Live\node_modules\lottie-react-native\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:lottie-react-native] D:\Git\_Github\MaternityCare_Live\node_modules\lottie-react-native\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-background-timer] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-background-timer\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-background-timer] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-background-timer\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-calendar-events] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-calendar-events\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-calendar-events] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-calendar-events\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-default-preference] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-default-preference\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-default-preference] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-default-preference\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-device-info] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-device-info\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-device-info] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-device-info\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-fs] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-fs\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-fs] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-fs\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-gesture-handler] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-gesture-handler] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-get-random-values] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-get-random-values\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-get-random-values] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-get-random-values\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-immersive-mode] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-immersive-mode\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-immersive-mode] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-immersive-mode\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-keep-awake] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-keep-awake\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-keep-awake] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-keep-awake\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-maps] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-maps\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-maps] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-maps\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-orientation-locker] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-orientation-locker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-orientation-locker] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-orientation-locker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-pager-view] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-pager-view\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-pager-view] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-pager-view\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-performance] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-performance] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-safe-area-context] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-safe-area-context] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-screens] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-screens] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-share] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-share] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-splash-screen] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-splash-screen\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-splash-screen] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-splash-screen\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-svg] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-svg\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-svg] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-svg\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-vector-icons] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-vector-icons] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-video] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-video\android\buildOutput_2fa6559e287e4da3850b9bacddcac0fe\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-video] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-video\android\buildOutput_2fa6559e287e4da3850b9bacddcac0fe\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-webrtc] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-webrtc\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-44
+MERGED from [:react-native-webrtc] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-webrtc\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-44
+MERGED from [:react-native-webview] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-webview] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [com.facebook.react:react-android:0.72.3] C:\Users\rezau\.gradle\caches\transforms-3\07dda0d5c23854d613e1c30a8f0101f6\transformed\jetified-react-android-0.72.3-debug\AndroidManifest.xml:5:5-44
 MERGED from [com.facebook.react:react-android:0.72.3] C:\Users\rezau\.gradle\caches\transforms-3\07dda0d5c23854d613e1c30a8f0101f6\transformed\jetified-react-android-0.72.3-debug\AndroidManifest.xml:5:5-44
 MERGED from [com.facebook.react:hermes-android:0.72.3] C:\Users\rezau\.gradle\caches\transforms-3\c90f95a0796270537fc6b7b00519d7e3\transformed\jetified-hermes-android-0.72.3-debug\AndroidManifest.xml:5:5-44
 MERGED from [com.facebook.react:hermes-android:0.72.3] C:\Users\rezau\.gradle\caches\transforms-3\c90f95a0796270537fc6b7b00519d7e3\transformed\jetified-hermes-android-0.72.3-debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-sound] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-sound\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-44
-MERGED from [:react-native-sound] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-sound\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-44
+MERGED from [:react-native-sound] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-sound\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-44
+MERGED from [:react-native-sound] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-sound\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-44
 MERGED from [com.giphy.sdk:ui:2.3.4] C:\Users\rezau\.gradle\caches\transforms-3\4a851c99f70975e4cef6ad337eae199c\transformed\jetified-ui-2.3.4\AndroidManifest.xml:5:5-7:41
 MERGED from [com.giphy.sdk:ui:2.3.4] C:\Users\rezau\.gradle\caches\transforms-3\4a851c99f70975e4cef6ad337eae199c\transformed\jetified-ui-2.3.4\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.6.0] C:\Users\rezau\.gradle\caches\transforms-3\a1978e87d401680598024145cb0ac00d\transformed\jetified-imagepipeline-okhttp3-2.6.0\AndroidManifest.xml:5:5-7:41
@@ -778,40 +780,40 @@ MERGED from [com.jakewharton.timber:timber:4.7.1] C:\Users\rezau\.gradle\caches\
 MERGED from [com.jakewharton.timber:timber:4.7.1] C:\Users\rezau\.gradle\caches\transforms-3\7064afb6bc96c3e41a28b375c0f5c93b\transformed\jetified-timber-4.7.1\AndroidManifest.xml:5:5-43
 MERGED from [com.android.installreferrer:installreferrer:1.1.2] C:\Users\rezau\.gradle\caches\transforms-3\fecf1d63e910b7e865cbe6a72ccd06b3\transformed\jetified-installreferrer-1.1.2\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.installreferrer:installreferrer:1.1.2] C:\Users\rezau\.gradle\caches\transforms-3\fecf1d63e910b7e865cbe6a72ccd06b3\transformed\jetified-installreferrer-1.1.2\AndroidManifest.xml:5:5-7:41
-MERGED from [org.jitsi:webrtc:111.0.1] C:\Users\rezau\.gradle\caches\transforms-3\882e12047b37d485572163a0fcd654ae\transformed\jetified-webrtc-111.0.1\AndroidManifest.xml:7:5-9:41
-MERGED from [org.jitsi:webrtc:111.0.1] C:\Users\rezau\.gradle\caches\transforms-3\882e12047b37d485572163a0fcd654ae\transformed\jetified-webrtc-111.0.1\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jitsi:webrtc:124.0.0] C:\Users\rezau\.gradle\caches\transforms-3\82bf46d5f5997730f31770010b277514\transformed\jetified-webrtc-124.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jitsi:webrtc:124.0.0] C:\Users\rezau\.gradle\caches\transforms-3\82bf46d5f5997730f31770010b277514\transformed\jetified-webrtc-124.0.0\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.fresco:fbcore:2.6.0] C:\Users\rezau\.gradle\caches\transforms-3\8e1baf0d23863a4b534b24773d610902\transformed\jetified-fbcore-2.6.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:fbcore:2.6.0] C:\Users\rezau\.gradle\caches\transforms-3\8e1baf0d23863a4b534b24773d610902\transformed\jetified-fbcore-2.6.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\rezau\.gradle\caches\transforms-3\38e5784e732166e9cfc981803b5fe152\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\rezau\.gradle\caches\transforms-3\38e5784e732166e9cfc981803b5fe152\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
-INJECTED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml
-INJECTED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml
+INJECTED from D:\Git\_Github\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml
+INJECTED from D:\Git\_Github\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml
 	tools:overrideLibrary
 		ADDED from [com.google.firebase:firebase-auth:21.2.0] C:\Users\rezau\.gradle\caches\transforms-3\4783990546ed5850a0718170e9370d74\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:23:9-61
 	android:targetSdkVersion
-		INJECTED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml
+		INJECTED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Git\_Github\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml
+		INJECTED from D:\Git\_Github\MaternityCare_Live\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Git\_Github\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:5:5-77
+ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:5:5-77
 	android:name
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:5:22-75
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:5:22-75
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:22:9-111
+ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:22:9-111
 	android:exported
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:22:84-108
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:22:84-108
 	android:name
-		ADDED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:22:19-83
+		ADDED from D:\Git\_Github\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:22:19-83
 meta-data#app_data_collection_default_enabled
-ADDED from [:react-native-firebase_app] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:9-11:36
+ADDED from [:react-native-firebase_app] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:9-11:36
 	android:value
-		ADDED from [:react-native-firebase_app] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-33
+		ADDED from [:react-native-firebase_app] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-33
 	android:name
-		ADDED from [:react-native-firebase_app] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-63
+		ADDED from [:react-native-firebase_app] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-63
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [:react-native-firebase_app] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:9-21:19
+ADDED from [:react-native-firebase_app] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:9-21:19
 MERGED from [com.google.firebase:firebase-firestore:24.4.5] C:\Users\rezau\.gradle\caches\transforms-3\70ddba8747dc9aafb99f987c2727d09a\transformed\jetified-firebase-firestore-24.4.5\AndroidManifest.xml:16:9-22:19
 MERGED from [com.google.firebase:firebase-firestore:24.4.5] C:\Users\rezau\.gradle\caches\transforms-3\70ddba8747dc9aafb99f987c2727d09a\transformed\jetified-firebase-firestore-24.4.5\AndroidManifest.xml:16:9-22:19
 MERGED from [com.google.firebase:firebase-auth:21.2.0] C:\Users\rezau\.gradle\caches\transforms-3\4783990546ed5850a0718170e9370d74\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:66:9-72:19
@@ -823,79 +825,85 @@ MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\rezau\.gradl
 MERGED from [com.google.firebase:firebase-common:20.3.2] C:\Users\rezau\.gradle\caches\transforms-3\c3c3297f2ca11a9294576fd2470fd579\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:32:9-36:35
 MERGED from [com.google.firebase:firebase-common:20.3.2] C:\Users\rezau\.gradle\caches\transforms-3\c3c3297f2ca11a9294576fd2470fd579\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:32:9-36:35
 	android:exported
-		ADDED from [:react-native-firebase_app] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
+		ADDED from [:react-native-firebase_app] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
 	tools:targetApi
-		ADDED from [:react-native-firebase_app] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-32
+		ADDED from [:react-native-firebase_app] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-32
 	android:directBootAware
-		ADDED from [:react-native-firebase_app] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-43
+		ADDED from [:react-native-firebase_app] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-43
 	android:name
-		ADDED from [:react-native-firebase_app] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-84
+		ADDED from [:react-native-firebase_app] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-84
 meta-data#com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar
-ADDED from [:react-native-firebase_app] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-20:85
+ADDED from [:react-native-firebase_app] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-20:85
 	android:value
-		ADDED from [:react-native-firebase_app] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:17-82
+		ADDED from [:react-native-firebase_app] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:17-82
 	android:name
-		ADDED from [:react-native-firebase_app] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:19:17-120
+		ADDED from [:react-native-firebase_app] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:19:17-120
 provider#io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider
-ADDED from [:react-native-firebase_app] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:23:9-27:38
+ADDED from [:react-native-firebase_app] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:23:9-27:38
 	android:authorities
-		ADDED from [:react-native-firebase_app] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:25:13-86
+		ADDED from [:react-native-firebase_app] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:25:13-86
 	android:exported
-		ADDED from [:react-native-firebase_app] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-37
+		ADDED from [:react-native-firebase_app] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-37
 	android:initOrder
-		ADDED from [:react-native-firebase_app] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-35
+		ADDED from [:react-native-firebase_app] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-35
 	android:name
-		ADDED from [:react-native-firebase_app] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:24:13-88
+		ADDED from [:react-native-firebase_app] D:\Git\_Github\MaternityCare_Live\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:24:13-88
 uses-permission#android.permission.WRITE_CALENDAR
-ADDED from [:react-native-calendar-events] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-calendar-events\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-73
+ADDED from [:react-native-calendar-events] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-calendar-events\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-73
 	android:name
-		ADDED from [:react-native-calendar-events] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-calendar-events\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-70
+		ADDED from [:react-native-calendar-events] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-calendar-events\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-70
 uses-permission#android.permission.READ_CALENDAR
-ADDED from [:react-native-calendar-events] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-calendar-events\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-72
+ADDED from [:react-native-calendar-events] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-calendar-events\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-72
 	android:name
-		ADDED from [:react-native-calendar-events] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-calendar-events\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:22-69
+		ADDED from [:react-native-calendar-events] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-calendar-events\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:22-69
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from [:react-native-fs] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-fs\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-81
+ADDED from [:react-native-fs] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-fs\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-81
 	android:name
-		ADDED from [:react-native-fs] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-fs\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-78
+		ADDED from [:react-native-fs] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-fs\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from D:\Git\_Github\Maternity\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:2:1-24:12 reason: com.rnfs requested WRITE_EXTERNAL_STORAGE
+IMPLIED from D:\Git\_Github\MaternityCare_Live\android\app\src\debug\AndroidManifest.xml:2:1-24:12 reason: com.rnfs requested WRITE_EXTERNAL_STORAGE
 provider#com.oblador.performance.StartTimeProvider
-ADDED from [:react-native-performance] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-12:39
+ADDED from [:react-native-performance] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-12:39
 	android:authorities
-		ADDED from [:react-native-performance] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-71
+		ADDED from [:react-native-performance] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-71
 	android:exported
-		ADDED from [:react-native-performance] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
+		ADDED from [:react-native-performance] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
 	android:initOrder
-		ADDED from [:react-native-performance] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-36
+		ADDED from [:react-native-performance] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-36
 	android:name
-		ADDED from [:react-native-performance] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-69
+		ADDED from [:react-native-performance] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-performance\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-69
 provider#cl.json.RNShareFileProvider
-ADDED from [:react-native-share] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
+ADDED from [:react-native-share] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
 	android:grantUriPermissions
-		ADDED from [:react-native-share] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-47
+		ADDED from [:react-native-share] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-47
 	android:authorities
-		ADDED from [:react-native-share] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-72
+		ADDED from [:react-native-share] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-72
 	android:exported
-		ADDED from [:react-native-share] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
+		ADDED from [:react-native-share] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
 	android:name
-		ADDED from [:react-native-share] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-55
+		ADDED from [:react-native-share] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-55
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:react-native-share] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:64
+ADDED from [:react-native-share] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:64
 	android:resource
-		ADDED from [:react-native-share] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-61
+		ADDED from [:react-native-share] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-61
 	android:name
-		ADDED from [:react-native-share] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-67
+		ADDED from [:react-native-share] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-share\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-67
+service#com.oney.WebRTCModule.MediaProjectionService
+ADDED from [:react-native-webrtc] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-webrtc\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:9-12:19
+	android:foregroundServiceType
+		ADDED from [:react-native-webrtc] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-webrtc\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-60
+	android:name
+		ADDED from [:react-native-webrtc] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-webrtc\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-72
 provider#com.reactnativecommunity.webview.RNCWebViewFileProvider
-ADDED from [:react-native-webview] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
+ADDED from [:react-native-webview] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
 	android:grantUriPermissions
-		ADDED from [:react-native-webview] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-47
+		ADDED from [:react-native-webview] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-47
 	android:authorities
-		ADDED from [:react-native-webview] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-64
+		ADDED from [:react-native-webview] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-64
 	android:exported
-		ADDED from [:react-native-webview] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
+		ADDED from [:react-native-webview] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
 	android:name
-		ADDED from [:react-native-webview] D:\Git\_Github\Maternity\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-83
+		ADDED from [:react-native-webview] D:\Git\_Github\MaternityCare_Live\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-83
 uses-library#android.test.runner
 ADDED from [com.giphy.sdk:ui:2.3.4] C:\Users\rezau\.gradle\caches\transforms-3\4a851c99f70975e4cef6ad337eae199c\transformed\jetified-ui-2.3.4\AndroidManifest.xml:12:9-14:40
 	android:required
